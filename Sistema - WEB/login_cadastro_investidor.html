@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2WORK</title>
+    <link rel="icon" href="img/Original.png">
+    <link rel="stylesheet" href="css/login_cadastro_investidor.css">
+    <!-- LINK FONTAWESOME DOS ICONES DO FORMULÁRIO -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- FIM LINK FONTAWESOME DOS ICONES DO FORMULÁRIO -->
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <img src="img/Original on Transparent.png" alt="" style="height: 32px; width: 160px; margin: 205px;">
+        <img class="home" src="img/pagina-inicial.png" alt="">
+        <p><a href="#">Início</p></a>
+    </header>
+    <!-- FIM HEADER -->
+    <div class="container">
+        <!-- PRIMEIRO CONTEÚDO -->
+        <div class="content first-content">
+            <!-- PRIMEIRA COLUNA -->
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, Investidor!</h2>
+                <p class="description description-primary">Já possui cadastro?</p>
+                <p class="description description-primary">Faça seu login para entrar</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>
+            <!-- FIM PRIMEIRA COLUNA -->
+            <!-- SEGUNDA COLUNA -->
+            <div class="second-column">
+                <h2 class="title title-second">Cadastro</h2>
+                <!-- FORMULÁRIO DE CADASTRO -->
+                <form id="formulario">
+                    <!-- NOME -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-user icon-modify" style="margin: 1px;"></i>
+                            <input id="nome" type="text" placeholder="Nome">
+                        </label>
+                    </div>
+                    <!-- FIM NOME -->
+                    <!-- ESTADO -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-search-location icon-modify"></i>
+                            <input id="estado" type="text" placeholder="Estado">
+                        </label>
+                    </div>
+                    <!-- FIM ESTADO -->
+                    <!-- CIDADE -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-map-marker-alt icon-modify" style="margin: 2px;"></i>
+                            <input id="cidade" type="text" placeholder="Cidade">
+                        </label>
+                    </div>
+                    <!-- FIM CIDADE -->
+                    <!-- DATA DE NASCIMENTO -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-calendar icon-modify" style="margin: 1px;"></i>
+                            <input id="dataNascimento" type="text" placeholder="Data de nascimento"
+                                onfocus="(this.type='date')">
+                        </label>
+                    </div>
+                    <!-- FIM DATA DE NASCIMENTO -->
+                    <!-- TELEFONE -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-mobile-alt icon-modify" style="margin: 3px;"></i>
+                            <input id="tel" type="tel" placeholder="Telefone" class="form-control" id="tel" name="tel"
+                                maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                        </label>
+                    </div>
+                    <!-- FIM TELEFONE -->
+                    <!-- CPF -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-sort-numeric-up icon-modify" style="margin: 1px;"></i>
+                            <input id="cpf" type="text" oninput="mascaraCPF(this)" placeholder="CPF">
+                        </label>
+                    </div>
+                    <!-- FIM CPF -->
+                    <!-- E-MAIL -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input id="e-mail" type="email" placeholder="E-mail">
+                        </label>
+                    </div>
+                    <!-- FIM E-MAIL -->
+                    <!-- CNPJ -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-building icon-modify" style="margin: 1px;"></i>
+                            <input id="cnpj" type="text" oninput="mascaraCNPJ(this)" placeholder="CNPJ">
+                        </label>
+                    </div>
+                    <!-- FIM CNPJ -->
+                    <!-- SENHA -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-lock icon-modify" style="margin: 1px;"></i>
+                            <input type="password" placeholder="Senha">
+                        </label>
+                    </div>
+                    <!-- FIM SENHA -->
+                    <!-- CONFIRMAR SENHA -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-lock icon-modify" style="margin: 1px;"></i>
+                            <input type="password" placeholder="Confirmar senha">
+                        </label>
+                    </div>
+                    <!-- FIM CONFIRMAR SENHA -->
+                    <button class="btn btn-second-cadastro">Cadastrar</button>
+                </form>
+                <!-- FIM FORMULÁRIO DE CADASTRO -->
+            </div>
+            <!-- FIM SEGUNDA COLUNA -->
+        </div>
+        <!-- SEGUNDO CONTÉUDO -->
+        <div class="content second-content">
+            <!-- PRIMEIRA COLUNA -->
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, Investidor!</h2>
+                <p class="description description-primary">É novo por aqui?</p>
+                <p class="description description-primary">Faça seu cadastro para começar!</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <!-- FIM PRIMEIRA COLUNA -->
+            <!-- SEGUNDA COLUNA -->
+            <div class="second-column">
+                <h2 class="title title-second">Login</h2>
+                <!-- FORMULÁRIO DE LOGIN -->
+                <form id="formulario-login">
+                    <!-- E-MAIL -->
+                    <div class="campo2">
+                        <label>
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input type="email" placeholder="E-mail">
+                        </label>
+                    </div>
+                    <!-- FIM E-MAIL -->
+                    <!-- SENHA -->
+                    <div class="campo2">
+                        <label>
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input type="password" placeholder="Senha">
+                        </label>
+                    </div>
+                    <!-- FIM SENHA -->
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second-login">Entrar</button>
+                </form>
+                <!-- FIM FORMULÁRIO DE LOGIN -->
+            </div>
+            <!-- FIM SEGUNDA COLUNA -->
+        </div>
+        <!-- FIM SEGUNDO CONTEÚDO -->
+    </div>
+    <!-- SCRIPT LOGIN E CADASTRO INVESTIDOR -->
+    <script src="js/login_cadastro_investidor.js"></script>
+    <!-- FIM SCRIPT LOGIN E CADASTRO INVESTIDOR -->
+</body>
+
+</html>

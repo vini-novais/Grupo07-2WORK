@@ -1,0 +1,59 @@
+- Testar cadastro do desenvolvedor -----> 
+http://localhost:8080/2work/cadastrar-usuario/00011122233/Luiz/Luiz@gmail.com/luiz1234/true/backend/null
+
+- Testar cadastro do investidor -----> 
+http://localhost:8080/2work/cadastrar-usuario/11122233344/Luis/Luis@gmail.com/luis1234/false/null/00011122233344
+
+- Testar a procura do usuário (dev) -----> 
+http://localhost:8080/2work/exibir-perfil-usuario/00011122233
+
+- Testar a procura do usuário (investidor) ----->
+http://localhost:8080/2work/exibir-perfil-usuario/11122233344
+
+- Testar a alteração de dados do Dev -----> 
+http://localhost:8080/2work/alterar-dados-dev/00011122233/00011122233/Louis/luiz@gmail.com/louis123/FrontEnd
+
+- Testar a alteração de dados do Investidor -----> 
+http://localhost:8080/2work/alterar-dados-investidor/11122233344/00011122233/Louis/luiz@gmail.com/louis123/01234567891011
+
+- Testar o Login
+http://localhost:8080/2work/login/00011122233/louis123
+ou
+http://localhost:8080/2work/login/00011122233/luiz1234
+
+- Testar o Logoff
+http://localhost:8080/2work/logoff/00011122233/luiz1234
+
+- Testar a remoção do usuário
+http://localhost:8080/2work/remover-usuario/00011122233/luiz1234
+
+------------------------------------
+
+- Ordem da apresentação;
+
+Cadastro do Dev:
+http://localhost:8080/2work/cadastrar-usuario/00011122233/Luiz/Luiz@gmail.com/luiz1234/true/backend/null
+
+Cadastro do Investidor:
+http://localhost:8080/2work/cadastrar-usuario/11122233344/Luis/Luis@gmail.com/luis1234/false/null/00011122233344
+
+Exibir o perfil do Usuário (no caso seria a página):
+http://localhost:8080/2work/exibir-perfil-usuario/00011122233
+
+Alterar dados do Dev:
+http://localhost:8080/2work/alterar-dados-dev/00011122233/00011122233/Louis/luiz@gmail.com/louis123/FrontEnd
+
+Login:
+http://localhost:8080/2work/login/00011122233/luiz1234
+
+Alterar dados do Dev (de novo):
+http://localhost:8080/2work/alterar-dados-dev/00011122233/00011122233/Louis/luiz@gmail.com/louis123/FrontEnd
+
+Logoff:
+http://localhost:8080/2work/logoff/00011122233/louis123
+
+Login:
+http://localhost:8080/2work/login/00011122233/louis123
+
+Testar a remoção do usuário:
+http://localhost:8080/2work/remover-usuario/00011122233/louis123

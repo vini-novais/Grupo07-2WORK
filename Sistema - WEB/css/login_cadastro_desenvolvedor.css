@@ -56,6 +56,7 @@ body {
     text-transform: capitalize;
 }
 .title-primary {
+    font-size: 24px;
     color: white;
 }
 .title-second {

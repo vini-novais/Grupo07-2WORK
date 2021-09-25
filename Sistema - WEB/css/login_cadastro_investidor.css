@@ -152,6 +152,16 @@ body {
     border: 1px solid rgba(60, 60, 60, 0.5);
     outline: none;
 }
+.campo #estado {
+    width: 80%;
+    height: 42px;
+    margin-top: 22px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(60, 60, 60, 0.5);
+    outline: none;
+}
 .campo2 input {
     width: 85%;
     height: 42px;

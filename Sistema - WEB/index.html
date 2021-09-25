@@ -10,49 +10,101 @@
     <link rel="icon" href="img/Original.png">
     <!-- FIM LOGO NO DOMÍNIO -->
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <!-- FIM CSS -->
     <!-- LINK FONTAWESOME DOS ÍCONES DO FOOTER -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- FIM LINK FONTAWESOME DOS ÍCONES DO FOOTER -->
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <!-- PRIMEIRO CONTEÚDO -->
-    <div class="primeiro-conteudo">
-        <!-- HEADER -->
-        <div class="navbar">
-            <img src="/img/White on Transparent.png" class="logo">
-            <ul>
-                <li><a href="#">Sobre Nós</a></li>
-            </ul>
-        </div>
-        <!-- FIM HEADER -->
-        <div class="content">
-            <h1>BEM VINDO A 2WORK</h1>
-            <p>Projetos são bem mais do que apenas linhas de código, são sonhos, acredite em seus sonhos.<br>
-                Venha fazer parte dessa comunidade!
-            </p>
-            <!-- BOTÕES -->
-            <div>
-                <button type="button"><a href="login_cadastro_desenvolvedor.html">
-                        <span>Cadastrar-se</a></span><b>Sou um Desenvolvedor!</b>
-                </button>
-                <button type="button"><a href="login_cadastro_investidor.html">
-                        <span>Cadastrar-se</a></span><b>Sou um Investidor!</b>
-                </button>
+    <!-- NAVBAR -->
+    <div id="navbar" class="header">
+        <div class="container">
+            <div class="logo-header">
+                <a href="#section_welcome"> <img src="img/White on Transparent.png" alt="" srcset=""
+                        href="#section_welcome">
+                </a>
             </div>
-            <!-- FIM BOTÕES -->
+            <div class="nav">
+                <ul>
+                    <li><a onclick="pInicio()" href="#section_welcome">Início</a></li>
+                    <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
+                    <li><a onclick="SobreNos()" href="#section_sobreNos">Sobre Nós</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-    <!-- FIM PRIMEIRO CONTEÚDO -->
-    <!-- SEGUNDO CONTEÚDO (PROJETOS) -->
-    <div class="segundo-conteudo">
+    <!-- FIM NAVBAR -->
+    <!-- SECTION WELCOME -->
+    <section class="section_welcome" id="section_welcome">
+        <div class="container">
+            <div class="content">
+                <h1>BEM VINDO A 2WORK</h1>
+                <p>Projetos são bem mais do que apenas linhas de código, são sonhos, acredite em seus sonhos!
+                    <br>Venha fazer parte dessa comunidade
+                </p>
+                <!-- CARD'S DESENVOLVEDOR E INVESTIDOR -->
+                <div class="camposInfCorp">
+                    <div class="camposInf">
+                        <h2>Voce é um Desenvolvedor?</h2>
+                        <div class="cardInf">
+                            <div class="imgBx">
+                                <img style="width:100px" src="img/icon-2Work.png" alt="">
+                            </div>
+                            <div class="contentInf">
+                                <div>
+                                    <h3>Enquanto dev você:</h3>
+                                    <p> * Quer trazer uma maior visibilidade a seu projeto. <br>
+                                        * Tem intuito em colaborar em um projeto. <br>
+                                        * Buscar um reconhecimento pelo seu trabalho.
+                                    </p>
+                                    <a href="login_cadastro_desenvolvedor.html">Cadastrar-se</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="camposInf">
+                        <h2>Voce é um Investidor?</h2>
+                        <div class="cardInf">
+                            <div class="imgBx">
+                                <img style="width:100px" src="img/icon-2Work.png" alt="">
+                            </div>
+                            <div class="contentInf">
+                                <div>
+                                    <h3>Enquanto investidor você:</h3>
+                                    <p> * Quer trazer inovação para a sua empresa. <br>
+                                        * Precisa de uma ideia inovadora para competir no mercado. <br>
+                                        * Ter acesso a ideias que poçam alavancar o seu negócio.
+                                    </p>
+                                    <a href="login_cadastro_investidor.html">Cadastrar-se</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM CARD'S DESENVOLVEDOR E INVESTIDOR -->
+            </div>
+        </div>
+    </section>
+    <!-- FIM SECTION WELCOME -->
+    <!-- SECTION PROJETOS -->
+    <section class="section_projetos" id="section_projetos">
+        <h1>Estes são alguns projetos que já estão em nossa plataforma!</h1>
+    </section>
+    <!-- FIM SECTION PROJETOS -->
+    <!-- SECTION SOBRE NÓS -->
+    <section class="section_sobreNos" id="section_sobreNos">
 
-    </div>
-    <!-- FIM SEGUNDO CONTEÚDO (PROJETOS) -->
-    <!-- TERCEIRO CONTEÚDO (FOOTER) -->
+    </section>
+    <!-- FIM SECTION SOBRE NÓS -->
+    <!-- FOOTER -->
     <footer>
         <div class="container-footer">
             <div class="sec work">
@@ -113,12 +165,16 @@
             <!-- FIM CONTATO -->
         </div>
     </footer>
-    <!-- FIM TERCEIRO CONTEÚDO (FOOTER) -->
+    <!-- FIM TFOOTER -->
     <!-- COPYRIGHT -->
     <div class="copyrightText">
         <p>Copyright © 2021 2WORK. Todos os direitos reservados.</p>
     </div>
     <!-- FIM COPYRIGHT -->
+    </footer>
+    <!-- SCRIPT NAVBAR -->
+    <script src="js/navbar.js"></script>
+    <!-- FIM SCRIPT NAVBAR -->
 </body>
 
 </html>

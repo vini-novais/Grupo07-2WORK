@@ -50,9 +50,38 @@
                     <!-- FIM NOME -->
                     <!-- ESTADO -->
                     <div class="campo">
-                        <label>
+                        <label class="label-input">
                             <i class="fas fa-search-location icon-modify"></i>
-                            <input id="estado" type="text" placeholder="Estado">
+                            <select id="estado" type="text">
+                                <option value="#" hidden>Estado</option>
+                                <option value="0">AC</option>
+                                <option value="1">AL</option>
+                                <option value="2">AP</option>
+                                <option value="3">AM</option>
+                                <option value="4">BA</option>
+                                <option value="5">CE</option>
+                                <option value="6">ES</option>
+                                <option value="7">GO</option>
+                                <option value="8">MA</option>
+                                <option value="9">MT</option>
+                                <option value="10">MS</option>
+                                <option value="11">MG</option>
+                                <option value="12">PA</option>
+                                <option value="13">PB</option>
+                                <option value="14">PR</option>
+                                <option value="15">PE</option>
+                                <option value="16">PI</option>
+                                <option value="17">RJ</option>
+                                <option value="18">RN</option>
+                                <option value="19">RS</option>
+                                <option value="20">RO</option>
+                                <option value="21">RR</option>
+                                <option value="22">SC</option>
+                                <option value="23">SP</option>
+                                <option value="24">SE</option>
+                                <option value="25">TO</option>
+                                <option value="26">DF</option>
+                            </select>
                         </label>
                     </div>
                     <!-- FIM ESTADO -->
@@ -67,7 +96,7 @@
                     <!-- DATA DE NASCIMENTO -->
                     <div class="campo">
                         <label>
-                            <i class="far fa-calendar icon-modify" style="margin: 1px;"></i>
+                            <i class="far fa-calendar icon-modify" style="margin: 3px;"></i>
                             <input id="dataNascimento" type="text" placeholder="Data de nascimento"
                                 onfocus="(this.type='date')">
                         </label>
@@ -85,7 +114,7 @@
                     <!-- CPF -->
                     <div class="campo">
                         <label>
-                            <i class="fas fa-sort-numeric-up icon-modify" style="margin: 1px;"></i>
+                            <i class="fas fa-sort-numeric-up icon-modify" style="margin: 3px;"></i>
                             <input id="cpf" type="text" oninput="mascaraCPF(this)" placeholder="CPF">
                         </label>
                     </div>
@@ -101,7 +130,7 @@
                     <!-- E-MAIL -->
                     <div class="campo">
                         <label>
-                            <i class="far fa-envelope icon-modify"></i>
+                            <i class="far fa-envelope icon-modify" style="margin: 2px;"></i>
                             <input id="e-mail" type="email" placeholder="E-mail">
                         </label>
                     </div>
@@ -114,6 +143,14 @@
                         </label>
                     </div>
                     <!-- FIM CONFIRMAR SENHA -->
+                    <!-- COMPETÊNCIA -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-code icon-modify"></i>
+                            <input type="password" placeholder="Competência">
+                        </label>
+                    </div>
+                    <!-- FIM COMPETÊNCIA -->
                     <button class="btn btn-second-cadastro">Cadastrar</button>
                 </form>
                 <!-- FIM FORMULÁRIO DE CADASTRO -->

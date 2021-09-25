@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <!-- LOGO NO DOMÍNIO -->
+    <link rel="icon" href="img/icon-2Work.png">
+    <!-- FIM LOGO NO DOMÍNIO -->
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- INÍCIO CONTEUDO -->
+    <div class="container">
+
+        <div class="header">
+
+
+        </div>
+
+        <div class="cabecalho-metricas">
+            <strong>
+                <h1>MÉTRICAS DO DESENVOLVEDOR</h1>
+            </strong>
+        </div>
+
+        <div class="primeiro-grafico">
+            <div class="conteudo-primeiro-grafico">
+                <div class="texto-primeiro-grafico">
+                    <p> Curtidas em suas postagens </p>
+                </div>
+
+                <canvas id="grafico-likes" width="565" height="330"> </canvas>
+
+                <div class="segundotexto-primeiro-grafico">
+                    <p> * Os dados serão atualizados automaticamente semanalmente * </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="segundo-grafico">
+            <div class="conteudo-segundo-grafico">
+                <div class="texto-segundo-grafico">
+                    <p> Visualizações em suas postagens </p>
+                </div>
+
+                <canvas id="grafico-visitas" width="565" height="330"> </canvas>
+
+                <div class="segundotexto-segundo-grafico">
+                    <p> * Os dados serão atualizados automaticamente semanalmente * </p>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js"></script>
+
+        <script>
+            new Chart(document.getElementById("grafico-likes"), {
+                type: 'line',
+                data: {
+                    labels: ["07-08", "14-08", "21-08", "28-08", "04-09", "11-09", "18-09", "25-09", "02-10", "09-10"],
+                    datasets: [{
+                        data: [20, 100, 110, 146, 226, 370, 500, 567, 700, 900],
+                        label: "Curtidas",
+                        borderColor: "#3e95cd",
+                        fill: false
+                    }, ]
+                },
+
+            });
+        </script>
+
+        <script>
+            new Chart(document.getElementById("grafico-visitas"), {
+                type: 'line',
+                data: {
+                    labels: ["07-08", "14-08", "21-08", "28-08", "04-09", "11-09", "18-09", "25-09", "02-10", "09-10"],
+                    datasets: [{
+                        data: [100, 196, 370, 998, 1200, 1800, 2678, 3215, 4672, 5671],
+                        label: "Visualizações",
+                        borderColor: "#3e95cd",
+                        fill: false
+                    }, ]
+                },
+
+            });
+        </script>
+
+
+    </div>
+    <!-- FIM CONTEUDO -->
+
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-<img width="425" alt="capa" src="https://user-images.githubusercontent.com/70399485/134789752-e36acff9-28e6-4d53-95b4-cf8455b8361f.png">
+![Capa](https://user-images.githubusercontent.com/70399485/134790099-02006817-acc0-4476-acf6-86823648cf90.gif)
 
 > Status do projeto: Em desenvolvimento
 
@@ -24,8 +24,14 @@ Somos uma empresa que acreditamos poder ajudar desenvolvedores a expor seus proj
 </tr>  
 </table>
 
-## Conheça nossa equipe!
-![Equipe](https://user-images.githubusercontent.com/70399485/134789578-6b71b475-480a-4623-ba60-089e43679249.png)
+## Conheça nossa equipe! 🥰 
+![Equipe](https://user-images.githubusercontent.com/70399485/134790137-518d1034-b7c3-485e-947c-43f37606cf06.png)
+
+### Sinta-se à vontade para:
+• Dar feedbacks referente ao projeto; <br>
+• Olhar nosso repositório; <br> 
+• Entrar em contato com algum de nossos membros <br>
+
 
 
 

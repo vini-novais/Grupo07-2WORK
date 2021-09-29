@@ -21,6 +21,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -96,7 +108,44 @@
     <!-- FIM SECTION WELCOME -->
     <!-- SECTION PROJETOS -->
     <section class="section_projetos" id="section_projetos">
-        <h1>Estes são alguns projetos que já estão em nossa plataforma!</h1>
+
+        <!-- UM COMPONENTE QUE GARANTE O ALINHAMENTO DO LAYOUT -->
+        <div class="container">
+            <div class="row-8">
+                <h1>Estes são alguns projetos que já estão em nossa plataforma!</h1>
+            </div>
+
+            <!-- ROW = LINHA -->
+            <div class="row-4 linha-1">
+
+                <!-- COL = COLUNA -->
+                <div class="col-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="./img/projeto-1.svg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <div class="row-informacoes-card">
+                                <p class="card-text">João oliveira</p>
+                                <img class="card-img-like" src="./img/Coracao-sem-curtir.svg" alt="Imagem Like">
+                                <p class="card-numero-likes">123</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 12rem;">
+                        <img class="card-img-top" src="./img/projeto-2.svg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <div class="row-informacoes-card">
+                                <p class="card-text">João oliveira</p>
+                                <img class="card-img-like" src="./img/Coracao-sem-curtir.svg" alt="Imagem Like">
+                                <p class="card-numero-likes">123</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
     </section>
     <!-- FIM SECTION PROJETOS -->
     <!-- SECTION SOBRE NÓS -->

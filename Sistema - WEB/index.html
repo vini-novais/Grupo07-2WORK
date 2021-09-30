@@ -16,23 +16,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- FIM LINK FONTAWESOME DOS ÍCONES DO FOOTER -->
-    <link rel="stylesheet" href="css/form.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <!-- LINKS DO BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+    <!-- FIM LINKS DO BOOTSTRAP -->
 </head>
 
 <body>
@@ -40,9 +40,7 @@
     <div id="navbar" class="header">
         <div class="container">
             <div class="logo-header">
-                <a href="#section_welcome"> <img src="img/White on Transparent.png" alt="" srcset=""
-                        href="#section_welcome">
-                </a>
+                <a href="#section_welcome"> <img src="img/White on Transparent.png"></a>
             </div>
             <div class="nav">
                 <ul>
@@ -59,11 +57,12 @@
         <div class="container">
             <div class="content">
                 <h1>BEM VINDO A 2WORK</h1>
-                <p>Projetos são bem mais do que apenas linhas de código, são sonhos, acredite em seus sonhos!
-                    <br>Venha fazer parte dessa comunidade
+                <p>Projetos são bem mais do que apenas linhas de código, são sonhos, acredite em seus sonhos! <br>
+                    Venha fazer parte dessa comunidade.
                 </p>
                 <!-- CARD'S DESENVOLVEDOR E INVESTIDOR -->
                 <div class="camposInfCorp">
+                    <!-- CARD DESENVOLVEDOR -->
                     <div class="camposInf">
                         <h2>Voce é um Desenvolvedor?</h2>
                         <div class="cardInf">
@@ -82,6 +81,8 @@
                             </div>
                         </div>
                     </div>
+                    <!-- FIM CARD DESENVOLVEDOR -->
+                    <!-- CARD INVESTIDOR -->
                     <div class="camposInf">
                         <h2>Voce é um Investidor?</h2>
                         <div class="cardInf">
@@ -93,13 +94,14 @@
                                     <h3>Enquanto investidor você:</h3>
                                     <p> * Quer trazer inovação para a sua empresa. <br>
                                         * Precisa de uma ideia inovadora para competir no mercado. <br>
-                                        * Ter acesso a ideias que poçam alavancar o seu negócio.
+                                        * Ter acesso a ideias que possam alavancar o seu negócio.
                                     </p>
                                     <a href="login_cadastro_investidor.html">Cadastrar-se</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- FIM CARD INVESTIDOR -->
                 </div>
                 <!-- FIM CARD'S DESENVOLVEDOR E INVESTIDOR -->
             </div>
@@ -108,43 +110,41 @@
     <!-- FIM SECTION WELCOME -->
     <!-- SECTION PROJETOS -->
     <section class="section_projetos" id="section_projetos">
-
         <!-- UM COMPONENTE QUE GARANTE O ALINHAMENTO DO LAYOUT -->
         <div class="container">
             <div class="row-8">
                 <h1>Estes são alguns projetos que já estão em nossa plataforma!</h1>
             </div>
-
             <!-- ROW = LINHA -->
             <div class="row-4 linha-1">
-
-                <!-- COL = COLUNA -->
+                <!-- COL = COLUNA (PROJETO 1) -->
                 <div class="col-3">
                     <div class="card" style="width: 12rem;">
                         <img class="card-img-top" src="./img/projeto-1.svg" alt="Imagem de capa do card">
                         <div class="card-body">
                             <div class="row-informacoes-card">
-                                <p class="card-text">João oliveira</p>
+                                <p class="card-text">João Oliveira</p>
                                 <img class="card-img-like" src="./img/Coracao-sem-curtir.svg" alt="Imagem Like">
-                                <p class="card-numero-likes">123</p>
+                                <p class="card-numero-likes">100</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <!-- FIM COLUNA (PROJETO 1) -->
+                <!-- COLUNA (PROJETO 2) -->
                 <div class="col-3">
                     <div class="card" style="width: 12rem;">
                         <img class="card-img-top" src="./img/projeto-2.svg" alt="Imagem de capa do card">
                         <div class="card-body">
                             <div class="row-informacoes-card">
-                                <p class="card-text">João oliveira</p>
+                                <p class="card-text">Caio Elcio</p>
                                 <img class="card-img-like" src="./img/Coracao-sem-curtir.svg" alt="Imagem Like">
-                                <p class="card-numero-likes">123</p>
+                                <p class="card-numero-likes">200</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <!-- FIM COLUNA (PROJETO 2) -->
             </div>
     </section>
     <!-- FIM SECTION PROJETOS -->
@@ -214,7 +214,7 @@
             <!-- FIM CONTATO -->
         </div>
     </footer>
-    <!-- FIM TFOOTER -->
+    <!-- FIM FOOTER -->
     <!-- COPYRIGHT -->
     <div class="copyrightText">
         <p>Copyright © 2021 2WORK. Todos os direitos reservados.</p>

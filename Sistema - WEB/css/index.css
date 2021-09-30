@@ -39,7 +39,7 @@ html {
 }
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
 /* FIM GLOBAL */
-/* HEADER */   
+/* NAVBAR */   
 .header {
     width: 100%;
     position: fixed;
@@ -90,7 +90,7 @@ html {
     display: inline-block;
     padding: 0px 20px 0px 20px;
 }
-/* FIM HEADER */
+/* FIM NAVBAR */
 /* SECTION WELCOME */
 .section_welcome {
     display: flex;
@@ -290,41 +290,33 @@ span {
     height: 100vh;
     background-color: #E5E5E5;
 }
-
 .section_projetos h1{
     margin-bottom: 100px;
 }
-
 .linha-1{
     display: flex;
     flex-direction: row;
 }
-
 .card{
     border: none !important; 
     font-size: 10px;
 }
-
 .card-img-top{
     border-radius: 10% !important;
 }
-
 .card-text{
     color: #111;
     justify-content: flex-start;
 }
-
 .row-informacoes-card{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .card-img-like{
     align-self: flex-start;
     width: 18px;
 }
-
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
 .section_projetos {

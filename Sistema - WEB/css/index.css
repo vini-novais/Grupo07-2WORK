@@ -8,6 +8,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+/* FIM GLOBAL */
 .container {
     width: 90%;
     height: auto;
@@ -38,7 +39,6 @@ html {
     background-color: #08376B
 }
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
-/* FIM GLOBAL */
 /* NAVBAR */   
 .header {
     width: 100%;
@@ -73,7 +73,7 @@ html {
 .nav a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: white;
     height: 1px;
     width: 0;
     left: 0;
@@ -81,7 +81,7 @@ html {
     transition: 0.3s;
 }
 .nav a:hover {
-    color: #fff;
+    color: white;
 } 
 .nav a:hover:after {
     width: 100%;
@@ -115,7 +115,7 @@ html {
     top: 23%;
     width: 90%;
     text-align: left;
-    color: #fff;
+    color: white;
 }
 .content h1 {
     font-size: 50px;
@@ -133,13 +133,13 @@ button {
     font-weight: bold;
     border: 2px solid #08376B;
     background: #08366b6b;
-    color: #fff;
+    color: white;
     cursor: pointer;
     position: relative;
     overflow: hidden;
 } 
 button:hover span {
-    color: #fff;
+    color: white;
     width: 100%;
 }  
 button:hover {
@@ -223,12 +223,12 @@ span {
     align-items: center;
 }
 .camposInf .cardInf .contentInf h3 {
-    color: #fff;
+    color: white;
     margin-bottom: 15px;
     font-size: 24px;
 }
 .camposInf .cardInf .contentInf p {
-    color: #fff;
+    color: white;
 }  
 .camposInf .cardInf .contentInf a {
     display: inline-block;
@@ -236,7 +236,7 @@ span {
     border-radius: 5px;
     background: #08376B;
     text-decoration: none;
-    color: #fff;
+    color: white;
     font-weight: 500;
     width: 50%;
     text-align: center;
@@ -277,10 +277,10 @@ span {
  .camposInf .cardInf .contentInf {
     position: relative;
     width: 100%;
-    background: #fff;
+    background: white;
     border-radius: 20px;
     padding: 20px;
-    border-top: 100px solid #fff;
+    border-top: 100px solid white;
  }
 }
 /* FIM SECTION WELCOME */

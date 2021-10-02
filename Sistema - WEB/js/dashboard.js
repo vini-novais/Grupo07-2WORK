@@ -1,4 +1,4 @@
-// GRÁFICO LIKES EM POSTAGENS
+/* GRÁFICO LIKES EM POSTAGENS */
 new Chart(document.getElementById("grafico-likes"), {
     type: 'line',
     data: {
@@ -11,8 +11,8 @@ new Chart(document.getElementById("grafico-likes"), {
         },]
     },
 });
-// FIM GRÁFICO LIKES EM POSTAGENS
-// GRÁFICO VISUALIZAÇÕES EM POSTAGENS
+/* FIM GRÁFICO LIKES EM POSTAGENS */
+/* GRÁFICO VISUALIZAÇÕES EM POSTAGENS */
 new Chart(document.getElementById("grafico-visitas"), {
     type: 'line',
     data: {
@@ -25,4 +25,4 @@ new Chart(document.getElementById("grafico-visitas"), {
         },]
     },
 });
-// FIM GRÁFICO VISUALIZAÇÕES EM POSTAGENS
+/* FIM GRÁFICO VISUALIZAÇÕES EM POSTAGENS */

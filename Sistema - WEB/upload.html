@@ -12,28 +12,59 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/upload.css">
     <!-- FIM CSS -->
-    <!-- LINK FONTAWESOME DOS ÍCONES -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- FIM LINK FONTAWESOME DOS ÍCONES -->
+    <!-- LINK FONTAWESOME DO ÍCONE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- FIM LINK FONTAWESOME DO ÍCONE -->
 </head>
 
 <body>
-
-</body>
-<!-- NAVBAR -->
-<div id="navbar" class="header">
-    <div class="container">
-        <div class="logo-header">
-            <a href="#"> <img src="img/White on Transparent.png"></a>
-        </div>
-        <div class="nav">
-            <ul>
-                <li><a onclick="pProjetos()" href="#">Projetos</a></li>
-            </ul>
+    <!-- NAVBAR -->
+    <div id="navbar" class="header">
+        <div class="container">
+            <div class="logo-header">
+                <a href="index.html"> <img src="img/White on Transparent.png"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
+                </ul>
+            </div>
+            <!-- INPUT DE PESQUISA -->
+            <div class="search">
+                <input type="text" placeholder="Procurar">
+                <img src="img/search.png">
+            </div>
+            <!-- FIM INPUT DE PESQUISA -->
         </div>
     </div>
-</div>
-<!-- FIM NAVBAR -->
+    <!-- FIM NAVBAR -->
+    <!-- UPLOAD DAS IMAGENS -->
+    <div class="wrapper">
+        <h1>Em que você está trabalhando?</h1>
+        <form action="#">
+            <input type="file" class="file-input" name="file" hidden>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Arraste e solte uma imagem</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
+    <!-- FIM UPLOAD DAS IMAGENS -->
+    <!-- DESCRIÇÃO E BOTÃO PUBLICAR AGORA -->
+    <footer id="footer">
+        <div class="container">
+            <div class="containerTwo">
+                <div class="footerForm">
+                    <textarea placeholder="Descrição:" name="" id="" cols="10" rows="5"></textarea>
+                    <button>Publicar Agora</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM DESCRIÇÃO E BOTÃO PUBLICAR AGORA -->
+</body>
 
 </html>
+<!-- SCRIPT UPLOAD  -->
+<script src="js/upload.js"></script>
+<!-- FIM SCRIPT UPLOAD  -->

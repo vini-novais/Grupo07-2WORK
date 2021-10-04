@@ -12,15 +12,17 @@ Somos uma empresa que acreditamos poder ajudar desenvolvedores a expor seus proj
 
 <table>
 <tr>
-  <td>HTML 49.2%</td>
+  <td>HTML</td>
   <td>CSS</td>
   <td>JavaScript</td>
+  <td>PHP</td>
 </tr>
   
 <tr>
-  <td>49.2%</td>
-  <td>44.5%</td>
-  <td>6.3%</td>
+  <td>45.6%</td>
+  <td>43%</td>
+  <td>10.9%</td>
+  <td>0.5%</td>
 </tr>  
 </table>
 

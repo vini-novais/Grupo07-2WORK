@@ -1,0 +1,19 @@
+Assinatura: Azure para Estudantes
+
+Grupo de recursos: rec2work
+
+Região: Leste dos EUA
+
+Nome do banco de dados: 2work
+
+Servidor: 2work.azurewebsites.net
+
+Método de autenticação: Autenticação SQL
+
+Login do administrador do servidor: towork
+
+Senha: #Gfgrupo7
+
+Computação + armazenamento: Standard S0: 10 DTUs, 250 GB de armazenamento
+
+Redundância do armazenamento de backup: Armazenamento de backup com redundância geográfica

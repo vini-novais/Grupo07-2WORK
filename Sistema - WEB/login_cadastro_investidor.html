@@ -44,12 +44,13 @@
             <div class="second-column">
                 <h2 class="title title-second">Cadastro</h2>
                 <!-- FORMULÁRIO DE CADASTRO -->
-                <form id="formulario">
+                <form id="formulario" autocomplete="off">
                     <!-- NOME -->
                     <div class="campo">
                         <label>
                             <i class="far fa-user icon-modify" style="margin: 1px;"></i>
-                            <input id="nome" type="text" placeholder="Nome">
+                            <input id="nome" type="text" placeholder="Nome" autocomplete="off"
+                                onkeyup="validarNomeInvestidor()" required>
                         </label>
                     </div>
                     <!-- FIM NOME -->
@@ -57,7 +58,7 @@
                     <div class="campo">
                         <label class="label-input">
                             <i class="fas fa-search-location icon-modify"></i>
-                            <select id="estado" type="text">
+                            <select id="estado" type="text" required>
                                 <option value="#" hidden>Estado</option>
                                 <option value="0">AC</option>
                                 <option value="1">AL</option>
@@ -94,7 +95,8 @@
                     <div class="campo">
                         <label>
                             <i class="fas fa-map-marker-alt icon-modify" style="margin: 2px;"></i>
-                            <input id="cidade" type="text" placeholder="Cidade">
+                            <input id="cidade" type="text" placeholder="Cidade" autocomplete="off"
+                                onkeyup="validarCidadeInvestidor()" required>
                         </label>
                     </div>
                     <!-- FIM CIDADE -->
@@ -102,8 +104,8 @@
                     <div class="campo">
                         <label>
                             <i class="far fa-calendar icon-modify" style="margin: 2px;"></i>
-                            <input id="dataNascimento" type="text" placeholder="Data de nascimento"
-                                onfocus="(this.type='date')">
+                            <input id="dataNascimento" type="text" placeholder="Data de nascimento" autocomplete="off"
+                                onfocus="(this.type='date')" required>
                         </label>
                     </div>
                     <!-- FIM DATA DE NASCIMENTO -->
@@ -111,8 +113,9 @@
                     <div class="campo">
                         <label>
                             <i class="fas fa-mobile-alt icon-modify" style="margin: 3px;"></i>
-                            <input id="tel" type="tel" placeholder="Telefone" class="form-control" id="tel" name="tel"
-                                maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}" required>
+                            <input id="telefone" type="tel" placeholder="Telefone" autocomplete="off"
+                                class="form-control" name="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}"
+                                onkeyup="validarTelefoneInvestidor()" required>
                         </label>
                     </div>
                     <!-- FIM TELEFONE -->
@@ -120,7 +123,8 @@
                     <div class="campo">
                         <label>
                             <i class="fas fa-sort-numeric-up icon-modify" style="margin: 2px;"></i>
-                            <input id="cpf" type="text" oninput="mascaraCPF(this)" placeholder="CPF">
+                            <input id="cpf" type="text" oninput="mascaraCPF(this)" placeholder="CPF" autocomplete="off"
+                                onkeyup="validarCPFInvestidor()" required>
                         </label>
                     </div>
                     <!-- FIM CPF -->
@@ -128,7 +132,8 @@
                     <div class="campo">
                         <label>
                             <i class="far fa-envelope icon-modify"></i>
-                            <input id="e-mail" type="email" placeholder="E-mail">
+                            <input id="email" type="email" placeholder="E-mail" autocomplete="off"
+                                onkeyup="validarEmailInvestidor()" required>
                         </label>
                     </div>
                     <!-- FIM E-MAIL -->
@@ -136,7 +141,8 @@
                     <div class="campo">
                         <label>
                             <i class="far fa-building icon-modify" style="margin: 2px;"></i>
-                            <input id="cnpj" type="text" oninput="mascaraCNPJ(this)" placeholder="CNPJ">
+                            <input id="cnpj" type="text" oninput="mascaraCNPJ(this)" placeholder="CNPJ"
+                                autocomplete="off" onkeyup="validarCNPJInvestidor()" required>
                         </label>
                     </div>
                     <!-- FIM CNPJ -->
@@ -144,7 +150,9 @@
                     <div class="campo">
                         <label>
                             <i class="fas fa-lock icon-modify" style="margin: 2px;"></i>
-                            <input type="password" placeholder="Senha">
+                            <input id="senha1" type="password" placeholder="Senha" autocomplete="off"
+                                onkeyup="validarSenha1()" required>
+                            <div id="toggle" onclick="showHide();"></div>
                         </label>
                     </div>
                     <!-- FIM SENHA -->
@@ -152,7 +160,9 @@
                     <div class="campo">
                         <label>
                             <i class="fas fa-lock icon-modify" style="margin: 1px;"></i>
-                            <input type="password" placeholder="Confirmar senha">
+                            <input id="senha2" type="password" placeholder="Confirmar senha" autocomplete="off"
+                                onkeyup="validarSenha2()" required>
+                            <div id="toggle-confirmar" onclick="showHidee();"></div>
                         </label>
                     </div>
                     <!-- FIM CONFIRMAR SENHA -->
@@ -181,7 +191,8 @@
                     <div class="campo2">
                         <label>
                             <i class="far fa-envelope icon-modify"></i>
-                            <input type="email" placeholder="E-mail">
+                            <input id="emailLogin" type="email" placeholder="E-mail" autocomplete="off"
+                                onkeyup="validarEmailInvestidorLogin()" required>
                         </label>
                     </div>
                     <!-- FIM E-MAIL -->
@@ -189,7 +200,9 @@
                     <div class="campo2">
                         <label>
                             <i class="fas fa-lock icon-modify"></i>
-                            <input type="password" placeholder="Senha">
+                            <input id="senhaLogin" type="password" placeholder="Senha" autocomplete="off"
+                                onkeyup="validarSenhaLogin()" required>
+                            <div id="toggle-login" onclick="showHideee();"></div>
                         </label>
                     </div>
                     <!-- FIM SENHA -->

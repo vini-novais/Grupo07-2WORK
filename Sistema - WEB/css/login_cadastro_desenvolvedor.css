@@ -1,3 +1,4 @@
+/* GLOBAL */  
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+/* FIM GLOBAL */  
 .container {
     display: flex;
     justify-content: center;
@@ -122,6 +124,48 @@ body {
 }
 /* FIM BOTÕES */
 /* OLHO EXIBIR E OCULTAR SENHA */
+#toggle {
+    position: absolute;
+    width: 3vw;
+    height: 6vh;
+    background: url(../img/olho.png);
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 198px;
+    margin-top: -41px;
+}
+#toggle.hide {
+    background: url(../img/olho_block.png);
+    background-size: cover;
+}
+#toggle-confirmar {
+    position: absolute;
+    width: 3vw;
+    height: 6vh;
+    background: url(../img/olho.png);
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 198px;
+    margin-top: -41px;
+}
+#toggle-confirmar.hide {
+    background: url(../img/olho_block.png);
+    background-size: cover;
+}
+#toggle-login {
+    position: absolute;
+    width: 3vw;
+    height: 6vh;
+    background: url(../img/olho.png);
+    background-size: cover;
+    cursor: pointer;
+    margin-left: 220px;
+    margin-top: -41px;
+}
+#toggle-login.hide {
+    background: url(../img/olho_block.png);
+    background-size: cover;
+}
 /* FIM OLHO EXIBIR E OCULTAR SENHA */
 /* PRIMEIRO CONTEÚDO */
 .first-content {

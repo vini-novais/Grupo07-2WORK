@@ -324,6 +324,40 @@ span {
     height: 100vh;
     background-color: white;
 }
+
+.section_sobreNos{
+ 
+    height: 590px;
+    border-top: black;
+}
+
+.section_sobreNos .texto {
+   width: 500px;
+   color: black;
+   right: 400px;
+   margin-top: 60px;
+   position: absolute;
+
+}
+
+.section_sobreNos .solucao {
+    height: 400px;
+    width: 600px;
+    color: white;
+    margin-top: 60px;
+ }
+
+.section_sobreNos .texto p{
+    margin-top: 29px;
+    font-size: 20px;
+    line-height: 2.0;
+}
+
+.section_projetos {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
 /* FIM SECTION SOBRE NÓS */
 /* FOOTER */ 
 footer {

@@ -1,0 +1,36 @@
+Alteração 01 - Vinícius Novais - 11/10/2021 20:26
+
+create table usuario (
+      idUsuario int identity,
+      cpf varchar(11),
+      email varchar(255),
+      nome varchar(255),
+      online_status TINYINT,
+      senha varchar(255),
+      usuario_dev TINYINT,
+      telefone VARCHAR(255),
+      estado VARCHAR(255),
+      dataNascimento(255),
+      primary key (idUsuario)
+      
+); 
+
+create table dev (
+      quantidadeTotalPublicacoes int,
+      fkIdUsuario int,
+      competencia varchar(255),
+      foreign key (fkIdUsuario) references usuario(idUsuario)
+);
+
+create table investidor(
+      cnpj varchar(14),
+      fkIdUsuario int,
+      foreign key (fkIdUsuario) references usuario(idUsuario)
+);
+
+DELETAR COLUNA
+ALTER TABLE [dbo].[usuario] DROP COLUMN competencia;
+
+ADICIONAR COLUNA
+ALTER TABLE [dbo].[usuario] ADD dataNascimento VARCHAR(40), competencia VARCHAR(255);
+

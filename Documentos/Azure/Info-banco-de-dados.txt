@@ -1,18 +1,15 @@
-Assinatura: Azure para Estudantes
-
-Grupo de recursos: rec2work
-
-Região: Leste dos EUA
-
-Nome do banco de dados: 2work
-
-Servidor: 2work.azurewebsites.net
-
-Método de autenticação: Autenticação SQL
+Email: 212-3b-grupo7@bandtec.com.br
+Senha: #Gfgrupo7
 
 Login do administrador do servidor: towork
-
 Senha: #Gfgrupo7
+
+Assinatura: Azure para Estudantes
+Grupo de recursos: rec2work
+Região: Leste dos EUA
+Nome do banco de dados: 2work
+Servidor: 2work.azurewebsites.net
+Método de autenticação: Autenticação SQL
 
 Computação + armazenamento: Standard S0: 10 DTUs, 250 GB de armazenamento
 

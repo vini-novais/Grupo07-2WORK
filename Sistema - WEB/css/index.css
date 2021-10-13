@@ -1,6 +1,6 @@
 /* GLOBAL */         
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 /* FIM GLOBAL */
-.container {
+.container2Work {
     width: 90%;
     height: auto;
     margin: auto;
@@ -40,7 +40,7 @@ html {
 }
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
 /* NAVBAR */   
-.header {
+.header2Work {
     width: 100%;
     position: fixed;
     top: 0;
@@ -48,7 +48,7 @@ html {
     background-color: transparent;
     z-index: 1000;
 } 
-.header .container {
+.header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
@@ -56,13 +56,12 @@ html {
 }
 .logo-header img {
     height: 30px;
-    margin-top: 7px;
     cursor: pointer;
 }
-.nav {
+.nav2Work {
     float: right;
 }
-.nav a {
+.nav2Work a {
     position: relative;
     font-size: 15px;
     color: #a0a0a0;
@@ -70,22 +69,32 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }  
-.nav a:after {
+.nav2Work a:after {
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: #fff;
     height: 1px;
     width: 0;
     left: 0;
-    bottom: -6px;
+    bottom: -3px;
     transition: 0.3s;
 }
-.nav a:hover {
-    color: white;
+.nav2Work a:hover {
+    color: #fff;
+    text-decoration: none;
 }
-.nav li {
+
+.nav2Work a:hover:after {
+    width: 100%;
+}
+
+
+.nav2Work li {
     display: inline-block;
     padding: 0px 20px 0px 20px;
+}
+.nav2Work ul {
+    margin: 0 !important;
 }
 /* FIM NAVBAR */
 /* SECTION WELCOME */
@@ -94,7 +103,7 @@ html {
     height: 115vh;
     align-items: center;
     text-align: center;
-    color: white;
+    color: #fff;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('/img/pexels-vlada-karpovich-4050301.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,17 +116,17 @@ html {
     padding-top: 190px;
     padding-bottom: 140px;
 } 
-.content {
+.content2Work {
     position: absolute;
     top: 23%;
     width: 90%;
     text-align: left;
     color: white;
 }
-.content h1 {
+.content2Work h1 {
     font-size: 50px;
 }
-.content p {
+.content2Work p {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;

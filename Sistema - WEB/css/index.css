@@ -334,9 +334,10 @@ span {
 .section_sobreNos .texto {
    width: 500px;
    color: black;
-   right: 400px;
+   right:120px;
    margin-top: 60px;
    position: absolute;
+   
 
 }
 

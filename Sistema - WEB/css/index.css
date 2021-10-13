@@ -326,27 +326,28 @@ span {
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
 .section_sobreNos {
-    height: 660px;
+    height: 760px;
     border-top: black;
     background-color: whitesmoke;
-    
-  
+    padding: 5%;
 }
 .section_sobreNos .texto {
    width: 500px;
    color: black;
    right:120px;
-   margin-top: 150px;
    position: absolute;
    font-size: 10px;
+
 }
 
-
+.sobre_nos{
+width: 100%;
+margin-top: 5%;
+}
 .section_sobreNos .solucao {
     height: 400px;
-    width: 600px;
     color: white;
-    margin-top: 150px;
+    margin-top: 7%;
 }
 .section_sobreNos .texto p {
     margin-top: 29px;

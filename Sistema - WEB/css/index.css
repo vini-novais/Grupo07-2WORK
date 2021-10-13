@@ -82,9 +82,6 @@ html {
 }
 .nav a:hover {
     color: white;
-} 
-.nav a:hover:after {
-    width: 100%;
 }
 .nav li {
     display: inline-block;
@@ -288,7 +285,7 @@ span {
 .section_projetos {
     display: flex;
     height: 100vh;
-    background-color: #E5E5E5;
+    background-color: white;
 }
 .section_projetos h1{
     margin-bottom: 100px;
@@ -319,45 +316,28 @@ span {
 }
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
-.section_projetos {
-    display: flex;
-    height: 100vh;
-    background-color: white;
-}
-
-.section_sobreNos{
- 
+.section_sobreNos {
     height: 590px;
     border-top: black;
+    background-color: whitesmoke;
 }
-
 .section_sobreNos .texto {
    width: 500px;
    color: black;
    right:120px;
    margin-top: 60px;
    position: absolute;
-   
-
 }
-
 .section_sobreNos .solucao {
     height: 400px;
     width: 600px;
     color: white;
     margin-top: 60px;
- }
-
-.section_sobreNos .texto p{
+}
+.section_sobreNos .texto p {
     margin-top: 29px;
     font-size: 20px;
     line-height: 2.0;
-}
-
-.section_projetos {
-    display: flex;
-    height: 100vh;
-    background-color: white;
 }
 /* FIM SECTION SOBRE NÓS */
 /* FOOTER */ 

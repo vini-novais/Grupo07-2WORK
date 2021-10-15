@@ -329,23 +329,21 @@ span {
     height: 760px;
     border-top: black;
     background-color: whitesmoke;
-    padding: 5%;
+    padding-top: 5%;
 }
 .section_sobreNos .texto {
-   width: 500px;
-   color: black;
-   right:120px;
-   position: absolute;
-   font-size: 10px;
-
+    width: 500px;
+    color: black;
+    font-size: 10px;
+    float: right;
 }
 
 .sobre_nos{
 width: 100%;
-margin-top: 5%;
+margin-top: 4%;
 }
 .section_sobreNos .solucao {
-    height: 400px;
+    height: 410px;
     color: white;
     margin-top: 7%;
 }

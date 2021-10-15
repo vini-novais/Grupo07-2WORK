@@ -2,11 +2,11 @@ $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
     if (scroll > 500) {
-        $('.header').css('background-color', '#08376B')
-        $('.header').css('box-shadow', '0px 4px 4px rgba(0, 0, 0, 0.25');
+        $('.header2Work').css('background-color', '#08376B')
+        $('.header2Work').css('box-shadow', '0px 4px 4px rgba(0, 0, 0, 0.25');
     } else {
-        $('.header').css('background-color', 'transparent', 'box-shadow', 'none');
-        $('.header').css('box-shadow', 'none');
+        $('.header2Work').css('background-color', 'transparent', 'box-shadow', 'none');
+        $('.header2Work').css('box-shadow', 'none');
     }
 });
 

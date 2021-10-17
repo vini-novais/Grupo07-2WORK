@@ -1,5 +1,5 @@
-section {
-    display: inline-block;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
 .informacoes-perfil {
@@ -38,15 +38,23 @@ section {
 }
 
 .projetos {
-    margin-top: 25px;
+    margin-top: 10px;
     width: 70%;
     height: 330px;
     border: black 1px solid;
 }
 
-.projetos h1 {
+.projetos span {
     font-weight: bold;
-    margin-left: 10px;
+    font-size: 30px;
+    margin-left: 4%;
+}
+
+.cards-projetos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
 }
 
 .card {
@@ -69,10 +77,14 @@ section {
     align-items: center;
 }
 
+.info-card span {
+    font-size: 15px;
+}
+
 .feedback {
     width: 30%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-direction: column;
     margin-left: 40px;
 }
@@ -82,21 +94,41 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
     width: 75%;
-    height: 160px;
+    height: 134px;
     border-radius: 10px;
     -webkit-box-shadow: 6px 5px 20px 3px rgba(0, 0, 0, 0.51);
     box-shadow: 6px 5px 20px 3px rgba(0, 0, 0, 0.51);
 }
 
-.informacoes-feedback h1 {
+.segundo {
+    margin-top: 20px;
+}
+
+.titulo-feedback span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.informacoes-feedback span {
     margin-left: 7%;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.desc-feed {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data-feed {
+    color: #8E8E8E;
 }
 
 .estrelas {
     display: flex;
     width: 25%;
     justify-content: space-around;
-    margin-left: 7%;
+    margin-left: 12%;
 }
 
 .descricao-perfil {
@@ -109,7 +141,7 @@ section {
     width: 126px;
 }
 
-.texto-feedback p {
-    margin-left: 4%;
-    font-size: 22px;
+.texto-feedback {
+    margin-left: 10px !important;
+    font-size: 16px;
 }

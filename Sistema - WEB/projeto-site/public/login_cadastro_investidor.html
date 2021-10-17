@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2WORK</title>
+    <!-- LOGO NO DOMÍNIO -->
+    <link rel="icon" href="img/Original.png">
+    <!-- FIM LOGO NO DOMÍNIO -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login_cadastro_investidor.css">
+    <!-- FIM CSS -->
+    <!-- LINK FONTAWESOME DOS ICONES DO FORMULÁRIO -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- FIM LINK FONTAWESOME DOS ICONES DO FORMULÁRIO -->
+    <!-- LINK FONT MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FIM LINK FONT MONTSERRAT -->
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar" class="header">
+        <div class="container">
+            <div class="logo-header">
+                <a href="index.html"> <img src="img/White on Transparent.png"></a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a onclick="pInicio()" href="index.html">Início</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- FIM NAVBAR -->
+    <!-- FIM HEADER -->
+    <div class="container_login">
+        <!-- PRIMEIRO CONTEÚDO -->
+        <div class="content first-content">
+            <!-- PRIMEIRA COLUNA -->
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, Investidor!</h2>
+                <p class="description description-primary">Já possui cadastro?</p>
+                <p class="description description-primary">Faça seu login para entrar</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>
+            <!-- FIM PRIMEIRA COLUNA -->
+            <!-- SEGUNDA COLUNA -->
+            <div class="second-column">
+                <h2 class="title title-second">Cadastro</h2>
+                <!-- FORMULÁRIO DE CADASTRO -->
+                <form id="formulario" autocomplete="off">
+                    <!-- NOME -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-user icon-modify" style="margin: 1px;"></i>
+                            <input id="nome" type="text" placeholder="Nome" autocomplete="off"
+                                onkeyup="validarNomeInvestidor()" required>
+                        </label>
+                    </div>
+                    <!-- FIM NOME -->
+                    <!-- ESTADO -->
+                    <div class="campo">
+                        <label class="label-input">
+                            <i class="fas fa-search-location icon-modify"></i>
+                            <select id="estado" type="text" required>
+                                <option value="#" hidden>Estado</option>
+                                <option value="0">AC</option>
+                                <option value="1">AL</option>
+                                <option value="2">AP</option>
+                                <option value="3">AM</option>
+                                <option value="4">BA</option>
+                                <option value="5">CE</option>
+                                <option value="6">ES</option>
+                                <option value="7">GO</option>
+                                <option value="8">MA</option>
+                                <option value="9">MT</option>
+                                <option value="10">MS</option>
+                                <option value="11">MG</option>
+                                <option value="12">PA</option>
+                                <option value="13">PB</option>
+                                <option value="14">PR</option>
+                                <option value="15">PE</option>
+                                <option value="16">PI</option>
+                                <option value="17">RJ</option>
+                                <option value="18">RN</option>
+                                <option value="19">RS</option>
+                                <option value="20">RO</option>
+                                <option value="21">RR</option>
+                                <option value="22">SC</option>
+                                <option value="23">SP</option>
+                                <option value="24">SE</option>
+                                <option value="25">TO</option>
+                                <option value="26">DF</option>
+                            </select>
+                        </label>
+                    </div>
+                    <!-- FIM ESTADO -->
+                    <!-- CIDADE -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-map-marker-alt icon-modify" style="margin: 2px;"></i>
+                            <input id="cidade" type="text" placeholder="Cidade" autocomplete="off"
+                                onkeyup="validarCidadeInvestidor()" required>
+                        </label>
+                    </div>
+                    <!-- FIM CIDADE -->
+                    <!-- DATA DE NASCIMENTO -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-calendar icon-modify" style="margin: 2px;"></i>
+                            <input id="dataNascimento" type="text" placeholder="Data de nascimento" autocomplete="off"
+                                onfocus="(this.type='date')" required>
+                        </label>
+                    </div>
+                    <!-- FIM DATA DE NASCIMENTO -->
+                    <!-- TELEFONE -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-mobile-alt icon-modify" style="margin: 3px;"></i>
+                            <input id="telefone" type="tel" placeholder="Telefone" autocomplete="off"
+                                class="form-control" name="tel" maxlength="15" pattern="\(\d{2}\)\s*\d{5}-\d{4}"
+                                onkeyup="validarTelefoneInvestidor()" required>
+                        </label>
+                    </div>
+                    <!-- FIM TELEFONE -->
+                    <!-- CPF -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-sort-numeric-up icon-modify" style="margin: 2px;"></i>
+                            <input id="cpf" type="text" oninput="mascaraCPF(this)" placeholder="CPF" autocomplete="off"
+                                onkeyup="validarCPFInvestidor()" required>
+                        </label>
+                    </div>
+                    <!-- FIM CPF -->
+                    <!-- E-MAIL -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input id="email" type="email" placeholder="E-mail" autocomplete="off"
+                                onkeyup="validarEmailInvestidor()" required>
+                        </label>
+                    </div>
+                    <!-- FIM E-MAIL -->
+                    <!-- CNPJ -->
+                    <div class="campo">
+                        <label>
+                            <i class="far fa-building icon-modify" style="margin: 2px;"></i>
+                            <input id="cnpj" type="text" oninput="mascaraCNPJ(this)" placeholder="CNPJ"
+                                autocomplete="off" onkeyup="validarCNPJInvestidor()" required>
+                        </label>
+                    </div>
+                    <!-- FIM CNPJ -->
+                    <!-- SENHA -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-lock icon-modify" style="margin: 2px;"></i>
+                            <input id="senha1" type="password" placeholder="Senha" autocomplete="off"
+                                onkeyup="validarSenha1()" required>
+                            <div id="toggle" onclick="showHide();"></div>
+                        </label>
+                    </div>
+                    <!-- FIM SENHA -->
+                    <!-- CONFIRMAR SENHA -->
+                    <div class="campo">
+                        <label>
+                            <i class="fas fa-lock icon-modify" style="margin: 1px;"></i>
+                            <input id="senha2" type="password" placeholder="Confirmar senha" autocomplete="off"
+                                onkeyup="validarSenha2()" required>
+                            <div id="toggle-confirmar" onclick="showHidee();"></div>
+                        </label>
+                    </div>
+                    <!-- FIM CONFIRMAR SENHA -->
+                    <button class="btn btn-second-cadastro">Cadastrar</button>
+                </form>
+                <!-- FIM FORMULÁRIO DE CADASTRO -->
+            </div>
+            <!-- FIM SEGUNDA COLUNA -->
+        </div>
+        <!-- SEGUNDO CONTÉUDO -->
+        <div class="content second-content">
+            <!-- PRIMEIRA COLUNA -->
+            <div class="first-column">
+                <h2 class="title title-primary">Olá, Investidor!</h2>
+                <p class="description description-primary">É novo por aqui?</p>
+                <p class="description description-primary">Faça seu cadastro para começar!</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <!-- FIM PRIMEIRA COLUNA -->
+            <!-- SEGUNDA COLUNA -->
+            <div class="second-column">
+                <h2 class="title title-second">Login</h2>
+                <!-- FORMULÁRIO DE LOGIN -->
+                <form id="formulario-login">
+                    <!-- E-MAIL -->
+                    <div class="campo2">
+                        <label>
+                            <i class="far fa-envelope icon-modify"></i>
+                            <input id="emailLogin" type="email" placeholder="E-mail" autocomplete="off"
+                                onkeyup="validarEmailInvestidorLogin()" required>
+                        </label>
+                    </div>
+                    <!-- FIM E-MAIL -->
+                    <!-- SENHA -->
+                    <div class="campo2">
+                        <label>
+                            <i class="fas fa-lock icon-modify"></i>
+                            <input id="senhaLogin" type="password" placeholder="Senha" autocomplete="off"
+                                onkeyup="validarSenhaLogin()" required>
+                            <div id="toggle-login" onclick="showHideee();"></div>
+                        </label>
+                    </div>
+                    <!-- FIM SENHA -->
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second-login">Entrar</button>
+                </form>
+                <!-- FIM FORMULÁRIO DE LOGIN -->
+            </div>
+            <!-- FIM SEGUNDA COLUNA -->
+        </div>
+        <!-- FIM SEGUNDO CONTEÚDO -->
+    </div>
+</body>
+
+</html>
+<!-- SCRIPT LOGIN E CADASTRO INVESTIDOR -->
+<script src="js/login_cadastro_investidor.js"></script>
+<!-- FIM SCRIPT LOGIN E CADASTRO INVESTIDOR -->

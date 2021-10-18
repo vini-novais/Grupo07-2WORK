@@ -203,7 +203,7 @@ function cadastrar() {
         body: entrar
     }).then(function (response) {
         if (response.ok) {
-            window.location.href = 'login_cadastro_desenvolvedor.html';
+            window.location.href = '#home_dev.html';
         } else {
             console.log('Erro de cadastro!');
             response.text().then(function (resposta) {

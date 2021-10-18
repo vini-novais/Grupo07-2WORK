@@ -1,21 +1,25 @@
-/* GLOBAL */         
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+/* GLOBAL */
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}   
+}
+html {
+    scroll-behavior: smooth;
+}
 /* FIM GLOBAL */
-.container {
+.container2Work {
     width: 90%;
     height: auto;
     margin: auto;
-}       
+}
 .title_msg {
     font-size: 32px;
     font-weight: 30;
-     margin: 0;
-}        
+    margin: 0;
+}
 .description {
     font-size: 18px;
     max-width: 800px;
@@ -23,29 +27,30 @@ body {
 .description p {
     text-align: center;
 }
-/* ALÇA DE ROLAGEM ARRASTÁVEL */        
+/* ALÇA DE ROLAGEM ARRASTÁVEL */
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
-}          
+}
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
-}  
+}
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
-/* NAVBAR */   
-.header {
+/* NAVBAR */
+.header2Work {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     background-color: #08376B;
     z-index: 1000;
-} 
-.header .container {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
@@ -53,38 +58,223 @@ body {
 }
 .logo-header img {
     height: 30px;
-    margin-top: 7px;
     cursor: pointer;
 }
-.nav {
+.nav2Work {
     float: right;
 }
-.nav a {
+.nav2Work a {
     position: relative;
     font-size: 15px;
     color: #a0a0a0;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-}  
-.nav a:after {
+}
+.nav2Work a:after {
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: #fff;
     height: 1px;
     width: 0;
     left: 0;
-    bottom: -6px;
+    bottom: -3px;
     transition: 0.3s;
 }
-.nav a:hover {
-    color: white;
-} 
-.nav a:hover:after {
+.nav2Work a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+.nav2Work a:hover:after {
     width: 100%;
 }
-.nav li {
+.nav2Work li {
+    display: unset;
+    padding: 0px 0px 0px 10px;
+}
+.nav2Work ul {
+    float: left;
+    margin-right: 10px;
+}
+.nav2Work ul input {
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button_upload {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 3px;
+    background: #C6C6C6;
+    border: 1px solid #C6C6C6;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: none;
+}
+.button_upload {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3;
+}
+.button_upload:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.action {
+    float: right;
+    top: 20px;
+    right: 30px;
+}
+.action .profile {
+    position: relative;
+    width: 40px;
+    height: 38px;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    background: #FFFFFF;
+    border: 0.1px solid #C6C6C6;
+}
+.fotoperfil {
+    width: 70px;
+}
+.action .profile img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.action .menu {
+    position: absolute;
+    top: 120px;
+    right: 3px;
+    padding: 10px 20px;
+    background: #08366bb4;
+    width: 210px;
+    box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.action .menu.active {
+    top: 70px;
+    visibility: visible;
+    opacity: 1;
+}
+.action .menu h3 {
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.2em;
+}
+.action .menu h3 span {
+    font-size: 14px;
+    color: #cecece;
+    font-weight: 400;
+}
+.action .menu ul li {
+    list-style: none;
+    padding: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    margin-left: -30px;
+}
+.action .menu ul li img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.action .menu ul li:hover img {
+    opacity: 1;
+}
+.action .menu ul li a {
     display: inline-block;
-    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.action .menu ul li:hover a {
+    color: #ff5d94;
 }
 /* FIM NAVBAR */
+/* SECTION WELCOME */
+.section_welcome {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section_welcome img {
+    height: 350px;
+    float: right;
+    margin-top: 90px;
+}
+.content2Work {
+    position: absolute;
+    top: 36%;
+    width: 37%;
+    text-align: left;
+    color: black;
+    left: 120px;
+}
+.content2Work h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.content2Work h3 {
+    font-size: 15px;
+    margin: 0 0 0 3px;
+}
+.content2Work p {
+    margin: 5px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.btn_projeto {
+    width: 240px;
+    padding: 10px 0;
+    margin: 20px 20px 0 -1px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #08376B;
+    background: #08376B;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.btn_projeto {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3;
+}
+.btn_projeto:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+/* FIM SECTION WELCOME */

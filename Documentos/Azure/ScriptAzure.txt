@@ -2,29 +2,29 @@ Alteração 01 - Vinícius Novais - 11/10/2021 20:26
 
 create table usuario (
       idUsuario int identity,
-      cpf varchar(11),
-      email varchar(255),
-      nome varchar(255),
-      online_status TINYINT,
-      senha varchar(255),
-      usuario_dev TINYINT,
-      telefone VARCHAR(255),
-      estado VARCHAR(255),
-      dataNascimento(255),
+      nome varchar(100),
+      estado varchar(2),
+      cidade varchar(55),
+      dataNascimento varchar(10),
+      telefone varchar(16),
+      cpf varchar(14),
+      email varchar(120),
+      senha varchar(25),
+      onlineStatus TINYINT,
+      usuarioDev TINYINT,
       primary key (idUsuario)
-      
-); 
+);
 
-create table dev (
-      quantidadeTotalPublicacoes int,
+create table desenvolvedor (
       fkIdUsuario int,
       competencia varchar(255),
+      quantidadeTotalPublicacoes int,
       foreign key (fkIdUsuario) references usuario(idUsuario)
 );
 
 create table investidor(
-      cnpj varchar(14),
       fkIdUsuario int,
+      cnpj varchar(18),
       foreign key (fkIdUsuario) references usuario(idUsuario)
 );
 
@@ -33,4 +33,8 @@ ALTER TABLE [dbo].[usuario] DROP COLUMN competencia;
 
 ADICIONAR COLUNA
 ALTER TABLE [dbo].[usuario] ADD dataNascimento VARCHAR(40), competencia VARCHAR(255);
+-------------------------------------------------------------------------------------
+Alteração 02 - Caio Elcio - 17/10/2021 19:50
 
+PARA EXIBIR A DESCRIÇÃO DE UMA DETERMINADA COLUNA
+exec sp_columns usuario;

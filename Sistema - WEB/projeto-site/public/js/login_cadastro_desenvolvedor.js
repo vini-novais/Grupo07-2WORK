@@ -214,3 +214,27 @@ function cadastrar() {
     return false;
 }
 /* FIM FUNÇÃO PARA ENVIAR O CADASTRO AO BD (AZURE) */
+
+/* FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
+function entrar() {
+    var formulario = new URLSearchParams(new FormData(formularioLogin));
+    fetch("/usuarios/autenticar", {
+        method: "POST",
+        body: formulario
+    }).then(resposta => {
+        if (resposta.ok) {
+            resposta.json().then(json => {
+                sessionStorage.emailLogin = json.emailLogin;
+                sessionStorage.senhaLogin = json.senhaLogin;
+                window.location.href = 'index.html';
+            });
+        } else {
+            console.log('Erro de login!');
+            resposta.text().then(texto => {
+                console.error(texto);
+            });
+        }
+    });
+    return false;
+}
+/* FIM FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */

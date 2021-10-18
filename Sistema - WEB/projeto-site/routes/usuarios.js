@@ -9,8 +9,8 @@ let sessoes = [];
 router.post('/autenticar', function (req, res, next) {
 	console.log('Recuperando usuário por login e senha');
 
-	var email = req.body.email; // DEPOIS DE .body, USE O NOME (name) DO CAMPO EM SEU FORMULÁRIO DE LOGIN
-	var senha = req.body.senha; // DEPOIS DE .body, USE O NOME (name) DO CAMPO EM SEU FORMULÁRIO DE LOGIN
+	var email = req.body.emailLogin; // DEPOIS DE .body, USE O NOME (name) DO CAMPO EM SEU FORMULÁRIO DE LOGIN
+	var senha = req.body.senhaLogin; // DEPOIS DE .body, USE O NOME (name) DO CAMPO EM SEU FORMULÁRIO DE LOGIN
 
 	let instrucaoSql = `select * from usuario where email='${email}' and senha='${senha}'`;
 
@@ -42,16 +42,16 @@ router.post('/cadastrar', function (req, res, next) {
 	console.log('Criando um usuário');
 
 	Usuario.create({
+		nome: req.body.nome,
+		estado: req.body.estado,
+		cidade: req.body.cidade,
+		dataNascimento: req.body.dataNascimento,
+		telefone: req.body.telefone,
 		cpf: req.body.cpf,
 		email: req.body.email,
-		nome: req.body.nome,
-		online_status: 0,
 		senha: req.body.senha1,
-		usuario_dev: 0,
-		telefone: req.body.telefone,
-		estado: req.body.estado,
-		dataNascimento: req.body.dataNascimento,
-		cidade: req.body.cidade
+		onlineStatus: 0,
+		usuarioDev: 0
 	}).then(resultado => {
 		console.log(`Registro criado: ${resultado}`)
 		res.send(resultado);
@@ -64,7 +64,7 @@ router.post('/cadastrar', function (req, res, next) {
 
 /* VERIFICAÇÃO DE USUÁRIO */
 router.get('/sessao/:login', function (req, res, next) {
-	let email = req.params.email;
+	let email = req.params.emailLogin;
 	console.log(`Verificando se o usuário ${email} tem sessão`);
 	let tem_sessao = false;
 
@@ -86,7 +86,7 @@ router.get('/sessao/:login', function (req, res, next) {
 
 /* LOGOFF DE USUÁRIO */
 router.get('/sair/:login', function (req, res, next) {
-	let email = req.params.email;
+	let email = req.params.emailLogin;
 	console.log(`Finalizando a sessão do usuário ${email}`);
 	let nova_sessoes = []
 

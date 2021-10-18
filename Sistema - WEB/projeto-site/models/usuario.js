@@ -13,6 +13,31 @@ module.exports = (sequelize, DataTypes) => {
 			primaryKey: true,
 			autoIncrement: true
 		},
+		nome: {
+			field: 'nome',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		estado: {
+			field: 'estado',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		cidade: {
+			field: 'cidade',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		dataNascimento: {
+			field: 'dataNascimento',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
+		telefone: {
+			field: 'telefone',
+			type: DataTypes.STRING,
+			allowNull: false
+		},
 		cpf: {
 			field: 'cpf',
 			type: DataTypes.STRING,
@@ -23,46 +48,21 @@ module.exports = (sequelize, DataTypes) => {
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		nome: {
-			field: 'nome',
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		online_status: {
-			field: 'online_status',
-			type: DataTypes.INTEGER,
-			allowNull: false
-		},
 		senha: {
 			field: 'senha',
 			type: DataTypes.STRING,
 			allowNull: false
 		},
-		usuario_dev: {
-			field: 'usuario_dev',
+		onlineStatus: {
+			field: 'onlineStatus',
 			type: DataTypes.INTEGER,
 			allowNull: false
 		},
-		telefone: {
-			field: 'telefone',
-			type: DataTypes.STRING,
+		usuarioDev: {
+			field: 'usuarioDev',
+			type: DataTypes.INTEGER,
 			allowNull: false
 		},
-		estado: {
-			field: 'estado',
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		dataNascimento: {
-			field: 'dataNascimento',
-			type: DataTypes.STRING,
-			allowNull: false
-		},
-		cidade: {
-			field: 'cidade',
-			type: DataTypes.STRING,
-			allowNull: false
-		}
 	},
 		{
 			tableName: 'Usuario',

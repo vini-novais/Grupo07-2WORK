@@ -43,37 +43,6 @@ body {
     margin-top: 7px;
     cursor: pointer;
 }
-.nav {
-    float: right;
-}
-.nav a {
-    position: relative;
-    font-size: 15px;
-    color: #a0a0a0;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-.nav a:after {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    height: 1px;
-    width: 0;
-    left: 0;
-    bottom: -6px;
-    transition: 0.3s;
-}
-.nav a:hover {
-    color: #fff;
-}
-.nav a:hover:after {
-    width: 100%;
-}
-.nav li {
-    display: inline-block;
-    padding: 0px 20px 0px 20px;
-}
 /* FIM HEADER */
 .content {
     background-color: white;
@@ -227,7 +196,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-#formulario-login {
+#formularioLogin {
     width: 50%;
 }
 .campo {

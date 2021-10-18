@@ -503,9 +503,7 @@ footer h1 {
 }
 
 textarea {
-    margin-left: 24px;
-    max-width: 100%;
-    min-width: 40vw;
+    min-width: 44.1vw;
     font-weight: 500;
     padding: 10px 0px 0px 15px;
     box-sizing: border-box;

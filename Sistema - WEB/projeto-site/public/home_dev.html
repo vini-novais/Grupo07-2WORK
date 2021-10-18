@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>2WORK-Desenvolvedor</title>
+    <!-- LOGO NO DOMÍNIO -->
+    <link rel="icon" href="img/Original.png">
+    <!-- FIM LOGO NO DOMÍNIO -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/home_dev.css">
+    <!-- FIM CSS -->
+    <!-- LINK FONT MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FIM LINK FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar" class="header2Work">
+        <div class="container2Work">
+            <div class="logo-header">
+                <a href="#section_welcome"> <img src="img/White on Transparent.png"></a>
+            </div>
+            <div class="nav2Work">
+                <ul>
+                    <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
+                    <li><button class="button_upload">UPLOAD</button></li>
+                    <li><input type="text" placeholder="Procurar..."> </li>
+                    <li>
+                        <div class="action">
+                            <div class="profile" onclick="menuToggle();">
+                                <img src="img/WhatsApp Image 2021-09-07 at 19.00.47.jpeg" alt="">
+                            </div>
+                            <div class="menu">
+                                <h3>Lucas Felix <br><span>Website Designer</span></h3>
+                                <ul>
+                                    <li><img src="img/icon-meusprojetos.png"> <a href="#">Meus Projetos</a></li>
+                                    <li><img src="img/icon-desempenho.png"> <a href="#">Meu Desempenho</a></li>
+                                    <li><img src="img/icon-perfil.png"> <a href="#">Perfil</a></li>
+                                    <li><img src="img/icon-logout.png"> <a href="#">Sair</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- FIM NAVBAR -->
+
+    <!-- SECTION WELCOME DEV -->
+    <section class="section_welcome" id="section_welcome">
+        <div class="container2Work">
+            <div class="content2Work">
+
+                <h3>Olá Lucas</h3>
+                <h1>Faça o upload de seu Projeto!</h1>
+                <p>O painel do projeto é um recurso exclusivo para contratos de trabalho. É perfeito para freelancers, agências e moonlighters na 2Work.
+                </p>
+                <button class="btn_projeto">Crie um projeto Gratis!</button>
+            </div>
+            <img src="img/undraw_Code_thinking_re_gka2 (1).png" alt="">
+        </div>
+
+    </section>
+    <!-- FIM SECTION WELCOME DEV -->
+</body>
+
+<script>
+    function menuToggle() {
+        const toggleMenu = document.querySelector('.menu');
+        toggleMenu.classList.toggle('active');
+    }
+</script>

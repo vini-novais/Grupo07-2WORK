@@ -12,16 +12,17 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/dashboard.css">
     <!-- FIM CSS -->
+    <!-- LINK FONT MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FIM LINK FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
 <body>
     <!-- CONTEÚDO -->
     <div class="container2Work">
-        <!-- HEADER -->
         <!-- NAVBAR -->
         <div id="navbar" class="header2Work">
             <div class="container2Work">
@@ -32,38 +33,38 @@
                     <ul>
                         <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
                         <li> <a href="upload.html"><button class="button_upload">UPLOAD</button></a></l>
-                            <li><input type="text" placeholder="Procurar..."> </li>
-                            <li>
-                                <div class="action">
-                                    <div class="profile" onclick="menuToggle();">
-                                        <img src="img/Group 158.png" alt="">
-                                    </div>
-                                    <div class="menu">
-                                        <h3>Vitor<br><span>Website Designer</span></h3>
-                                        <ul>
-                                            <li><img src="img/icon-meusprojetos.png"> <a href="#projetos">Meus Projetos</a>
-                                            </li>
-                                            <li><img src="img/icon-desempenho.png"> <a href="dashboard.html">Meu
-                                                Desempenho</a></li>
-                                            <li><img src="img/icon-perfil.png"> <a href="perfil_investidor.html">Perfil</a>
-                                            </li>
-                                            <li><img src="img/icon-logout.png"> <a href="index.html">Sair</a></li>
-                                        </ul>
-                                    </div>
+                        <li><input type="text" placeholder="Procurar..."> </li>
+                        <li>
+                            <div class="action">
+                                <div class="profile" onclick="menuToggle();">
+                                    <img src="img/Group 158.png" alt="">
                                 </div>
-                            </li>
+                                <div class="menu">
+                                    <h3>Vitor<br><span>Website Designer</span></h3>
+                                    <ul>
+                                        <li><img src="img/icon-meusprojetos.png"> <a href="#projetos">Meus Projetos</a>
+                                        </li>
+                                        <li><img src="img/icon-desempenho.png"> <a href="dashboard.html">Meu
+                                                Desempenho</a></li>
+                                        <li><img src="img/icon-perfil.png"> <a href="perfil_investidor.html">Perfil</a>
+                                        </li>
+                                        <li><img src="img/icon-logout.png"> <a href="index.html">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- FIM NAVBAR -->
-        <!-- FIM HEADER -->
         <!-- CABEÇALHO -->
         <div class="cabecalho-metricas">
             <strong>
                 <h1>MÉTRICAS DO DESENVOLVEDOR</h1>
             </strong>
         </div>
+        <!-- FIM CABEÇALHO -->
         <!-- CARD -->
         <div class="content">
             <div class="card">
@@ -95,7 +96,6 @@
             </div>
         </div>
         <!-- FIM CARD -->
-        <!-- FIM CABEÇALHO -->
         <!-- PRIMEIRO GRÁFICO -->
         <div class="primeiro-grafico">
             <div class="conteudo-primeiro-grafico">
@@ -141,9 +141,3 @@
 <!-- SCRIPT DASHBOARD -->
 <script src="js/dashboard.js"></script>
 <!-- FIM SCRIPT DASHBOARD -->
-<script>
-    function menuToggle() {
-        const toggleMenu = document.querySelector('.menu');
-        toggleMenu.classList.toggle('active');
-    }
-</script>

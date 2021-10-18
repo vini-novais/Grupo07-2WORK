@@ -65,3 +65,10 @@ function uploadFile(name) {
     let formData = new FormData(form); // formData É UM OBJETO PARA ENVIAR DADOS DE UM FORMULÁRIO FACILMENTE
     xhr.send(formData); // ENVIANDO DADOS DE UM FORMULÁRIO PARA PHP
 }
+
+/* FIM FUNÇÃO MENU */
+function menuToggle() {
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active');
+}
+/* FIM FUNÇÃO MENU */

@@ -226,7 +226,7 @@ function entrar() {
             resposta.json().then(json => {
                 sessionStorage.emailLogin = json.emailLogin;
                 sessionStorage.senhaLogin = json.senhaLogin;
-                window.location.href = 'index.html';
+                window.location.href = 'home_dev.html';
             });
         } else {
             console.log('Erro de login!');

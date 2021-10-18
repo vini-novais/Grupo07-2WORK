@@ -26,3 +26,10 @@ new Chart(document.getElementById("grafico-visitas"), {
     },
 });
 /* FIM GRÁFICO VISUALIZAÇÕES EM POSTAGENS */
+
+/* FUNÇÃO MENU */
+function menuToggle() {
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active');
+}
+/* FIM FUNÇÃO MENU */

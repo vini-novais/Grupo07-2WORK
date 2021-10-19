@@ -263,6 +263,8 @@ html {
 
 /* INICIO INPUT PROJETO */
 
+.form_projeto {}
+
 .box {
     width: 44%;
     padding: 15px 30px;
@@ -285,11 +287,11 @@ html {
     border-bottom: 2px solid #999;
 }
 
-.box form div {
+.box .form_projeto div {
     position: sticky;
 }
 
-.box form div label {
+.box .form_projeto div label {
     position: absolute;
     z-index: 1;
     top: 5px;

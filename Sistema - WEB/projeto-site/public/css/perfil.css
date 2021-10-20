@@ -8,15 +8,21 @@ body {
 html {
     scroll-behavior: smooth;
 }
+<<<<<<< HEAD
+=======
 
 
 /* FIM GLOBAL */
 
+>>>>>>> f3298363a13f70f4d7ecae6032a5a9d2740d382f
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
+<<<<<<< HEAD
+/* NAVBAR*/
+=======
 
 .title_msg {
     font-size: 32px;
@@ -56,6 +62,7 @@ html {
 
 /* NAVBAR */
 
+>>>>>>> f3298363a13f70f4d7ecae6032a5a9d2740d382f
 .header2Work {
     width: 100%;
     position: fixed;
@@ -65,23 +72,34 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
+.lista {
+=======
 
 .header2Work .container2Work {
+>>>>>>> f3298363a13f70f4d7ecae6032a5a9d2740d382f
     display: flex;
     height: 65px;
     align-items: center;
-    justify-content: space-between;
+<<<<<<< HEAD
+    margin-top: 18px;
 }
-
+.logo-header {
+    width: 130vh;
+}
+.inv {
+    width: 150vh;
+=======
+    justify-content: space-between;
+>>>>>>> f3298363a13f70f4d7ecae6032a5a9d2740d382f
+}
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
-
 .nav2Work {
     float: right;
 }
-
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -90,7 +108,6 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -101,26 +118,21 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
-
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
-
 .nav2Work a:hover:after {
     width: 100%;
 }
-
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
-
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
-
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -131,7 +143,6 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -144,25 +155,21 @@ html {
     text-decoration: none;
     box-sizing: none;
 }
-
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
-
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
-
 .action .profile {
     position: relative;
     width: 40px;
@@ -174,11 +181,9 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
-
 .fotoperfil {
     width: 70px;
 }
-
 .action .profile img {
     position: absolute;
     top: 0;
@@ -187,7 +192,6 @@ html {
     height: 100%;
     object-fit: cover;
 }
-
 .action .menu {
     position: absolute;
     top: 120px;
@@ -202,13 +206,11 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
-
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -217,13 +219,11 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
-
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
-
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -232,18 +232,15 @@ html {
     align-items: center;
     margin-left: -30px;
 }
-
 .action .menu ul li img {
     max-width: 20px;
     margin-right: 10px;
     opacity: 0.5;
     transition: 0.5s;
 }
-
 .action .menu ul li:hover img {
     opacity: 1;
 }
-
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -251,9 +248,10 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
-
 .action .menu ul li:hover a {
     color: #ff5d94;
+<<<<<<< HEAD
+=======
 }
 
 .fotoperfil {
@@ -340,7 +338,10 @@ html {
 
 
 /*Navbar*/
+>>>>>>> f3298363a13f70f4d7ecae6032a5a9d2740d382f
 
+}
+/* FIM NAVBAR */
 .conteiner {
     width: 100vw;
     height: 100vh;
@@ -349,13 +350,11 @@ html {
     justify-content: flex-end;
     align-items: center;
 }
-
 .espacamento {
     width: 100vw;
     display: flex;
     justify-content: center;
 }
-
 .informacoes-perfil {
     display: flex;
     flex-direction: column;
@@ -366,38 +365,31 @@ html {
     color: white;
     border-radius: 10px;
 }
-
 .informacoes-perfil span {
     font-size: 23px;
     margin-left: 7%;
 }
-
 .descricao-perfil {
     display: flex;
     flex-direction: row;
     margin-left: 6%;
 }
-
 .foto-perfil {
     width: 126px;
 }
-
 .texto-perfil {
     width: 60%;
     height: 50%;
 }
-
 .texto-perfil p {
     font-size: 19px;
 }
-
 .linha-2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-
 .projetos {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -405,13 +397,11 @@ html {
     height: 50vh;
     border: black 1px solid;
 }
-
 .projetos span {
     font-weight: bold;
     font-size: 30px;
     margin-left: 4%;
 }
-
 .cards-projetos {
     height: 40vh;
     display: flex;
@@ -419,23 +409,19 @@ html {
     align-items: center;
     flex-direction: row;
 }
-
 .card {
     width: 240px;
     border: none !important;
 }
-
 .card-body {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1.25rem;
     height: 50px;
 }
-
 .imagem-card-especial img {
     width: 245px !important;
 }
-
 .info-card {
     width: 95%;
     height: 20px;
@@ -443,11 +429,9 @@ html {
     justify-content: space-between;
     align-items: center;
 }
-
 .info-card span {
     font-size: 25px;
 }
-
 .feedback {
     width: 26vw;
     display: flex;
@@ -456,7 +440,6 @@ html {
     flex-direction: column;
     margin-left: 40px;
 }
-
 .informacoes-feedback {
     display: flex;
     flex-direction: column;
@@ -467,61 +450,49 @@ html {
     -webkit-box-shadow: 6px 5px 20px 3px rgba(0, 0, 0, 0.51);
     box-shadow: 6px 5px 20px 3px rgba(0, 0, 0, 0.51);
 }
-
 .segundo {
     margin-top: 20px;
 }
-
 .titulo-feedback {
     margin-bottom: 10px;
 }
-
 .titulo-feedback span {
     font-size: 30px;
     font-weight: bold;
 }
-
 .perfil-feed img {
     width: 80px;
 }
-
 .competencias {
     display: flex;
     align-items: center;
     height: 15px;
 }
-
 .informacoes-feedback span {
     margin-left: 8%;
     font-size: 15px;
     font-weight: bold;
 }
-
 .desc-feed {
     display: flex;
     justify-content: flex-start;
 }
-
 .data-feed {
     color: #8E8E8E;
 }
-
 .estrelas {
     display: flex;
     margin-left: 7%;
 }
-
 .descricao-perfil {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 6%;
 }
-
 .foto-perfil {
     width: 126px;
 }
-
 .texto-feedback {
     margin-left: 10px !important;
     font-size: 14px;

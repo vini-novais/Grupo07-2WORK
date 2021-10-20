@@ -1,63 +1,45 @@
 /* GLOBAL */
-
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
-
 /* FIM GLOBAL */
-
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
-
 .title_msg {
     font-size: 32px;
     font-weight: 30;
     margin: 0;
 }
-
 .description {
     font-size: 18px;
     max-width: 800px;
 }
-
 .description p {
     text-align: center;
 }
-
-
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
-
-
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
-
-
 /* NAVBAR */
-
 .header2Work {
     width: 100%;
     position: fixed;
@@ -67,23 +49,19 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
-
 .nav2Work {
     float: right;
 }
-
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -92,7 +70,6 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -103,26 +80,21 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
-
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
-
 .nav2Work a:hover:after {
     width: 100%;
 }
-
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
-
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
-
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -133,7 +105,6 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -144,25 +115,21 @@ html {
     border: 1px solid #C6C6C6;
     cursor: pointer;
 }
-
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
-
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
-
 .action .profile {
     position: relative;
     width: 40px;
@@ -174,11 +141,9 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
-
 .fotoperfil {
     width: 70px;
 }
-
 .action .profile img {
     position: absolute;
     top: 0;
@@ -187,7 +152,6 @@ html {
     height: 100%;
     object-fit: cover;
 }
-
 .action .menu {
     position: absolute;
     top: 120px;
@@ -202,13 +166,11 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
-
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -217,13 +179,11 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
-
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
-
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -232,18 +192,15 @@ html {
     align-items: center;
     margin-left: -30px;
 }
-
 .action .menu ul li img {
     max-width: 20px;
     margin-right: 10px;
     opacity: 0.5;
     transition: 0.5s;
 }
-
 .action .menu ul li:hover img {
     opacity: 1;
 }
-
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -251,33 +208,22 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
-
 .action .menu ul li:hover a {
     color: #ff5d94;
-    ;
 }
-
-
 /* FIM NAVBAR */
-
-
 /* INICIO INPUT PROJETO */
-
 .form_projeto {}
-
 .box {
     width: 44%;
     padding: 15px 30px;
 }
-
 .div-projeto {
     width: 69%;
 }
-
 .box input {
     padding: 10px 0;
 }
-
 .box input {
     width: 145%;
     box-sizing: border-box;
@@ -286,11 +232,9 @@ html {
     border: none;
     border-bottom: 2px solid #999;
 }
-
 .box .form_projeto div {
     position: sticky;
 }
-
 .box .form_projeto div label {
     position: absolute;
     z-index: 1;
@@ -300,7 +244,6 @@ html {
     font-size: 20px;
     font-weight: bold
 }
-
 .box input:focus~label,
 .box textarea:focus~label,
 .box input:valid~label,
@@ -311,20 +254,14 @@ html {
     font-size: 12pt;
     font-weight: bold;
 }
-
 .box input:focus,
 .box textarea:focus,
 .box input:valid,
 .box textarea:valid {
     border-bottom: 2px solid #08376B;
 }
-
-
 /* FIM INPUT PROJETO */
-
-
 /* INICIO SECTION UPLOAD */
-
 .section_upload {
     width: 100%;
     display: flex;
@@ -333,7 +270,6 @@ html {
     flex-direction: column;
     padding: 5% 0 3%;
 }
-
 .wrapper {
     position: absolute;
     width: 40vw;
@@ -343,14 +279,12 @@ html {
     margin-top: 4%;
     z-index: 100;
 }
-
 .wrapper h1 {
     color: #08376B;
     font-size: 27px;
     font-weight: 600;
     text-align: center;
 }
-
 .wrapper form {
     height: 40vh;
     display: flex;
@@ -362,20 +296,16 @@ html {
     border-radius: 5px;
     border: 2px dashed #08376B;
 }
-
 form :where(i, p) {
     color: #08376B;
 }
-
 form i {
     font-size: 50px;
 }
-
 form p {
     font-size: 16px;
     margin-top: 15px;
 }
-
 section .row {
     background: #E9F0FF;
     margin-bottom: 10px;
@@ -386,28 +316,23 @@ section .row {
     align-items: center;
     justify-content: space-between;
 }
-
 section .row i {
     font-size: 30px;
     color: #08376B;
 }
-
 section .details span {
     font-size: 14px;
 }
-
 .progress-area .row .content {
     width: 100%;
     margin-left: 15px;
 }
-
 .progress-area .details {
     display: flex;
     align-items: center;
     margin-bottom: 7px;
     justify-content: space-between;
 }
-
 .progress-area .progress-bar {
     height: 6px;
     width: 100%;
@@ -415,54 +340,41 @@ section .details span {
     margin-bottom: 4px;
     border-radius: 30px;
 }
-
 .progress-bar .progress {
     height: 100%;
     width: 0%;
     background: #08376B;
     border-radius: inherit;
 }
-
 .uploaded-area {
     max-height: 230px;
     overflow-y: scroll;
 }
-
 .uploaded-area.onprogress {
     max-height: 150px;
 }
-
 .uploaded-area::-webkit-scrollbar {
     width: 0px;
 }
-
 .uploaded-area .row .content {
     display: flex;
     align-items: center;
 }
-
 .uploaded-area .row .details {
     display: flex;
     flex-direction: column;
     margin-left: 15px;
 }
-
 .uploaded-area .details .size {
     font-size: 11px;
     color: #404040;
 }
-
 .uploaded-area .fa-check {
     color: #08376B;
     font-size: 16px;
 }
-
-
-/* /* INICIO SECTION UPLOAD */
-
-
+/* INICIO SECTION UPLOAD */
 /* DESCRIÇÃO E BOTÃO PUBLICAR AGORA */
-
 footer {
     box-sizing: border-box;
     position: absolute;
@@ -473,19 +385,16 @@ footer {
     display: flex;
     margin-top: 5%;
 }
-
 footer .containerTwo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 footer h1 {
     margin: 0;
     float: left;
 }
-
 .footerForm {
     flex-wrap: wrap;
     display: flex;
@@ -493,7 +402,6 @@ footer h1 {
     text-align: center;
     flex-direction: column
 }
-
 .footerForm input {
     width: 100%;
     height: 35px;
@@ -505,7 +413,6 @@ footer h1 {
     border-radius: 4px;
     outline: none;
 }
-
 textarea {
     min-width: 44.1vw;
     font-weight: 500;
@@ -516,7 +423,6 @@ textarea {
     border-radius: 4px;
     outline: none;
 }
-
 .footerForm button {
     float: right;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -531,7 +437,6 @@ textarea {
     transition: 0.7s;
     font-weight: bold;
 }
-
 .footerForm button:hover {
     color: #2F90B0;
     background-color: whitesmoke;

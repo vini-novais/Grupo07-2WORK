@@ -12,6 +12,7 @@ new Chart(document.getElementById("grafico-likes"), {
     },
 });
 /* FIM GRÁFICO LIKES EM POSTAGENS */
+
 /* GRÁFICO VISUALIZAÇÕES EM POSTAGENS */
 new Chart(document.getElementById("grafico-visitas"), {
     type: 'line',

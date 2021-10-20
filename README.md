@@ -19,12 +19,15 @@ Somos uma empresa que acreditamos poder ajudar desenvolvedores a expor seus proj
 </tr>
   
 <tr>
-  <td>45.6%</td>
-  <td>43%</td>
-  <td>10.9%</td>
-  <td>0.5%</td>
+  <td>37.3%</td>
+  <td>40.1%</td>
+  <td>22.3%</td>
+  <td>0.3%</td>
 </tr>  
 </table>
+
+## Features / Serviços
+![Features](https://user-images.githubusercontent.com/70399485/138110029-4c42f799-87d9-41f0-b2c3-002f034d4b7a.gif)
 
 ## Conheça nossa equipe! 🥰 
 ![Equipe](https://user-images.githubusercontent.com/70399485/134790137-518d1034-b7c3-485e-947c-43f37606cf06.png)

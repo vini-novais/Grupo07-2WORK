@@ -290,7 +290,7 @@ span {
 /* SECTION PROJETOS */
 .section_projetos {
     display: flex;
-    height: 100vh;
+    height: 110vh;
     background-color: white;
 }
 .section_projetos h1 {
@@ -346,8 +346,7 @@ p {
     text-transform: none !important;
     color: #111;
 }
-
-.modal-footer a{
+.modal-footer a {
     display: inline-block !important;
     padding: 8px 20px !important;
     border-radius: 5px;
@@ -359,18 +358,6 @@ p {
     text-align: center !important;
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%) !important;
 }
-
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
-    border: none;
-}
-
-.modal-footer .btn+.btn {
-    margin-bottom: 0;
-    margin-left: 5px;
-    border: none;
-}
-
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
 .section_sobreNos {
@@ -399,6 +386,15 @@ p {
     margin-top: 29px;
     font-size: 20px;
     line-height: 2.0;
+}
+.modal-footer .botao {
+    background-color: transparent;
+    border: none;
+}
+.modal-footer .botao:hover a {
+    background-color: transparent;
+    border: none;
+    color: white;
 }
 /* FIM SECTION SOBRE NÓS */
 /* FOOTER */

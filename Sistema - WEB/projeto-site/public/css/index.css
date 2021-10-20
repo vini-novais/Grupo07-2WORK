@@ -294,6 +294,9 @@ span {
     background-color: white;
 }
 .section_projetos h1 {
+    display: flex;
+    align-items: flex-end;
+    height: 100px;
     font-weight: bold;
     margin-bottom: 90px;
     font-size: 35px;
@@ -343,6 +346,31 @@ p {
     text-transform: none !important;
     color: #111;
 }
+
+.modal-footer a{
+    display: inline-block !important;
+    padding: 8px 20px !important;
+    border-radius: 5px;
+    background: #08376B !important;
+    text-decoration: none !important;
+    color: white;
+    font-weight: 500 !important;
+    width: 50%;
+    text-align: center !important;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 10%) !important;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    border: none;
+}
+
+.modal-footer .btn+.btn {
+    margin-bottom: 0;
+    margin-left: 5px;
+    border: none;
+}
+
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
 .section_sobreNos {

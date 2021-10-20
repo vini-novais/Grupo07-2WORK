@@ -501,13 +501,13 @@ html {
 .projetos span {
     font-weight: bold;
     font-size: 30px;
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 .cards-projetos {
-    height: 40vh;
+    height: 43vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
@@ -524,7 +524,7 @@ html {
     height: 50px;
 }
 
-.imagem-card-especial img {
+.imagem-card img {
     width: 245px !important;
 }
 

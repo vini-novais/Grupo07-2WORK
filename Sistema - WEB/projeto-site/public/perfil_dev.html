@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
-    <title>Perfil Investidor</title>
+    <title>Perfil Desenvolvedor</title>
 </head>
 
 <body>
     <div id="navbar" class="header2Work">
         <div class="container2Work">
-            <div class="logo-header inv">
+            <div class="logo-header">
                 <a href="home_dev.html"> <img src="img/White on Transparent.png"></a>
             </div>
             <div class="nav2Work">
                 <ul class="lista">
                     <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
-                    <li><input type="text" placeholder="Procurar..."> </li>
-                    <li>
-                        <div class="action">
-                            <div class="profile" onclick="menuToggle();">
-                                <img src="img/Group 158.png" alt="">
+                    <li> <a href="upload.html"><button class="button_upload">UPLOAD</button></a></l>
+                        <li><input type="text" placeholder="Procurar..."> </li>
+                        <li>
+                            <div class="action">
+                                <div class="profile" onclick="menuToggle();">
+                                    <img src="img/Group 158.png" alt="">
+                                </div>
+                                <div class="menu">
+                                    <h3>Vitor<br><span>Website Designer</span></h3>
+                                    <ul>
+                                        <li><img src="img/icon-meusprojetos.png"> <a href="#projetos">Meus Projetos</a></li>
+                                        <li><img src="img/icon-desempenho.png"> <a href="dashboard.html">Meu Desempenho</a>
+                                        </li>
+                                        <li><img src="img/icon-perfil.png"> <a href="perfil_investidor.html">Perfil</a></li>
+                                        <li><img src="img/icon-logout.png"> <a href="index.html">Sair</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="menu">
-                                <h3>Vitor<br><span>Website Designer</span></h3>
-                                <ul>
-                                    <li><img src="img/icon-meusprojetos.png"> <a href="#projetos">Meus Projetos</a></li>
-                                    <li><img src="img/icon-desempenho.png"> <a href="dashboard.html">Meu Desempenho</a>
-                                    </li>
-                                    <li><img src="img/icon-perfil.png"> <a href="perfil_investidor.html">Perfil</a></li>
-                                    <li><img src="img/icon-logout.png"> <a href="index.html">Sair</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
                 </ul>
             </div>
         </div>
@@ -50,14 +51,26 @@
                         <img src="./img/foto-perfil.svg" alt="foto de perfil">
                     </div>
                     <div class="texto-perfil">
-                        <p>Maicon, 30 anos - Investidor <br> Esta é minha biografia, aqui vou poder demonstrar para vocês um pouco mais dos investimentos que fiz, e assim, me conhecerem melhor!</p>
+                        <p>Vitor, 22 anos - Desenvolvedor <br> Esta é minha biografia, aqui vou poder demonstrar para vocês um pouco mais dos investimentos que fiz, e assim, me conhecerem melhor!</p>
                     </div>
+                </div>
+                <div class="competencias">
+                    <div class="estrelas">
+                        <img src="./img/estrela-amarela.svg" alt="">
+                        <img src="./img/estrela-amarela.svg" alt="">
+                        <img src="./img/estrela-amarela.svg" alt="">
+                        <img src="./img/estrela-amarela.svg" alt="">
+                        <img src="./img/estrela-amarela.svg" alt="">
+                    </div>
+                </div>
+                <div class="texto-competencias">
+                    <span>Competências:</span>
                 </div>
             </div>
         </div>
         <div class="linha-2">
             <div class="projetos">
-                <span>Projetos curtidos:</span>
+                <span>Meus projetos:</span>
                 <div class="cards-projetos">
                     <div class="card">
                         <div class="imagem-card">
@@ -105,11 +118,11 @@
                         <img src="./img/estrela.svg" alt="">
                     </div>
                     <div class="descricao-perfil">
-                        <div class="foto-perfil">
+                        <div class="perfil-feed">
                             <img src="./img/perfil-cinza.svg" alt="foto de perfil">
                         </div>
                         <div class="texto-feedback">
-                            Investidor oferece plano de carreira, oportunidades e reconhecimento.
+                            Empresa oferece plano de carreira, oportunidades e reconhecimento.
                         </div>
                     </div>
                 </div>
@@ -126,11 +139,11 @@
                         <img src="./img/estrela.svg" alt="">
                     </div>
                     <div class="descricao-perfil">
-                        <div class="foto-perfil">
+                        <div class="perfil-feed">
                             <img src="./img/perfil-cinza.svg" alt="foto de perfil">
                         </div>
                         <div class="texto-feedback">
-                            Investidor não oferece plano de carreira, oportunidades e reconhecimento.
+                            Empresa oferece plano de carreira, oportunidades e reconhecimento.
                         </div>
                     </div>
                 </div>

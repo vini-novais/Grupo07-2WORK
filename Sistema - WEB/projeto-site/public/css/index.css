@@ -353,17 +353,28 @@ span {
 }
 
 .section_projetos h1 {
-    margin-bottom: 100px;
+    font-weight: bold;
+    margin-bottom: 90px;
+    font-size: 35px;
 }
 
 .linha-1 {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.coluna-card {
+    display: flex;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .card {
     border: none !important;
     font-size: 10px;
+    background-color: white !important;
+    width: 85% !important;
 }
 
 .card-img-top {
@@ -373,6 +384,11 @@ span {
 .card-text {
     color: #111;
     justify-content: flex-start;
+    font-weight: bold;
+}
+
+.card-numero-likes {
+    font-weight: bold;
 }
 
 .row-informacoes-card {
@@ -384,6 +400,17 @@ span {
 .card-img-like {
     align-self: flex-start;
     width: 18px;
+}
+
+.modal-content h4,
+p {
+    font-weight: bold;
+}
+
+.modal-content a {
+    text-decoration: none !important;
+    text-transform: none !important;
+    color: #111;
 }
 
 

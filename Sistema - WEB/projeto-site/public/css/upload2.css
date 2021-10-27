@@ -334,12 +334,12 @@ html {
     align-items: center;
     position: relative;
     justify-content: space-evenly;
-    padding: 5% 0 2%;
+    padding: 5% 0;
 }
 
 .img-upload {
-    margin-top: 5%;
-    width: 35%;
+    margin: 4% 0% 0% 8%;
+    width: 30%;
 }
 
 .wrapper {
@@ -475,7 +475,7 @@ footer {
     position: absolute;
     width: 100%;
     height: auto;
-    padding: 1.5% 3.5%;
+    padding: 1.5% 2.3%;
     background-color: #08376B;
     display: flex;
     margin-top: auto;

@@ -1,45 +1,63 @@
 /* GLOBAL */
+
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+
 /* FIM GLOBAL */
+
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
+
 .title_msg {
     font-size: 32px;
     font-weight: 30;
     margin: 0;
 }
+
 .description {
     font-size: 18px;
     max-width: 800px;
 }
+
 .description p {
     text-align: center;
 }
+
+
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
+
+
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
+
+
 /* NAVBAR */
+
 .header2Work {
     width: 100%;
     position: fixed;
@@ -49,19 +67,23 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
+
 .nav2Work {
     float: right;
 }
+
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -70,31 +92,37 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .nav2Work a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #c6c6c6;
     height: 1px;
     width: 0;
     left: 0;
     bottom: -3px;
     transition: 0.3s;
 }
+
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .nav2Work a:hover:after {
     width: 100%;
 }
+
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
+
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
+
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -105,6 +133,7 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -117,21 +146,25 @@ html {
     text-decoration: none;
     box-sizing: none;
 }
+
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
+
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
+
 .action .profile {
     position: relative;
     width: 40px;
@@ -143,9 +176,11 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
+
 .fotoperfil {
     width: 70px;
 }
+
 .action .profile img {
     position: absolute;
     top: 0;
@@ -154,6 +189,7 @@ html {
     height: 100%;
     object-fit: cover;
 }
+
 .action .menu {
     position: absolute;
     top: 120px;
@@ -168,11 +204,13 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
+
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -181,11 +219,13 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
+
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
+
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -194,15 +234,18 @@ html {
     align-items: center;
     margin-left: -30px;
 }
+
 .action .menu ul li img {
     max-width: 20px;
     margin-right: 10px;
     opacity: 0.5;
     transition: 0.5s;
 }
+
 .action .menu ul li:hover img {
     opacity: 1;
 }
+
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -210,11 +253,17 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
+
 .action .menu ul li:hover a {
     color: #ff5d94;
 }
+
+
 /* FIM NAVBAR */
+
+
 /* SECTION WELCOME */
+
 .section_welcome {
     display: flex;
     height: 100vh;
@@ -225,11 +274,13 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .section_welcome img {
     height: 350px;
     float: right;
     margin-top: 90px;
 }
+
 .content2Work {
     position: absolute;
     top: 36%;
@@ -238,19 +289,23 @@ html {
     color: black;
     left: 120px;
 }
+
 .content2Work h1 {
     font-size: 50px;
     margin: 0;
 }
+
 .content2Work h3 {
     font-size: 15px;
     margin: 0 0 0 3px;
 }
+
 .content2Work p {
     margin: 5px auto;
     font-weight: 100;
     line-height: 25px;
 }
+
 .btn_projeto {
     width: 240px;
     padding: 10px 0;
@@ -266,14 +321,18 @@ html {
     float: left;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .btn_projeto {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
+
 .btn_projeto:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+
 /* FIM SECTION WELCOME */

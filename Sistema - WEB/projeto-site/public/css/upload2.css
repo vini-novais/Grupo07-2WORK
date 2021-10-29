@@ -100,7 +100,7 @@ html {
 .nav2Work a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #c6c6c6;
     height: 1px;
     width: 0;
     left: 0;

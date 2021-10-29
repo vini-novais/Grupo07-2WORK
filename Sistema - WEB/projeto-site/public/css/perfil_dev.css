@@ -96,7 +96,7 @@ html {
 .nav2Work a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #c6c6c6;
     height: 1px;
     width: 0;
     left: 0;
@@ -173,7 +173,6 @@ html {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
-    border-left: none;
 }
 
 .fotoperfil {
@@ -283,7 +282,7 @@ html {
     display: block;
     position: relative;
     width: 90%;
-    height: 17rem;
+    height: 10rem;
     background: linear-gradient( 313deg, #314ec1, #08376B);
     border-radius: 10px;
     margin-top: 5%;
@@ -413,12 +412,12 @@ html {
     margin-top: .5rem;
 }
 
-.seccion-perfil-usuario .boton-redes.facebook {
+.seccion-perfil-usuario .boton-redes.linkedin {
     background-color: #5955FF;
 }
 
-.seccion-perfil-usuario .boton-redes.twitter {
-    background-color: #35E1BF;
+.seccion-perfil-usuario .boton-redes.github {
+    background-color: rgba(45, 49, 58, 0.87);
 }
 
 .seccion-perfil-usuario .boton-redes.instagram {
@@ -466,13 +465,17 @@ html {
 
 .espaco-projetos {
     font-weight: bold;
-    height: 30rem;
+    height: 25rem;
     width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #C6C6C6;
+    border-left: 2px solid #BFBABA;
+}
+
+.espaco-projetos h2 {
+    margin-bottom: 3%;
 }
 
 .meu-projetos {

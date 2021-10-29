@@ -294,6 +294,7 @@ span {
     background-color: white;
 }
 .section_projetos h1 {
+    justify-content: center;
     display: flex;
     align-items: flex-end;
     height: 100px;
@@ -325,17 +326,10 @@ span {
     justify-content: flex-start;
     font-weight: bold;
 }
-.card-numero-likes {
-    font-weight: bold;
-}
 .row-informacoes-card {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.card-img-like {
-    align-self: flex-start;
-    width: 18px;
 }
 .modal-content h4,
 p {

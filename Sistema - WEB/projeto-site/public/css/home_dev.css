@@ -267,7 +267,7 @@ html {
 
 .section_welcome {
     display: flex;
-    height: 90vh;
+    height: 92vh;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -346,12 +346,14 @@ html {
     display: flex;
     justify-content: center;
     align-content: center;
-    align-items: center;
+    align-items: flex-start;
+    height: 80vh;
 }
 
 .projetoslist {
     width: 75%;
     height: auto;
+    display: inline-block;
 }
 
 .meusProjetos {
@@ -369,6 +371,10 @@ html {
     flex-direction: column;
     align-items: flex-start;
     border-bottom: 2px solid #BFBABA;
+}
+
+.iconUsuario {
+    height: 3vw;
 }
 
 .perfil-Projeto {
@@ -440,11 +446,19 @@ html {
     align-items: center;
 }
 
-.especificationProjeto button {
+.especificationProjeto span {
+    font-size: 10pt;
+    font-weight: bold;
+    padding: 0.5% 3%;
     margin-right: 5%;
+    background: #E4E4E4;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filtro {
+    margin: 7% 1%;
     width: 25%;
     height: 22rem;
     padding: 2%;

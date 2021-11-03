@@ -88,63 +88,83 @@
                 <h2>Projeto Recentes</h2>
                 <span>03 novos projetos adicionados . . .</span>
             </div>
-            <div class="descriptionProjeto">
-                <div class="perfil-Projeto">
-                    <div class="nomeDev">
-                        <img src="img/Group 158.png" alt="">
-                        <div class="nomeDev2">
-                            <h2>Vinicius Novais</h2>
-                            <span>Postado há 05 segundos... </span>
-                        </div>
-                    </div>
-                    <button>Ver Projeto</button>
-                </div>
-                <p>
-                    Wellaby é o seu diário de saúde mental, permitindo que os usuários mantenham um registro personalizado de seu humor e saúde mental. O produto precisa de um logotipo e ilustrações da landing page, inspiradas em um animal
-                </p>
-                <div class="especificationProjeto">
-                    <button>Animação</button>
-                    <button>Ilustração</button>
-                </div>
-            </div>
+            <div class="lista" id="projetos">
 
-            <div class="descriptionProjeto">
-                <div class="perfil-Projeto">
-                    <div class="nomeDev">
-                        <img src="img/Group 158.png" alt="">
-                        <div class="nomeDev2">
-                            <h2>Vinicius Novais</h2>
-                            <span>Postado há 05 segundos... </span>
+                <div nome="ilustração" class="descriptionProjeto">
+                    <div class="perfil-Projeto">
+                        <div class="nomeDev">
+                            <img class="iconUsuario" src="img/Group 158.png" alt="">
+                            <div class="nomeDev2">
+                                <h2>Vinicius Novais</h2>
+                                <span>Postado há 05 segundos . . . </span>
+                            </div>
                         </div>
+                        <button>Ver Projeto</button>
                     </div>
-                    <button>Ver Projeto</button>
+                    <p>
+                        Wellaby é o seu diário de saúde mental, permitindo que os usuários mantenham um registro personalizado de seu humor e saúde mental. O produto precisa de um logotipo e ilustrações da landing page, inspiradas em um animal
+                    </p>
+                    <div class="especificationProjeto">
+                        <span>Ilustração</span>
+                    </div>
                 </div>
-                <p>
-                    Wellaby é o seu diário de saúde mental, permitindo que os usuários mantenham um registro personalizado de seu humor e saúde mental. O produto precisa de um logotipo e ilustrações da landing page, inspiradas em um animal
-                </p>
-                <div class="especificationProjeto">
-                    <button>Animação</button>
-                    <button>Ilustração</button>
+
+                <div nome="Animação" class="descriptionProjeto">
+                    <div class="perfil-Projeto">
+                        <div class="nomeDev">
+                            <img class="iconUsuario" src="img/icon-caio.png" alt="">
+                            <div class="nomeDev2">
+                                <h2>Caio Elcio</h2>
+                                <span>Postado há 3 minutos . . . </span>
+                            </div>
+                        </div>
+                        <button>Ver Projeto</button>
+                    </div>
+                    <p>
+                        Um grupo de entusiastas de relógios iniciou um esforço muito ambicioso para encomendar um relógio construído pelas melhores empresas do mundo. Precisamos de um logotipo para colocar no mostrador e / ou na fivela da... </p>
+                    <div class="especificationProjeto">
+                        <span>Animação</span>
+                    </div>
+                </div>
+
+                <div nome="Implementação" class="descriptionProjeto">
+                    <div class="perfil-Projeto">
+                        <div class="nomeDev">
+                            <img class="iconUsuario" src="img/icon-lucas.png" alt="">
+                            <div class="nomeDev2">
+                                <h2>Lucas Felix</h2>
+                                <span>Postado há 3 horas . . . </span>
+                            </div>
+                        </div>
+                        <button>Ver Projeto</button>
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique cupiditate fugit quasi, ut ad optio eius repudiandae dicta nulla perferendis! Dolore asperiores veniam illo vero est dolorem officiis sit. Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Officia qui ad hic atque fugit? Tempore culpa rerum sapiente harum? Nemo deleniti fugiat accusamus provident et perspiciatis, consectetur alias accusantium. Veritatis?
+                    </p>
+                    <div class="especificationProjeto">
+                        <span>Implementação</span>
+                    </div>
                 </div>
             </div>
 
         </div>
-
         <div class="filtro">
             <h2>Filtro</h2>
-            <input class="inputPesquisa" type="text" placeholder="Habilidade, tag, palavra chave">
+            <meta name="viewport" content="width=device-width, user-scalable=no">
+            <input class="inputPesquisa" placeholder="Habilidade, tag, palavra chave" search="projetos">
             <h2>Especialidades</h2>
             <div class="form-group">
-                <input class="checkbox" id="checkbox1" type='checkbox' />
-                <label for="checkbox1">Animação</label>
+                <input search="projetos" class="checkbox" id="checkbox1" type='checkbox' />
+                <label for="checkbox1">animação</label>
             </div>
             <div class="form-group">
-                <input class="checkbox" id="checkbox1" type='checkbox' />
-                <label for="checkbox1">Ilustração</label>
+                <input search="projetos" class="checkbox" id="checkbox1" type='checkbox' />
+                <label for="checkbox1">ilustração</label>
             </div>
             <div class="form-group">
-                <input class="checkbox" id="checkbox1" type='checkbox' />
-                <label for="checkbox1">Implementação</label>
+                <input search="projetos" class="checkbox" id="checkbox1" type='checkbox' />
+                <label for="checkbox1">implementação</label>
             </div>
         </div>
     </div>
@@ -152,4 +172,5 @@
 </body>
 <!-- SCRIPT HOME DEV -->
 <script src="js/home_dev.js"></script>
+<script src="js/sistema_de_busca.js"></script>
 <!-- FIM SCRIPT HOME DEV -->

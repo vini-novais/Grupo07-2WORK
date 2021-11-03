@@ -10,14 +10,16 @@
     <link rel="icon" href="img/icon-2Work.png">
     <!-- FIM LOGO NO DOMÍNIO -->
     <!-- CSS -->
-    <link rel="stylesheet" href="css/upload2.css">
+    <link rel="stylesheet" href="css/upload.css">
     <!-- FIM CSS -->
     <!-- LINK FONTAWESOME DO ÍCONE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- FIM LINK FONTAWESOME DO ÍCONE -->
+    <!-- LINK FONT MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FIM LINK FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 </head>
 
@@ -30,9 +32,8 @@
             </div>
             <div class="nav2Work">
                 <ul>
-                    <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
-                    <li> <a href="upload2.html"><button class="button_upload">UPLOAD</button></a></li>
-                    <li><input type="text" placeholder="Procurar..."> </li>
+                    <li><a onclick="pProjetos()" href="home_dev.html">Projetos</a></li>
+                    <li><input type="text" placeholder="Procurar..."></li>
                     <li>
                         <div class="action">
                             <div class="profile" onclick="menuToggle();">
@@ -42,7 +43,7 @@
                                 <h3>Vitor<br><span>Website Designer</span></h3>
                                 <ul>
                                     <li><img src="img/icon-meusprojetos.png">
-                                        <a href="#projetos">Meus Projetos</a>
+                                        <a href="perfil_dev.html">Meus Projetos</a>
                                     </li>
                                     <li><img src="img/icon-desempenho.png">
                                         <a href="dashboard.html">Meu Desempenho</a>
@@ -82,7 +83,7 @@
                     <form action="#">
                         <input type="file" class="file-input" name="file" hidden>
                         <i class="fas fa-cloud-upload-alt"></i>
-                        <p>Arraste e solte uma imagem</p>
+                        <p>System.out.println("Selecione uma imagem!");</p>
                     </form>
                     <section class="progress-area"></section>
                     <section class="uploaded-area"></section>
@@ -97,7 +98,7 @@
         <div class="container2Work">
             <div class="containerTwo">
                 <div class="footerForm">
-                    <textarea placeholder="Descrição:" name="" id="" cols="10" rows="5"></textarea>
+                    <textarea placeholder="Descrição:" id="" cols="10" rows="5"></textarea>
                     <button>Publicar Agora</button>
                 </div>
             </div>

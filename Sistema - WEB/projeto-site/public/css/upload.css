@@ -110,26 +110,6 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.button_upload {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100px;
-    height: 39px;
-    padding: 10px;
-    border-radius: 3px;
-    background: #C6C6C6;
-    border: 1px solid #C6C6C6;
-    cursor: pointer;
-}
-.button_upload {
-    -moz-transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3;
-}
-.button_upload:hover {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
 .action {
     float: right;
     top: 20px;
@@ -218,7 +198,6 @@ html {
 }
 /* FIM NAVBAR */
 /* INICIO INPUT PROJETO */
-.form_projeto {}
 .box {
     padding: 15px 0;
 }
@@ -443,6 +422,7 @@ textarea {
     background-color: transparent;
     transition: 0.7s;
     font-weight: bold;
+    cursor: pointer;
 }
 .footerForm button:hover {
     color: #2F90B0;

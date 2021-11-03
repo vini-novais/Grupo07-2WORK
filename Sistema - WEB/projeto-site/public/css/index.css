@@ -331,8 +331,22 @@ span {
     justify-content: space-around;
     align-items: center;
 }
-.modal-content h4,
-p {
+.modal-footer .botao {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 15vw;
+}
+.modal-footer .botao:hover a {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.modal-content h4, p {
     font-weight: bold;
 }
 .modal-content a {
@@ -351,6 +365,7 @@ p {
     width: 50%;
     text-align: center !important;
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%) !important;
+    outline: none;
 }
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
@@ -380,15 +395,6 @@ p {
     margin-top: 29px;
     font-size: 20px;
     line-height: 2.0;
-}
-.modal-footer .botao {
-    background-color: transparent;
-    border: none;
-}
-.modal-footer .botao:hover a {
-    background-color: transparent;
-    border: none;
-    color: white;
 }
 /* FIM SECTION SOBRE NÓS */
 /* FOOTER */

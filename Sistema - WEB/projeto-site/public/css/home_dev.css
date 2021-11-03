@@ -1,45 +1,63 @@
 /* GLOBAL */
+
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+
 /* FIM GLOBAL */
+
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
+
 .title_msg {
     font-size: 32px;
     font-weight: 30;
     margin: 0;
 }
+
 .description {
     font-size: 18px;
     max-width: 800px;
 }
+
 .description p {
     text-align: center;
 }
+
+
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
+
+
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
+
+
 /* NAVBAR */
+
 .header2Work {
     width: 100%;
     position: fixed;
@@ -49,19 +67,23 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
+
 .nav2Work {
     float: right;
 }
+
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -70,6 +92,7 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -80,21 +103,26 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
+
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .nav2Work a:hover:after {
     width: 100%;
 }
+
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
+
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
+
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -106,6 +134,7 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -118,21 +147,25 @@ html {
     text-decoration: none;
     box-sizing: none;
 }
+
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
+
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
+
 .action .profile {
     position: relative;
     width: 40px;
@@ -144,9 +177,11 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
+
 .fotoperfil {
     width: 70px;
 }
+
 .action .profile img {
     position: absolute;
     top: 0;
@@ -155,6 +190,7 @@ html {
     height: 100%;
     object-fit: cover;
 }
+
 .action .menu {
     position: absolute;
     top: 120px;
@@ -169,11 +205,13 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
+
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -182,11 +220,13 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
+
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
+
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -195,15 +235,18 @@ html {
     align-items: center;
     margin-left: -30px;
 }
+
 .action .menu ul li img {
     max-width: 20px;
     margin-right: 10px;
     opacity: 0.5;
     transition: 0.5s;
 }
+
 .action .menu ul li:hover img {
     opacity: 1;
 }
+
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -211,14 +254,20 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
+
 .action .menu ul li:hover a {
     color: #ff5d94;
 }
+
+
 /* FIM NAVBAR */
+
+
 /* SECTION WELCOME */
+
 .section_welcome {
     display: flex;
-    height: 100vh;
+    height: 90vh;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -226,32 +275,37 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .section_welcome img {
     height: 350px;
     float: right;
     margin-top: 90px;
 }
+
 .content2Work {
     position: absolute;
     top: 36%;
-    width: 37%;
+    width: 35%;
     text-align: left;
     color: black;
-    left: 120px;
 }
+
 .content2Work h1 {
     font-size: 50px;
     margin: 0;
 }
+
 .content2Work h3 {
     font-size: 15px;
     margin: 0 0 0 3px;
 }
+
 .content2Work p {
     margin: 5px auto;
     font-weight: 100;
     line-height: 25px;
 }
+
 .btn_projeto {
     width: 240px;
     padding: 10px 0;
@@ -267,14 +321,212 @@ html {
     float: left;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .btn_projeto {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
+
 .btn_projeto:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
+
 /* FIM SECTION WELCOME */
+
+
+/* INICIO LIST PROJETOS */
+
+.section_Projetos {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.projetoslist {
+    width: 75%;
+    height: auto;
+}
+
+.meusProjetos {
+    padding-bottom: 1%;
+    border-bottom: 2px solid #BFBABA;
+    width: 85%;
+}
+
+.descriptionProjeto {
+    margin-top: 4%;
+    margin-bottom: 2%;
+    display: flex;
+    width: 85%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 2px solid #BFBABA;
+}
+
+.perfil-Projeto {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 7rem;
+    justify-content: space-between;
+}
+
+.perfil-Projeto button {
+    color: #FFFFFF;
+    background: rgba(41, 124, 27, 0.73);
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 15%;
+    height: 23%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.perfil-Projeto button {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3;
+}
+
+.perfil-Projeto button:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nomeDev {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 90%;
+}
+
+.nomeDev2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    align-items: baseline;
+    margin-left: 1%;
+}
+
+.nomeDev span {
+    font-size: 10pt;
+    margin-left: 3%;
+}
+
+.descriptionProjeto p {
+    width: 80%;
+}
+
+.especificationProjeto {
+    height: 4rem;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.especificationProjeto button {
+    margin-right: 5%;
+}
+
+.filtro {
+    width: 25%;
+    height: 22rem;
+    padding: 2%;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 60%);
+    border-radius: 3px;
+}
+
+.inputPesquisa {
+    background: #FFFFFF;
+    border: 2px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10%;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 7%);
+}
+
+.filtro h2 {
+    margin: 0 0 5%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.radio,
+.checkbox {
+    margin-right: 5%;
+    cursor: pointer;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #08376B;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+.checkbox {
+    border-radius: 10%;
+}
+
+.radio:before,
+.checkbox:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: turquoise;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+    position: absolute;
+}
+
+.checkbox:before {
+    border-radius: 0;
+    background: transparent;
+    border: 4px solid #08376B;
+    border-left: 0;
+    border-top: 0;
+    width: 7px;
+    height: 12px;
+    transform: rotate(45deg);
+    top: 2px;
+}
+
+.radio:checked:before,
+.checkbox:checked:before {
+    opacity: 1;
+}
+
+
+/* FIM LIST PROJETOS */

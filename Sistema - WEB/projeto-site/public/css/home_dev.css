@@ -544,3 +544,173 @@ html {
 
 
 /* FIM LIST PROJETOS */
+
+
+/* INICIO MODAL PROJETOS */
+
+:root {
+    --modal-duration: 1s;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    margin: 10% auto;
+    width: 60%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    animation-name: modalopen;
+    animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+    margin: 0;
+}
+
+.modal-header {
+    background: #08376B;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-body {
+    padding: 10px 20px;
+    background: #fff;
+}
+
+.conteudoModal {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.modal-body img {
+    width: 40%;
+}
+
+.modal-footer {
+    background: #08376B;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.modal-footer img {
+    height: 30px;
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 55px;
+    color: #fff;
+    margin-top: -17px;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 70, 70);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heart-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    padding: 13px 16px;
+    display: flex;
+    border: 2px solid #eae2e1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content.heart-active {
+    border-color: #f9b9c4;
+    background: #fbd0d8;
+}
+
+.heart {
+    position: absolute;
+    background: url("img.png") no-repeat;
+    background-position: left;
+    background-size: 2900%;
+    height: 90px;
+    width: 90px;
+    top: 50%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    font-size: 21px;
+    margin-left: 30px;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.numb:before {
+    content: '12';
+    font-size: 21px;
+    margin-left: 7px;
+    font-weight: 600;
+    color: #9C9496;
+    font-family: sans-serif;
+}
+
+.numb.heart-active:before {
+    content: '13';
+    color: #000;
+}
+
+.text.heart-active {
+    color: #000;
+}
+
+.heart.heart-active {
+    animation: animate .8s steps(28) 1;
+    background-position: right;
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+/* FIM MODAL PROJETOS */

@@ -17,6 +17,9 @@
     <!-- FIM LINK FONT MONTSERRAT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- LINK jsquery para botão curtida -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- FIM LINK jsquery para botão curtida -->
 </head>
 
 <body>
@@ -117,16 +120,29 @@
                                 <h2>Projeto X</h2>
                             </div>
                             <div class="modal-body">
+
+                                <div class="heart-btnButton">
+                                    <div class="contentButton">
+                                        <span class="heartButton"></span>
+                                        <span class="textButton">Gostei</span>
+                                    </div>
+                                </div>
                                 <div class="conteudoModal">
-                                    <img src="img/undraw_Code_thinking_re_gka2 (1).png" alt="">
+                                    <div class="nomeDev">
+                                        <img class="iconUsuario" src="img/Group 158.png" alt="">
+                                        <div class="nomeDev2">
+                                            <h2>Vinicius Novais</h2>
+                                        </div>
+                                    </div>
+                                    <img class="modalimgProjeto" src="img/undraw_Code_thinking_re_gka2 (1).png" alt="">
 
                                     <h2>Descrição</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti quibusdam nemo commodi
+                                    <span class="descriptionModal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti quibusdam nemo commodi
                                         ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti quibusdam
                                         nemo commodi ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia dolor deleniti
                                         quibusdam nemo commodi ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla repellendus nisi, sunt consectetur ipsa velit repudiandae aperiam modi quisquam nihil nam asperiores doloremque mollitia
                                         dolor deleniti quibusdam nemo commodi ab.
-                                    </p>
+                                    </span>
                                 </div>
                             </div>
                             <div class="modal-footer">
@@ -200,4 +216,13 @@
 <script src="js/home_dev.js"></script>
 <script src="js/sistema_de_busca.js"></script>
 <script src="js/modalProjetos.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.contentButton').click(function() {
+            $('.contentButton').toggleClass("heartButton-active")
+            $('.textButton').toggleClass("heartButton-active")
+            $('.heartButton').toggleClass("heartButton-active")
+        });
+    });
+</script>
 <!-- FIM SCRIPT HOME DEV -->

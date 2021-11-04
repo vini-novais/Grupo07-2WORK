@@ -564,6 +564,10 @@ html {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.descriptionModal {
+    width: 90%;
+}
+
 .modal-content {
     margin: 10% auto;
     width: 60%;
@@ -600,7 +604,7 @@ html {
     text-align: justify;
 }
 
-.modal-body img {
+.modalimgProjeto {
     width: 40%;
 }
 
@@ -641,14 +645,17 @@ html {
     }
 }
 
-.heart-btn {
+
+/* FIM MODAL PROJETOS */
+
+.heart-btnButton {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 31.5%;
+    left: 72.1%;
     transform: translate(-50%, -50%);
 }
 
-.content {
+.contentButton {
     padding: 13px 16px;
     display: flex;
     border: 2px solid #eae2e1;
@@ -656,14 +663,14 @@ html {
     cursor: pointer;
 }
 
-.content.heart-active {
+.contentButton.heartButton-active {
     border-color: #f9b9c4;
     background: #fbd0d8;
 }
 
-.heart {
+.heartButton {
     position: absolute;
-    background: url("img.png") no-repeat;
+    background: url("/img/img.png") no-repeat;
     background-position: left;
     background-size: 2900%;
     height: 90px;
@@ -673,32 +680,19 @@ html {
     transform: translate(-50%, -50%);
 }
 
-.text {
-    font-size: 21px;
+.textButton {
+    font-weight: bold;
+    font-size: 15px;
     margin-left: 30px;
     color: grey;
     font-family: 'Montserrat', sans-serif;
 }
 
-.numb:before {
-    content: '12';
-    font-size: 21px;
-    margin-left: 7px;
-    font-weight: 600;
-    color: #9C9496;
-    font-family: sans-serif;
-}
-
-.numb.heart-active:before {
-    content: '13';
+.textButton.heartButton-active {
     color: #000;
 }
 
-.text.heart-active {
-    color: #000;
-}
-
-.heart.heart-active {
+.heartButton.heartButton-active {
     animation: animate .8s steps(28) 1;
     background-position: right;
 }
@@ -711,6 +705,3 @@ html {
         background-position: right;
     }
 }
-
-
-/* FIM MODAL PROJETOS */

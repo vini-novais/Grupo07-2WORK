@@ -649,14 +649,13 @@ html {
 /* FIM MODAL PROJETOS */
 
 .heart-btnButton {
-    position: absolute;
-    top: 31.5%;
-    left: 72.1%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    margin-top: 6.5%;
+    transform: translate(0%, -50%);
 }
 
 .contentButton {
-    padding: 13px 16px;
+    padding: 10px 10px;
     display: flex;
     border: 2px solid #eae2e1;
     border-radius: 5px;
@@ -673,8 +672,8 @@ html {
     background: url("/img/img.png") no-repeat;
     background-position: left;
     background-size: 2900%;
-    height: 90px;
-    width: 90px;
+    height: 60px;
+    width: 60px;
     top: 50%;
     left: 21%;
     transform: translate(-50%, -50%);
@@ -682,8 +681,8 @@ html {
 
 .textButton {
     font-weight: bold;
-    font-size: 15px;
-    margin-left: 30px;
+    font-size: 10pt;
+    margin-left: 20px;
     color: grey;
     font-family: 'Montserrat', sans-serif;
 }

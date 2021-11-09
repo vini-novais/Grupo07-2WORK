@@ -704,3 +704,80 @@ html {
         background-position: right;
     }
 }
+
+.slide {
+    width: 90%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: all 0.4s;
+}
+
+.slides {
+    width: 5200px;
+    display: flex;
+}
+
+.image img {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+#atual {
+    margin-left: 0;
+    transition: all 2s;
+}
+
+.btnSlide {
+    position: absolute;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+
+.btnSlide:hover {
+    transform: scale(1.5);
+}
+
+#voltar {
+    top: 50%;
+    left: 10%;
+}
+
+#avancar {
+    top: 50%;
+    right: 10%;
+}
+
+.balls {
+    position: absolute;
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
+}
+
+.balls div {
+    transition: all 0.5s;
+    border: 3px solid #fff;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.balls div:hover {
+    background: #fff;
+}

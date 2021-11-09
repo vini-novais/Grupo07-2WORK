@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Sistema">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/projeto-2work.zip!/" />
+      <root url="jar://$PROJECT_DIR$/projeto.zip!/" />
+      <root url="jar://$PROJECT_DIR$/ToWork-Spring-boot.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

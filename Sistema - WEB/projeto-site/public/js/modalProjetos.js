@@ -77,7 +77,7 @@
           atual = quant.length - 1;
       }
       document.querySelector('.imgAtual').classList.remove('.imgAtual');
-      imagem.style.marginLeft = -900 * atual + 'px';
+      imagem.style.marginLeft = -100 * atual + 'vh';
       document.getElementById(atual).classList.add('imgAtual');
   }
   setInterval(() => {

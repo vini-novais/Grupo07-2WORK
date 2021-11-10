@@ -707,25 +707,26 @@ html {
 
 .slide {
     width: 90%;
-    height: 500px;
+    height: 30vw;
     overflow: hidden;
     border-radius: 5px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     transition: all 0.4s;
+    ;
 }
 
 .slides {
     width: 5200px;
     display: flex;
+    align-content: center;
+    align-items: center;
 }
 
 .image img {
     display: flex;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed
+    width: 100vh;
+    height: 30vw;
+    overflow: hidden;
 }
 
 #atual {
@@ -735,7 +736,7 @@ html {
 
 .btnSlide {
     position: absolute;
-    color: black;
+    color: #fff;
     padding: 10px;
     text-align: center;
     display: flex;
@@ -752,21 +753,21 @@ html {
 }
 
 #voltar {
-    top: 50%;
-    left: 10%;
+    top: 75%;
+    left: 26%;
 }
 
 #avancar {
-    top: 50%;
-    right: 10%;
+    top: 75%;
+    right: 26%;
 }
 
 .balls {
     position: absolute;
-    width: 750px;
+    width: 100vh;
     display: flex;
     justify-content: center;
-    margin-top: -45px;
+    margin-top: -2%;
 }
 
 .balls div {

@@ -707,8 +707,8 @@ html {
 }
 
 .slide {
-    width: 100vh;
-    height: 28vw;
+    width: 90%;
+    height: 60vh;
     overflow: hidden;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
@@ -725,8 +725,8 @@ html {
 
 .image img {
     display: flex;
-    width: 100vh;
-    height: 28vw;
+    width: 49vw;
+    height: 60vh;
     overflow: hidden;
 }
 
@@ -738,15 +738,13 @@ html {
 .btnSlide {
     position: absolute;
     color: #fff;
-    padding: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     transition: all 0.4s;
-    font-size: 1.7em;
-    margin-top: -5px;
+    font-size: 1.5em;
 }
 
 .btnSlide:hover {
@@ -754,18 +752,16 @@ html {
 }
 
 #voltar {
-    top: 68%;
-    left: 26%;
+    left: 27%;
 }
 
 #avancar {
-    top: 68%;
-    right: 26%;
+    right: 27%;
 }
 
 .balls {
     position: absolute;
-    width: 49.6vw;
+    width: 49vw;
     display: flex;
     justify-content: center;
     margin-top: -2%;

@@ -15,6 +15,9 @@
     <!-- LINK FONT MONTSERRAT -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!-- FIM LINK FONT MONTSERRAT -->
+    <!-- TODOS OS ICONS DA TELA -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- FIM TODOS OS ICONS DA TELA -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
@@ -33,112 +36,121 @@
                     <ul>
                         <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
                         <li> <a href="upload.html"><button class="button_upload">UPLOAD</button></a></l>
-                        <li><input type="text" placeholder="Procurar..."> </li>
-                        <li>
-                            <div class="action">
-                                <div class="profile" onclick="menuToggle();">
-                                    <img src="img/Group 158.png" alt="">
+                            <li><input type="text" placeholder="Procurar..."> </li>
+                            <li>
+                                <div class="action">
+                                    <div class="profile" onclick="menuToggle();">
+                                        <img src="img/Group 158.png" alt="">
+                                    </div>
+                                    <div class="menu">
+                                        <h3>Vitor<br><span>Website Designer</span></h3>
+                                        <ul>
+                                            <li>
+                                                <i class="fal fa-chart-area"></i>
+                                                <a href="dashboard.html">Meu Desempenho</a>
+                                            </li>
+                                            <li>
+                                                <i class="fal fa-user-circle"></i>
+                                                <a href="perfil_dev.html">Perfil</a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-award"></i>
+                                                <a href="planos.html">Planos</a>
+                                            </li>
+                                            <li>
+                                                <i class="fal fa-sign-out-alt"></i>
+                                                <a href="index.html">Sair</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="menu">
-                                    <h3>Vitor<br><span>Website Designer</span></h3>
-                                    <ul>
-                                        <li><img src="img/icon-meusprojetos.png">
-                                            <a href="perfil_dev.html">Meus Projetos</a>
-                                        </li>
-                                        <li><img src="img/icon-desempenho.png">
-                                            <a href="dashboard.html">Meu Desempenho</a>
-                                        </li>
-                                        <li><img src="img/icon-perfil.png">
-                                            <a href="perfil_dev.html">Perfil</a>
-                                        </li>
-                                        <li><img src="./img/premium.png">
-                                            <a href="planos.html">Planos</a>
-                                        </li>
-                                        <li><img src="img/icon-logout.png">
-                                            <a href="index.html">Sair</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- FIM NAVBAR -->
         <!-- CABEÇALHO -->
-        <div class="cabecalho-metricas">
-            <strong>
+        <section class="seccion-perfil-usuario">
+            <div class="cabecalho-metricas">
+                <strong>
                 <h1></h1>
             </strong>
-        </div>
-        <!-- FIM CABEÇALHO -->
-        <!-- CARD -->
-        <div class="content">
-            <div class="card-user">
-                <div class="image-card">
-                    <img src="img/user-dashboard.png" alt="">
-                    <h2 class="title-dev">Olá, Desenvolvedor!</h2>
-                </div>
             </div>
-            <div class="card">
-                <div class="topCard">
-                    <h2 class="title">Quantidade de projetos publicados</h2>
-                </div>
-                <div class="mediaCard">
-                    <img src="img/plano.png" alt="">
-                    <h2 class="title2">3</h2>
-                </div>
-            </div>
+            <!-- FIM CABEÇALHO -->
+            <!-- CARD -->
 
-            <div class="card">
-                <div class="topCard">
-                    <h2 class="title">Assinatura do usuário</h2>
+            <div class="content">
+                <div class="card-user">
+                    <div class="image-card">
+                        <img src="img/user-dashboard.png" alt="">
+                        <h2 class="title-dev">Olá, Desenvolvedor!</h2>
+                    </div>
                 </div>
-                <div class="mediaCard">
-                    <img src="img/planos.png" alt="">
-                    <h2 class="title2">Basic</h2>
+                <div class="card">
+                    <div class="topCard">
+                        <h3 class="title">Quantidade de projetos publicados</h3>
+                    </div>
+                    <div class="mediaCard">
+                        <img src="img/plano.png" alt="">
+                        <h2 class="title2">3</h2>
+                    </div>
                 </div>
-            </div>
 
-        </div>
-        <!-- FIM CARD -->
-        <!-- PRIMEIRO GRÁFICO -->
-        <div class="primeiro-grafico">
-            <div class="conteudo-primeiro-grafico">
-                <!-- TÍTULO -->
-                <div class="texto-primeiro-grafico">
-                    <p>Curtidas em suas postagens</p>
+                <div class="card">
+                    <div class="topCard">
+                        <h3 class="title">Assinatura do usuário</h3>
+                    </div>
+                    <div class="mediaCard">
+                        <img src="img/planos.png" alt="">
+                        <h2 class="title2">Basic</h2>
+                    </div>
                 </div>
-                <!-- FIM TÍTULO -->
-                <canvas id="grafico-likes" width="565" height="330"> </canvas>
-                <!-- AVISO -->
-                <div class="segundotexto-primeiro-grafico">
-                    <p>* Os dados serão atualizados automaticamente semanalmente. *</p>
-                </div>
-                <!-- FIM AVISO -->
+
             </div>
-        </div>
-        <!-- FIM PRIMEIRO GRÁFICO -->
-        <!-- SEGUNDO GRÁFICO -->
-        <div class="segundo-grafico">
-            <div class="conteudo-segundo-grafico">
-                <!-- TÍTULO -->
-                <div class="texto-segundo-grafico">
-                    <p>Visualizações em suas postagens</p>
+            <!-- FIM CARD -->
+            <!-- PRIMEIRO GRÁFICO -->
+            <div class="primeiro-grafico">
+                <div class="conteudo-primeiro-grafico">
+                    <!-- TÍTULO -->
+                    <div class="texto-primeiro-grafico">
+                        <p>Curtidas em suas postagens</p>
+                    </div>
+                    <!-- FIM TÍTULO -->
+                    <canvas id="grafico-likes" width="565" height="330"> </canvas>
+                    <!-- AVISO -->
+                    <div class="segundotexto-primeiro-grafico">
+                        <p>* Os dados serão atualizados automaticamente semanalmente. *</p>
+                    </div>
+                    <!-- FIM AVISO -->
                 </div>
-                <!-- FIM TÍTULO -->
-                <canvas id="grafico-visitas" width="565" height="330"> </canvas>
-                <!-- AVISO -->
-                <div class="segundotexto-segundo-grafico">
-                    <p>* Os dados serão atualizados automaticamente semanalmente. *</p>
-                </div>
-                <!-- FIM AVISO -->
             </div>
-            <!-- FIM SEGUNDO GRÁFICO -->
-        </div>
+            <!-- FIM PRIMEIRO GRÁFICO -->
+            <!-- SEGUNDO GRÁFICO -->
+            <div class="segundo-grafico">
+                <div class="conteudo-segundo-grafico">
+                    <!-- TÍTULO -->
+                    <div class="texto-segundo-grafico">
+                        <p>Visualizações em suas postagens</p>
+                    </div>
+                    <!-- FIM TÍTULO -->
+                    <canvas id="grafico-visitas" width="565" height="330"> </canvas>
+                    <!-- AVISO -->
+                    <div class="segundotexto-segundo-grafico">
+                        <p>* Os dados serão atualizados automaticamente semanalmente. *</p>
+                    </div>
+                    <!-- FIM AVISO -->
+                </div>
+                <!-- FIM SEGUNDO GRÁFICO -->
+            </div>
+        </section>
     </div>
     <!-- FIM CONTEÚDO -->
+    <!-- FOOTER -->
+    <footer class="footer">
+        <img src="img/White on Transparent.png" alt="">
+    </footer>
+    <!-- FIM FOOTER -->
 </body>
 
 </html>

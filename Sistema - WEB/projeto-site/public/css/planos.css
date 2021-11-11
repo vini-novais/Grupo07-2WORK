@@ -1,4 +1,5 @@
 /* GLOBAL */
+
 body {
     font-family: 'Montserrat', sans-serif !important;
     background-color: whitesmoke;
@@ -6,31 +7,45 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
     height: 100%;
     min-height: 100%;
 }
+
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
+
+
 /* FIM GLOBAL */
+
+
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B;
 }
+
+
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
+
+
 /* NAVBAR */
+
 .header2Work {
     width: 100%;
     position: fixed;
@@ -40,19 +55,23 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
+
 .nav2Work {
     float: right;
 }
+
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -61,6 +80,7 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -71,21 +91,26 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
+
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .nav2Work a:hover:after {
     width: 100%;
 }
+
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
+
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
+
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -97,6 +122,7 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -109,21 +135,25 @@ html {
     text-decoration: none;
     box-sizing: none;
 }
+
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
+
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
+
 .action .profile {
     position: relative;
     width: 40px;
@@ -135,9 +165,11 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
+
 .fotoperfil {
     width: 70px;
 }
+
 .action .profile img {
     position: absolute;
     top: 0;
@@ -146,6 +178,7 @@ html {
     height: 100%;
     object-fit: cover;
 }
+
 .action .menu {
     position: absolute;
     top: 120px;
@@ -160,11 +193,13 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
+
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -173,11 +208,13 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
+
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
+
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -186,15 +223,19 @@ html {
     align-items: center;
     margin-left: -30px;
 }
-.action .menu ul li img {
+
+.action .menu ul li i {
     max-width: 20px;
     margin-right: 10px;
     opacity: 0.5;
     transition: 0.5s;
+    color: #E4E4E4;
 }
-.action .menu ul li:hover img {
+
+.action .menu ul li:hover i {
     opacity: 1;
 }
+
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -202,17 +243,24 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
+
 .action .menu ul li:hover a {
     color: #ff5d94;
 }
+
+
 /* FIM NAVBAR */
+
+
 /* CARDS */
+
 main.cards {
     display: flex;
-    margin-top: 28vh;
-    margin-bottom: 18vh;
     justify-content: center;
+    align-items: center;
+    height: 95vh;
 }
+
 main.cards section.card {
     display: flex;
     flex-direction: column;
@@ -227,36 +275,44 @@ main.cards section.card {
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
+
 main.cards section.card:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+
 main.cards .texto {
     display: grid;
     text-align: left;
     height: 22vh;
 }
+
 main.cards section.card:first-child {
     margin-left: 0;
 }
+
 main.cards section.card .icon {
     width: 64px;
     height: 64px;
 }
+
 main.cards section.card img {
     width: 100%;
 }
+
 main.cards section.card h3 {
     font-size: 100%;
     margin: 16px 0;
 }
+
 main.cards section.card span {
     font-weight: 300;
     max-width: 240px;
     font-size: 80%;
     margin-bottom: 16px;
 }
+
 main.cards section.card button {
     padding: 0.5rem 1rem;
     text-transform: uppercase;
@@ -269,24 +325,31 @@ main.cards section.card button {
     width: 8vw;
     color: white;
 }
+
 main.cards section.card.basic button {
     background: linear-gradient(green, black);
 }
+
 main.cards section.card.pro button {
     background: linear-gradient(#08376B, black);
 }
+
 main.cards section.card.premium button {
     background: linear-gradient(red, black);
 }
+
 main.cards section.card.basic {
     box-shadow: 6px 9px 14px -7px green;
 }
+
 main.cards section.card.pro {
     box-shadow: 6px 9px 14px -7px #08376B;
 }
+
 main.cards section.card.premium {
     box-shadow: 6px 9px 14px -7px red;
 }
+
 @media screen and (max-width: 720px) {
     main.cards {
         flex-direction: column;
@@ -302,8 +365,13 @@ main.cards section.card.premium {
         font-size: 70%;
     }
 }
+
+
 /* FIM CARDS */
+
+
 /* FOOTER */
+
 .footer {
     background: #08376B;
     box-shadow: 0 0 0.4em rgb(0, 0, 0);
@@ -311,7 +379,10 @@ main.cards section.card.premium {
     color: #fff;
     text-align: center;
 }
+
 .footer img {
     height: 4vh;
 }
+
+
 /* FIM FOOTER */

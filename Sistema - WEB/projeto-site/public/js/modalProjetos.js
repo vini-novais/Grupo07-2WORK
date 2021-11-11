@@ -77,7 +77,7 @@
           atual = quant.length - 1;
       }
       document.querySelector('.imgAtual').classList.remove('.imgAtual');
-      imagem.style.marginLeft = -49 * atual + 'vw';
+      imagem.style.marginLeft = -48.7 * atual + 'vw';
       document.getElementById(atual).classList.add('imgAtual');
   }
   setInterval(() => {

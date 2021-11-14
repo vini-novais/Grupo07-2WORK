@@ -331,7 +331,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"tituloPublicacao\": \"Biotec\",\r\n    \"dataPublicacao\" : \"2002-12-16T21:33:22-03:00\"\r\n}",
+							"raw": "{\r\n    \"tituloPublicacao\": \"Biotec\",\r\n    \"dataPublicacao\" : \"2002-12-16T21:33:22-03:00\",\r\n    \"descricaoPublicacao\": \"Com base nas leis de padronização da Anvisa, vimos a necessidade da criação de um sistema de capturação de temperatura e umidade de medicamentos termolábeis durante seu transporte.\",\r\n    \"totalInteracao\": null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -339,7 +339,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/2work/publicar",
+							"raw": "http://localhost:8080/2work/publicar/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -347,7 +347,8 @@
 							"port": "8080",
 							"path": [
 								"2work",
-								"publicar"
+								"publicar",
+								"1"
 							]
 						}
 					},
@@ -359,7 +360,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/2work//procura-todas-publicacoes",
+							"raw": "http://localhost:8080/2work/procura-todas-publicacoes",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -367,7 +368,6 @@
 							"port": "8080",
 							"path": [
 								"2work",
-								"",
 								"procura-todas-publicacoes"
 							]
 						}
@@ -407,7 +407,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"dataInteracao\" : \"2002-12-16T21:33:22-03:00\"\r\n}",
+							"raw": "{\r\n    \"dataInteracao\" : \"2002-12-16T21:33:22-03:00\",\r\n    \"comentario\" : \"Excelente projeto!\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -435,7 +435,18 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": null
+						"url": {
+							"raw": "http://localhost:8080/2work/exibir-todas-interacoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"exibir-todas-interacoes"
+							]
+						}
 					},
 					"response": []
 				}

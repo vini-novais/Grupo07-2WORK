@@ -56,7 +56,6 @@ for (let i = 0; i < pos.length; i++) {
         atual = pos[i].id
         slide()
         rolar = false
-
     })
 }
 
@@ -64,7 +63,6 @@ voltar.addEventListener('click', () => {
     atual--
     slide()
     rolar = false
-
 })
 
 avancar.addEventListener('click', () => {

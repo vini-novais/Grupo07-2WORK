@@ -1,0 +1,470 @@
+{
+	"info": {
+		"_postman_id": "a3b6a5ac-dc12-4c02-9a5b-4a0484db4891",
+		"name": "ToWorkCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CrudELogin",
+			"item": [
+				{
+					"name": "Cadastro-Dev",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Luiz Gustavo da Silva\",\r\n    \"email\" : \"luizgustavo@gmail.com\",\r\n    \"dataNascimento\" : \"2002-12-16T21:33:22-03:00\",\r\n    \"senha\" : \"Luiz1234\",\r\n    \"cpf\" : \"12345678911\",\r\n    \"cidade\" : \"Mauá\",\r\n    \"estado\" : \"São Paulo\",\r\n    \"telefone\" : \"945541990\",\r\n    \"biografia\" : \"Hello, I'm Luiz Gustavo\",\r\n    \"especialidade\" : \"Front-End\",\r\n    \"onlineStatus\" : false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/cadastrar-dev",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"cadastrar-dev"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastro-Investidor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"avliS ad ovatsuG ziuL\",\r\n    \"email\" : \"moc.liamg@ovatsugziul\",\r\n    \"cnpj\" : \"00011122233344\",\r\n    \"senha\" : \"Luiz1234\",\r\n    \"cpf\" : \"12345678911\",\r\n    \"cidade\" : \"Mauá\",\r\n    \"estado\" : \"São Paulo\",\r\n    \"telefone\" : \"945541990\",\r\n    \"biografia\" : \"Hello, I'm ziuL OvatsuG\",\r\n    \"dataNascimento\": \"2002-12-16T21:33:22-03:00\",\r\n    \"planoUsuario\": \"Premium\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/cadastrar-investidor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"cadastrar-investidor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Visualizar-Dados-Especificos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/procura/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"procura",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exibir-Todos-Os-Dados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/procura",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"procura"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar-Dados-Dev",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Luis\",\r\n    \"email\" : \"moc.liamg@ovatsugziul\",\r\n    \"cnpj\" : \"00011122233344\",\r\n    \"senha\" : \"Luiz1234\",\r\n    \"cpf\" : \"12345678911\",\r\n    \"cidade\" : \"Mauá\",\r\n    \"estado\" : \"São Paulo\",\r\n    \"telefone\" : \"945541990\",\r\n    \"biografia\" : \"Hello, I'm ziuL OvatsuG\",\r\n    \"dataNascimento\": \"2002-12-16T21:33:22-03:00\",\r\n    \"planoUsuario\": \"Premium\",\r\n    \"publicacao\" : {\r\n            \"idPublicacao\" : 1,\r\n            \"tituloPublicacao\": \"Biotec\",\r\n            \"dataPublicacao\" : \"2002-12-16T21:33:22-03:00\"\r\n        }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/atualiza-dev/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"atualiza-dev",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar-Dados-Investidor",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\" : \"Luiz\",\r\n    \"cnpj\" : \"2222\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/atualiza-investidor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"atualiza-investidor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar-Dados",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/deleta/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"deleta",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Iterator",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/procura/iterator/Luiz Gustavo da Silva",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"procura",
+								"iterator",
+								"Luiz Gustavo da Silva"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login-Dev",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/login-dev/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"login-dev",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logoff-Dev",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/logoff-dev/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"logoff-dev",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login-Investidor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/login-investidor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"login-investidor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logoff-Investidor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/logoff-investidor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"logoff-investidor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publicacoes",
+			"item": [
+				{
+					"name": "Publicar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tituloPublicacao\": \"Biotec\",\r\n    \"dataPublicacao\" : \"2002-12-16T21:33:22-03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/publicar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"publicar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exibir-Todas-Publicacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work//procura-todas-publicacoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"",
+								"procura-todas-publicacoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar-Publicacao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/deletar-publicacao/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"deletar-publicacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Interacoes",
+			"item": [
+				{
+					"name": "Interagir",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dataInteracao\" : \"2002-12-16T21:33:22-03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/2work/interagir/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"interagir",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Exibir-Todas-Interacoes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gerenciamento-De-TXT",
+			"item": [
+				{
+					"name": "Exportar-TXT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/2work/exportar-registro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"2work",
+								"exportar-registro"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

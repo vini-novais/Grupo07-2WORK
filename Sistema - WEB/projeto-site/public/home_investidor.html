@@ -3,23 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>2WORK-Desenvolvedor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2WORK-Investidor</title>
     <!-- LOGO NO DOMÍNIO -->
     <link rel="icon" href="img/icon-2Work.png">
     <!-- FIM LOGO NO DOMÍNIO -->
     <!-- CSS -->
-    <link rel="stylesheet" href="css/home_dev.css">
+    <link rel="stylesheet" href="css/home_investidor.css">
     <!-- FIM CSS -->
     <!-- LINK FONT MONTSERRAT -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!-- FIM LINK FONT MONTSERRAT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- LINK jsquery para botão curtida -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <!-- FIM LINK jsquery para botão curtida -->
     <!-- TODOS OS ICONS DA TELA -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -31,32 +26,23 @@
     <div id="navbar" class="header2Work">
         <div class="container2Work">
             <div class="logo-header">
-                <a href="home_dev.html"> <img src="img/White on Transparent.png"></a>
+                <a href="home_investidor.html"> <img src="img/White on Transparent.png"></a>
             </div>
             <div class="nav2Work">
                 <ul>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><input type="text" placeholder="Habilidade, tag, palavra chave..."></li>
-                    <li><a href="upload.html"><button class="button_upload">UPLOAD</button></a></li>
                     <li>
                         <div class="action">
                             <div class="profile" onclick="menuToggle();">
-                                <img src="img/Group 158.png">
+                                <img src="./img/Group 158(2).png">
                             </div>
                             <div class="menu">
-                                <h3>Vitor<br><span>Website Designer</span></h3>
+                                <h3>Maicon<br><span>Investidor</span></h3>
                                 <ul>
                                     <li>
-                                        <i class="fal fa-chart-area"></i>
-                                        <a href="dashboard.html">Meu Desempenho</a>
-                                    </li>
-                                    <li>
                                         <i class="fal fa-user-circle"></i>
-                                        <a href="perfil_dev.html">Perfil</a>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-award"></i>
-                                        <a href="planos.html">Planos</a>
+                                        <a href="perfil_investidor.html">Perfil</a>
                                     </li>
                                     <li>
                                         <i class="fal fa-sign-out-alt"></i>
@@ -76,13 +62,13 @@
         <div class="container2Work">
             <div class="content2Work">
                 <h2 id="msgSaudacao"></h2>
-                <h1>Faça o upload de seu Projeto!</h1>
+                <h1>Veja oque temos de novo para você!</h1>
                 <p>O painel do projeto é um recurso exclusivo para contratos de trabalho. É perfeito para freelancers,
                     agências e moonlighters na 2WORK.
                 </p>
-                <button class="btn_projeto">Crie um projeto Gratis!</button>
+                <button class="btn_projeto">Projetos de inspiração!</button>
             </div>
-            <img src="img/undraw_Code_thinking_re_gka2 (1).png">
+            <img src="img/undraw_Savings_re_eq4w 1.svg">
         </div>
     </section>
     <!-- FIM SECTION WELCOME DEV -->
@@ -91,7 +77,7 @@
         <div class="projetoslist">
             <div class="meusProjetos">
                 <h2>Projeto Recentes</h2>
-                <span>03 novos projetos adicionados . . .</span>
+                <span>05 novos projetos adicionados . . .</span>
             </div>
             <div class="lista" id="projetos">
                 <!-- PROJETO 1 -->
@@ -206,64 +192,6 @@
                     <!-- FIM MODAL PROJETO 1 -->
                 </div>
                 <!-- FIM PROJETO 1 -->
-                <!-- PROJETO 2 -->
-                <div nome="Animação" class="descriptionProjeto">
-                    <!-- INFORMAÇÕES DO PROJETO 2 -->
-                    <div class="perfil-Projeto">
-                        <div class="nomeDev">
-                            <img class="iconUsuario" src="img/icon-caio.png">
-                            <div class="nomeDev2">
-                                <h2>Caio Elcio</h2>
-                                <span>Postado há 3 minutos . . . </span>
-                            </div>
-                        </div>
-                        <button class="modal-btn">Ver Projeto</button>
-                    </div>
-                    <!-- FIM INFORMAÇÕES DO PROJETO 2 -->
-                    <!-- DESCRIÇÃO (PRÉVIA) -->
-                    <p>
-                        Um grupo de entusiastas de relógios iniciou um esforço muito ambicioso para encomendar um
-                        relógio construído pelas melhores empresas do mundo. Precisamos de um logotipo para colocar no
-                        mostrador e / ou na fivela da...
-                    </p>
-                    <!-- FIM DESCRIÇÃO (PRÉVIA) -->
-                    <!-- ESPEFICAÇÃO DO PROJETO -->
-                    <div class="especificationProjeto">
-                        <span>Animação</span>
-                    </div>
-                    <!-- FIM ESPEFICAÇÃO DO PROJETO -->
-                </div>
-                <!-- FIM PROJETO 2 -->
-                <!-- PROJETO 3 -->
-                <div nome="Implementação" class="descriptionProjeto">
-                    <!-- INFORMAÇÕES DO PROJETO 3 -->
-                    <div class="perfil-Projeto">
-                        <div class="nomeDev">
-                            <img class="iconUsuario" src="img/icon-lucas.png" alt="">
-                            <div class="nomeDev2">
-                                <h2>Lucas Felix</h2>
-                                <span>Postado há 3 horas . . . </span>
-                            </div>
-                        </div>
-                        <button class="modal-btn">Ver Projeto</button>
-                    </div>
-                    <!-- FIM INFORMAÇÕES DO PROJETO 3 -->
-                    <!-- DESCRIÇÃO (PRÉVIA) -->
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam similique cupiditate fugit
-                        quasi, ut ad optio eius repudiandae dicta nulla perferendis! Dolore asperiores veniam illo vero
-                        est dolorem officiis sit. Lorem ipsum dolor sit amet consectetur,
-                        adipisicing elit. Officia qui ad hic atque fugit? Tempore culpa rerum sapiente harum? Nemo
-                        deleniti fugiat accusamus provident et perspiciatis, consectetur alias accusantium. Veritatis?
-                    </p>
-                    <!-- FIM DESCRIÇÃO (PRÉVIA) -->
-                    <!-- ESPEFICAÇÃO DO PROJETO -->
-                    <div class="especificationProjeto">
-                        <span>Implementação</span>
-                    </div>
-                    <!-- FIM ESPEFICAÇÃO DO PROJETO -->
-                </div>
-                <!-- FIM PROJETO 3 -->
             </div>
         </div>
         <!-- FILTRO -->
@@ -293,7 +221,7 @@
 </html>
 
 <!-- SCRIPTS HOME DEV -->
-<script src="js/home_dev.js"></script>
+<script src="js/home_investidor.js"></script>
 <script src="js/sistema_de_busca.js"></script>
 <script src="js/modalProjetos.js"></script>
 <!-- FIM SCRIPTS HOME DEV -->

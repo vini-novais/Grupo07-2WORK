@@ -64,7 +64,7 @@ html {
 .nav2Work a:after {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: #c6c6c6;
     height: 1px;
     width: 0;
     left: 0;
@@ -92,10 +92,32 @@ html {
     box-sizing: border-box;
     border-radius: 3px;
     outline: none;
-    width: 150px;
-    height: 40px;
+    width: 230px;
+    height: 39px;
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.button_upload {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100px;
+    height: 39px;
+    padding: 10px;
+    border-radius: 3px;
+    background: #C6C6C6;
+    border: 1px solid #C6C6C6;
+    cursor: pointer;
+    text-decoration: none;
+    box-sizing: none;
+}
+.button_upload {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3;
+}
+.button_upload:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .action {
     float: right;
@@ -164,13 +186,14 @@ html {
     align-items: center;
     margin-left: -30px;
 }
-.action .menu ul li img {
+.action .menu ul li i {
     max-width: 20px;
     margin-right: 10px;
     opacity: 0.5;
     transition: 0.5s;
+    color: #E4E4E4;
 }
-.action .menu ul li:hover img {
+.action .menu ul li:hover i {
     opacity: 1;
 }
 .action .menu ul li a {
@@ -184,11 +207,12 @@ html {
     color: #ff5d94;
 }
 /* FIM NAVBAR */
+/* CARDS */
 main.cards {
     display: flex;
-    margin-top: 28vh;
-    margin-bottom: 18vh;
     justify-content: center;
+    align-items: center;
+    height: 95vh;
 }
 main.cards section.card {
     display: flex;
@@ -212,6 +236,7 @@ main.cards section.card:hover {
 main.cards .texto {
     display: grid;
     text-align: left;
+    height: 22vh;
 }
 main.cards section.card:first-child {
     margin-left: 0;
@@ -246,22 +271,22 @@ main.cards section.card button {
     color: white;
 }
 main.cards section.card.basic button {
-    background: linear-gradient(to right, green, black);
+    background: linear-gradient(green, black);
 }
 main.cards section.card.pro button {
-    background: linear-gradient(to right, #08376B, black);
+    background: linear-gradient(#08376B, black);
 }
 main.cards section.card.premium button {
-    background: linear-gradient(to right, red, black);
+    background: linear-gradient(red, black);
 }
 main.cards section.card.basic {
-    box-shadow: 20px 20px 50px -30px green;
+    box-shadow: 6px 9px 14px -7px green;
 }
 main.cards section.card.pro {
-    box-shadow: 20px 20px 50px -30px #08376B;
+    box-shadow: 6px 9px 14px -7px #08376B;
 }
 main.cards section.card.premium {
-    box-shadow: 20px 20px 50px -30px red;
+    box-shadow: 6px 9px 14px -7px red;
 }
 @media screen and (max-width: 720px) {
     main.cards {
@@ -278,135 +303,16 @@ main.cards section.card.premium {
         font-size: 70%;
     }
 }
+/* FIM CARDS */
 /* FOOTER */
-footer {
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 50px 100px;
-    background-color: #111;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-footer .container-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-footer .container-footer .sec {
-    margin-right: 30px;
-}
-footer .container-footer .sec.work {
-    width: 40%;
-}
-footer .container-footer h2 {
-    position: relative;
-    color: white;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-footer .container-footer h2::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background-color: #08376B;
-}
-footer p {
-    color: #999;
-}
-.sci {
-    margin-top: 20px;
-    display: flex;
-    padding-left: 0;
-}
-.sci li {
-    list-style: none;
-}
-.sci li a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    color: #08376B;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-.sci li a:hover {
-    color: white;
-    background-color: #08376B;
-    transition: 0.7s;
-}
-.sci li a .fa {
-    font-size: 20px;
-}
-.localizacao {
-    position: relative;
-    width: 25%;
-}
-.contato {
-    width: (35% - 60px);
-    margin-right: 0 !important;
-}
-.contato .info {
-    position: relative;
-    padding-left: 0;
-}
-.contato .info li {
-    display: flex;
-    margin-bottom: 5px;
-}
-.contato .info li span:nth-child(1) {
-    color: white;
-    font-size: 20px;
-    margin-right: 10px;
-}
-.contato .info li span {
-    color: #999;
-}
-.contato .info li a {
-    color: #999;
-    text-decoration: none;
-}
-.contato .info li a:hover {
-    color: white;
-}
-.copyrightText {
-    color: white;
-    background-color: #181818;
-    padding: 1px 100px;
+.footer {
+    background: #08376B;
+    box-shadow: 0 0 0.4em rgb(0, 0, 0);
+    padding: 10px;
+    color: #fff;
     text-align: center;
 }
-#pFooter {
-    margin-top: 19px;
-}
-@media (max-width: 991px) {
-    footer {
-        padding: 40px;
-    }
-    footer .container-footer {
-        flex-direction: column;
-    }
-    footer .container-footer .sec {
-        margin-right: 0;
-        margin-bottom: 40px;
-    }
-    footer .container-footer .sec.sec.work,
-    .localizacao,
-    .contato {
-        width: 100%;
-    }
-    .copyrightText {
-        padding: 8px 40px;
-    }
+.footer img {
+    height: 4vh;
 }
 /* FIM FOOTER */

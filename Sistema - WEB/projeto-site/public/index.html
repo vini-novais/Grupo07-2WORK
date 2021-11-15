@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+   <head>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,6 +39,14 @@
 </head>
 
 <body>
+    <div onclick="teste()" id="teste" style="z-index: 999999; cursor: pointer; position: fixed; bottom: 10px; right: 10px; padding: 10px;color: white; background-color: #08376B;">
+        Precisa de ajuda?
+    </div>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <iframe src='https://webchat.botframework.com/embed/qnabot2work-bot?s=Fm_wfhy4ygI.ZKK9SfZ1_l9zNEER1xMS0Qi7KUSwGykyR0lznh_oiw0' id="webchat" role="main"  style='z-index: 999999; display: none; position: fixed; right: 10px; bottom: 50px; min-width: 400px; width: 30%; min-height: 400px;'></iframe>
+    <div class="bot">
+        <img src="" alt="">
+    </div>
     <!-- NAVBAR -->
     <div id="navbar" class="header2Work">
         <div class="container2Work">
@@ -335,7 +343,7 @@
             </div>
             <!-- FIM CONTATO -->
         </div>
-    </footer>
+        </footer>
     <!-- FIM FOOTER -->
     <!-- COPYRIGHT -->
     <div class="copyrightText">
@@ -343,6 +351,7 @@
     </div>
     <!-- FIM COPYRIGHT -->
     </footer>
+    
 </body>
 
 </html>
@@ -355,3 +364,27 @@
     popup()
 </script>
 <!-- FUNÇÃO POPUP MODAL -->
+<script>
+    // Set  the CSS rules.
+    const styleSet = getElementById(WebChat).createStyleSet({
+        rootHeight: '100%',
+        rootWidth: '50%',
+        backgroundColor: 'paleturquoise'
+     });
+
+   window.WebChat.renderWebChat({
+     directLine: window.WebChat.createDirectLine({
+         token: '<Your Direct Line token>'}),
+     styleSet
+   }, document.getElementById('webchat'));
+   
+   function teste() {
+       if (document.getElementById('webchat').style.display == "block"){
+        document.getElementById('webchat').style.display = "none"
+
+       }else{
+        document.getElementById('webchat').style.display = "block"
+       }
+     
+   }
+ </script>

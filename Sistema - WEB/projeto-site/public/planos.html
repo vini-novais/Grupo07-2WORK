@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="css/planos.css">
     <!-- FIM CSS -->
     <!-- LINK FONT MONTSERRAT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <!-- FIM LINK FONT MONTSERRAT -->
     <!-- LINK FONTAWESOME DOS ÍCONES DO FOOTER -->
@@ -37,9 +35,9 @@
             </div>
             <div class="nav2Work">
                 <ul>
-                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><input type="text" placeholder="Habilidade, tag, palavra chave..."></li>
                     <li><a href="upload.html"><button class="button_upload">UPLOAD</button></a></li>
-                    <li><input type="text" placeholder="Procurar..."> </li>
                     <li>
                         <div class="action">
                             <div class="profile" onclick="menuToggle();">
@@ -48,16 +46,20 @@
                             <div class="menu">
                                 <h3>Vitor<br><span>Website Designer</span></h3>
                                 <ul>
-                                    <li><img src="img/icon-meusprojetos.png">
-                                        <a href="perfil_dev.html">Meus Projetos</a>
-                                    </li>
-                                    <li><img src="img/icon-desempenho.png">
+                                    <li>
+                                        <i class="fal fa-chart-area"></i>
                                         <a href="dashboard.html">Meu Desempenho</a>
                                     </li>
-                                    <li><img src="img/icon-perfil.png">
+                                    <li>
+                                        <i class="fal fa-user-circle"></i>
                                         <a href="perfil_dev.html">Perfil</a>
                                     </li>
-                                    <li><img src="img/icon-logout.png">
+                                    <li>
+                                        <i class="fas fa-award"></i>
+                                        <a href="planos.html">Planos</a>
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-sign-out-alt"></i>
                                         <a href="index.html">Sair</a>
                                     </li>
                                 </ul>
@@ -106,7 +108,7 @@
             <div class="icon">
                 <img src="./img/premium.png">
             </div>
-            <h3>Pro</h3>
+            <h3>Premium</h3>
             <span>R$ 149,90 (Anual)</span>
             <div class="texto">
                 <span>✅ Sem limite de upload de projetos.</span>
@@ -126,6 +128,7 @@
 </body>
 
 </html>
+
 <!-- SCRIPT PLANOS  -->
-<script src="js/upload.js"></script>
+<script src="js/planos.js"></script>
 <!-- FIM SCRIPT PLANOS  -->

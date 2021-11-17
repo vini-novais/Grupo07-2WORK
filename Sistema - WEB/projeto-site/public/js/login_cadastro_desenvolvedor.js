@@ -226,6 +226,7 @@ function entrar() {
             resposta.json().then(json => {
                 sessionStorage.emailLogin = json.emailLogin;
                 sessionStorage.senhaLogin = json.senhaLogin;
+                sessionStorage.setItem('nome', json.nome);
                 window.location.href = 'home_dev.html';
             });
         } else {

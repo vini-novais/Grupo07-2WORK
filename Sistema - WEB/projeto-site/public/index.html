@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,6 +40,16 @@
 </head>
 
 <body>
+    <!-- CHATBOT -->
+    <div onclick="teste()" id="teste">
+        Precisa de ajuda?
+    </div>
+    <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <iframe
+        src='https://webchat.botframework.com/embed/qnabot2work-bot?s=Fm_wfhy4ygI.ZKK9SfZ1_l9zNEER1xMS0Qi7KUSwGykyR0lznh_oiw0'
+        id="webchat" role="main">
+    </iframe>
+    <!-- FIM CHATBOT -->
     <!-- NAVBAR -->
     <div id="navbar" class="header2Work">
         <div class="container2Work">
@@ -343,15 +354,41 @@
     </div>
     <!-- FIM COPYRIGHT -->
     </footer>
+
 </body>
 
 </html>
+
 <!-- SCRIPT NAVBAR -->
 <script src="js/navbar.js"></script>
 <!-- FIM SCRIPT NAVBAR -->
-
 <!-- FUNCÃO POPUP MODAL -->
 <script>
     popup()
 </script>
 <!-- FUNÇÃO POPUP MODAL -->
+<script>
+    // Set  the CSS rules.
+    const styleSet = getElementById(WebChat).createStyleSet({
+        rootHeight: '100%',
+        rootWidth: '50%',
+        backgroundColor: 'paleturquoise'
+    });
+
+    window.WebChat.renderWebChat({
+        directLine: window.WebChat.createDirectLine({
+            token: '<Your Direct Line token>'
+        }),
+        styleSet
+    }, document.getElementById('webchat'));
+
+    function teste() {
+        if (document.getElementById('webchat').style.display == "block") {
+            document.getElementById('webchat').style.display = "none"
+
+        } else {
+            document.getElementById('webchat').style.display = "block"
+        }
+
+    }
+</script>

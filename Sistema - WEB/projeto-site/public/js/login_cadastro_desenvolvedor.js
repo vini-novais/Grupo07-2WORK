@@ -194,48 +194,71 @@ function showHideee() {
 }
 /* FIM FUNÇÃO EXIBIR E OCULTAR SENHA (LOGIN) */
 
-/* FUNÇÃO PARA ENVIAR O CADASTRO AO BD (AZURE) */
-function cadastrar() {
-    var entrar = new URLSearchParams(new FormData(formulario));
-    console.log("cheguei aqui", entrar);
-    fetch("/usuarios/cadastrar", {
-        method: "POST",
-        body: entrar
-    }).then(function (response) {
-        if (response.ok) {
-            window.location.href = '#home_dev.html';
-        } else {
-            console.log('Erro de cadastro!');
-            response.text().then(function (resposta) {
-                div_erro.innerHTML = resposta;
-            });
-        }
-    });
-    return false;
+console.log("antes de entrar na função");
+
+function entrar() {
+
+    console.log("entrou na função");
+
+    var email = document.getElementById("emailLogin").value;
+    var senha = document.getElementById("senhaLogin").value;
+
+    axios.get(`http://localhost:8080/2work/login/luizgustavo@gmail.com/teste1234`, {
+        headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+    }).then(response => {
+        console.log('entrou');
+        window.location.href = 'home_dev.html';
+    }).catch(function (error) {
+        console.log('não entrou')
+    })
 }
-/* FIM FUNÇÃO PARA ENVIAR O CADASTRO AO BD (AZURE) */
+
+
+
+
+
+
+
+// function cadastrar() {
+//     // var entrar = new URLSearchParams(new FormData(formulario));
+//     // console.log("cheguei aqui", entrar);
+//     // fetch("/usuarios/cadastrar", {
+//     //     method: "POST",
+//     //     body: entrar
+//     // }).then(function (response) {
+//     //     if (response.ok) {
+//     //         window.location.href = '#home_dev.html';
+//     //     } else {
+//     //         console.log('Erro de cadastro!');
+//     //         response.text().then(function (resposta) {
+//     //             div_erro.innerHTML = resposta;
+//     //         });
+//     //     }
+//     // });
+//     return false;
+// }
 
 /* FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
-function entrar() {
-    var formulario = new URLSearchParams(new FormData(formularioLogin));
-    fetch("/usuarios/autenticar", {
-        method: "POST",
-        body: formulario
-    }).then(resposta => {
-        if (resposta.ok) {
-            resposta.json().then(json => {
-                sessionStorage.emailLogin = json.emailLogin;
-                sessionStorage.senhaLogin = json.senhaLogin;
-                sessionStorage.setItem('nome', json.nome);
-                window.location.href = 'home_dev.html';
-            });
-        } else {
-            console.log('Erro de login!');
-            resposta.text().then(texto => {
-                console.error(texto);
-            });
-        }
-    });
-    return false;
-}
+// function entrar() {
+    // var formulario = new URLSearchParams(new FormData(formularioLogin));
+    // fetch("/usuarios/autenticar", {
+    //     method: "POST",
+    //     body: formulario
+    // }).then(resposta => {
+    //     if (resposta.ok) {
+    //         resposta.json().then(json => {
+    //             sessionStorage.emailLogin = json.emailLogin;
+    //             sessionStorage.senhaLogin = json.senhaLogin;
+    //             sessionStorage.setItem('nome', json.nome);
+    //             window.location.href = 'home_dev.html';
+    //         });
+    //     } else {
+    //         console.log('Erro de login!');
+    //         resposta.text().then(texto => {
+    //             console.error(texto);
+    //         });
+    //     }
+    // });
+    // return false;
+// }
 /* FIM FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */

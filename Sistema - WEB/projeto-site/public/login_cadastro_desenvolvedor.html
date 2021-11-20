@@ -195,7 +195,7 @@
             <div class="second-column">
                 <h2 class="title title-second">Login</h2>
                 <!-- FORMULÁRIO DE LOGIN -->
-                <form id="formularioLogin" autocomplete="off" method="post" onsubmit="return entrar()">
+                <form id="formularioLogin" autocomplete="off" method="get">
                     <!-- E-MAIL -->
                     <div class="campo2">
                         <label>
@@ -216,9 +216,9 @@
                     </div>
                     <!-- FIM SENHA -->
                     <a class="password" href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-second-login">Entrar</button>
                 </form>
                 <!-- FIM FORMULÁRIO DE LOGIN -->
+                <button class="btn btn-second-login" type="submit" onclick="entrar()">Entrar</button>
             </div>
             <!-- FIM SEGUNDA COLUNA -->
         </div>
@@ -231,3 +231,7 @@
 <!-- SCRIPT LOGIN E CADASTRO DESENVOLVEDOR -->
 <script src="js/login_cadastro_desenvolvedor.js"></script>
 <!-- FIM SCRIPT LOGIN E CADASTRO DESENVOLVEDOR -->
+
+<!-- SCRIPT AXIOS -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- FIM SCRIPT AXIOS -->

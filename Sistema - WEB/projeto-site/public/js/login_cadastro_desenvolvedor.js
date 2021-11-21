@@ -194,30 +194,29 @@ function showHideee() {
 }
 /* FIM FUNÇÃO EXIBIR E OCULTAR SENHA (LOGIN) */
 
-console.log("antes de entrar na função");
-
+/* FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
 function entrar() {
-
     console.log("entrou na função");
 
     var email = document.getElementById("emailLogin").value;
     var senha = document.getElementById("senhaLogin").value;
 
-    axios.get(`http://localhost:8080/2work/login/luizgustavo@gmail.com/teste1234`, {
+    axios.post(`http://localhost:8080/2work/login`, {
         headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+        "email": email,
+        "senha": senha
     }).then(response => {
-        console.log('entrou');
+        console.log('entrou' + response);
+        sessionStorage.usuario_dev = JSON.stringify(response.data);
+        console.log(sessionStorage.usuario_dev);
+        // Session storage cache do navegador, stringify ta convertendo o json pra uma string
+        // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
         window.location.href = 'home_dev.html';
     }).catch(function (error) {
-        console.log('não entrou')
+        console.log(error)
     })
 }
-
-
-
-
-
-
+/* FIM FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
 
 // function cadastrar() {
 //     // var entrar = new URLSearchParams(new FormData(formulario));
@@ -237,28 +236,3 @@ function entrar() {
 //     // });
 //     return false;
 // }
-
-/* FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
-// function entrar() {
-    // var formulario = new URLSearchParams(new FormData(formularioLogin));
-    // fetch("/usuarios/autenticar", {
-    //     method: "POST",
-    //     body: formulario
-    // }).then(resposta => {
-    //     if (resposta.ok) {
-    //         resposta.json().then(json => {
-    //             sessionStorage.emailLogin = json.emailLogin;
-    //             sessionStorage.senhaLogin = json.senhaLogin;
-    //             sessionStorage.setItem('nome', json.nome);
-    //             window.location.href = 'home_dev.html';
-    //         });
-    //     } else {
-    //         console.log('Erro de login!');
-    //         resposta.text().then(texto => {
-    //             console.error(texto);
-    //         });
-    //     }
-    // });
-    // return false;
-// }
-/* FIM FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */

@@ -1,6 +1,6 @@
 import React from "react";
-import Site from '../Site';
 import logo from '../img/White on Transparent.png';
+import iconCards from '../img/icon-2Work.png';
 
 function Index() {
     return (
@@ -39,7 +39,29 @@ function Index() {
                                 <h2>Voce é um Desenvolvedor?</h2>
                                 <div class="cardInf">
                                     <div class="imgBx">
-
+                                        <img src={iconCards} class="iconCards" />
+                                    </div>
+                                    <div class="contentInf">
+                                        <div>
+                                            <h3>Enquanto dev você:</h3>
+                                            <p>* Quer trazer uma maior visibilidade a seu projeto. <br /> * Tem intuito em
+                                                colaborar em um projeto. <br />  * Buscar um reconhecimento pelo seu trabalho.
+                                            </p>
+                                            <a href="#">Cadastre-se</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="camposInf">
+                                <h2>Você é um Investidor?</h2>
+                                <div class="cardInf">
+                                    <div class="imgBx">
+                                        <img src={iconCards} class="iconCards" />
+                                    </div>
+                                    <div class="contentInf">
+                                        <div>
+                                            <h3>Enquanto investidor você:</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -170,13 +170,13 @@ public class UsuarioControllerJPA<T> {
 
     }
 
-    @GetMapping("/login/{email}/{senha}")
-    public ResponseEntity login(@PathVariable String email, @PathVariable String senha) {
-        Usuario usuario = repository.findByEmailAndSenha(email, senha);
-        if (usuario == null) {
+    @PostMapping("/login")
+    public ResponseEntity login(@RequestBody Dev devInserido) {
+        Dev dev = repository.findByEmailAndSenha(devInserido.getEmail(), devInserido.getSenha());
+        if (dev == null) {
             return ResponseEntity.status(404).build();
         }
-        return ResponseEntity.status(200).build();
+        return ResponseEntity.status(200).body(dev);
     }
 
     @PatchMapping("/logoff-investidor/{id}")//Atualizar os dados do perfil de Dev

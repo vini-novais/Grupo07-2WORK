@@ -6,11 +6,13 @@ function menuToggle() {
 /* FIM FUNÇÃO MENU */
 
 /* FUNÇÃO MENSAGEM DE SAUDAÇÃO */
-var usuario = sessionStorage.getItem('nome');
+var usuario = sessionStorage.usuario_dev;
 console.log(usuario);
-if (usuario == null) {
+if (sessionStorage == null) {
     alert("Você não está logado, faça seu login!");
+    window.location.href = 'login_cadastro_desenvolvedor.html';
 } else {
-    msgSaudacao.innerHTML = `<p style="color:black">Olá, ${usuario}!</p>`;
+    let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON 
+    msgSaudacao.innerHTML = `<p style="color:black">Olá, ${nomeUsuario}!</p>`;
 }
 /* FIM FUNÇÃO MENSAGEM DE SAUDAÇÃO */

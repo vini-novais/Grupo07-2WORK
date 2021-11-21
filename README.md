@@ -32,6 +32,8 @@ Somos uma empresa que acreditamos poder ajudar desenvolvedores a expor seus proj
 ## Conheça nossa equipe! 🥰 
 ![Equipe](https://user-images.githubusercontent.com/70399485/134790137-518d1034-b7c3-485e-947c-43f37606cf06.png)
 
+### Nosso whitepaper: https://2work.gitbook.io/artigo-2work/
+
 ### Sinta-se à vontade para:
 • Dar feedbacks referente ao projeto; <br>
 • Olhar nosso repositório; <br> 

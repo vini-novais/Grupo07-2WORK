@@ -1,45 +1,63 @@
 /* GLOBAL */
+
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+
 /* FIM GLOBAL */
+
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
+
 .title_msg {
     font-size: 32px;
     font-weight: 30;
     margin: 0;
 }
+
 .description {
     font-size: 18px;
     max-width: 800px;
 }
+
 .description p {
     text-align: center;
 }
+
+
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
+
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
+
+
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
+
+
 /* NAVBAR */
+
 .header2Work {
     width: 100%;
     position: fixed;
@@ -48,19 +66,23 @@ html {
     background-color: transparent;
     z-index: 1000;
 }
+
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
+
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
+
 .nav2Work {
     float: right;
 }
+
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -69,6 +91,7 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -79,22 +102,31 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
+
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
+
 .nav2Work a:hover:after {
     width: 100%;
 }
+
 .nav2Work li {
     display: inline-block;
     padding: 0px 20px 0px 20px;
 }
+
 .nav2Work ul {
     margin: 0 !important;
 }
+
+
 /* FIM NAVBAR */
+
+
 /* SECTION WELCOME */
+
 .section_welcome {
     display: flex;
     height: 115vh;
@@ -106,13 +138,16 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 .section_welcome img {
     opacity: 0.5;
 }
+
 .section_welcome .container {
     padding-top: 190px;
     padding-bottom: 140px;
 }
+
 .content2Work {
     position: absolute;
     top: 23%;
@@ -120,14 +155,17 @@ html {
     text-align: left;
     color: white;
 }
+
 .content2Work h1 {
     font-size: 50px;
 }
+
 .content2Work p {
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
 }
+
 button {
     width: 240px;
     padding: 15px 0;
@@ -141,13 +179,16 @@ button {
     position: relative;
     overflow: hidden;
 }
+
 button:hover span {
     color: white;
     width: 100%;
 }
+
 button:hover {
     border: none;
 }
+
 span {
     color: transparent;
     background: #08376B;
@@ -161,11 +202,13 @@ span {
     transition: 0.5s;
     padding-top: 50px;
 }
+
 .camposInfCorp {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .camposInf {
     position: relative;
     width: 1000px;
@@ -175,6 +218,7 @@ span {
     padding: 20px 0;
     margin-top: 35px;
 }
+
 .camposInf .cardInf {
     position: relative;
     height: 240px;
@@ -184,6 +228,7 @@ span {
     width: 90%;
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 }
+
 .camposInf .cardInf .imgBx {
     position: absolute;
     top: 10px;
@@ -201,20 +246,24 @@ span {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     transition: 0.5s ease-in-out;
 }
+
 .camposInf .cardInf:hover .imgBx {
     height: 150px;
     width: 150px;
     left: -75px;
     top: calc(50% - 75px);
 }
+
 .camposInf .cardInf .imgBx img {
     max-width: 100px;
     transition: 0.5s ease-in-out;
 }
+
 .camposInf .cardInf:hover .imgBx img {
     filter: invert(1);
     max-width: 75px;
 }
+
 .camposInf .cardInf .contentInf {
     position: absolute;
     right: 0;
@@ -225,14 +274,17 @@ span {
     justify-content: center;
     align-items: center;
 }
+
 .camposInf .cardInf .contentInf h3 {
     color: white;
     margin-bottom: 15px;
     font-size: 24px;
 }
+
 .camposInf .cardInf .contentInf p {
     color: white;
 }
+
 .camposInf .cardInf .contentInf a {
     display: inline-block;
     padding: 8px 20px;
@@ -245,6 +297,7 @@ span {
     text-align: center;
     box-shadow: 0 5px 15px rgb(0 0 0 / 10%);
 }
+
 @media (max-width:992px) {
     .camposInf {
         position: relative;
@@ -286,13 +339,23 @@ span {
         border-top: 100px solid white;
     }
 }
+
+
 /* FIM SECTION WELCOME */
+
+
 /* SECTION PROJETOS */
+
 .section_projetos {
+    background-color: #edeef6;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
     height: 110vh;
-    background-color: white;
 }
+
 .section_projetos h1 {
     justify-content: center;
     display: flex;
@@ -302,102 +365,234 @@ span {
     margin-bottom: 90px;
     font-size: 35px;
 }
-.linha-1 {
+
+
+/* MODAL PROJETOS */
+
+.ui-card {
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background: radial-gradient(#111 50%, #000 100%);
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.coluna-card {
-    display: flex;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-.card {
-    border: none !important;
-    font-size: 10px;
-    background-color: white !important;
-    width: 85% !important;
-}
-.card-img-top {
-    border-radius: 10% !important;
-}
-.card-text {
-    color: #111;
-    justify-content: flex-start;
-    font-weight: bold;
-}
-.row-informacoes-card {
-    display: flex;
-    justify-content: space-around;
+    background: white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 3px;
+    width: 25vw;
+    height: 30vh;
+    margin: 0 1% 5%;
+    text-decoration: none;
+    color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    background: radial-gradient(#111 50%, #000 100%);
+    cursor: pointer;
 }
-.modal-footer .botao {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 15vw;
+
+.ui-card .capa-projeto {
+    transform: scale(1);
+    transition: all 0.3s ease-out;
 }
-.modal-footer .botao:hover a {
-    background-color: transparent;
-    color: white;
-    outline: none;
+
+.ui-card:hover .capa-projeto {
+    transform: scale(1) translateY(1%);
+    opacity: 0.3
+}
+
+.ui-card .description {
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    left: 0;
+    padding: 0%;
+    width: 100%;
+    color: #fff;
+    font-size: 10pt;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ui-card .description h3 {
+    font-weight: 300;
+    font-size: 20pt;
+    margin: 0;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out;
+}
+
+.ui-card .description p {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.ui-card .description button {
+    width: 40%;
+    color: #fff;
+    background-color: #08376B;
+    border: 1px solid #8E8E8E;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    padding: 2%;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 0.3s ease-out 0.4s;
+}
+
+.ui-card .description button:hover {
+    background: rgba(42, 124, 27, 0.514);
+}
+
+.ui-card:hover .description h3 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ui-card:hover .description p {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.ui-card:hover .description button {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.modal-btnDesc {
+    background-color: #08376B;
+    border: 0;
+    border-radius: 3px;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 60px;
+    cursor: pointer;
+}
+
+.modal-btnDesc {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3;
+}
+
+.modal-btnDesc:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    transition: 0.2s;
 }
-.modal-content h4, p {
-    font-weight: bold;
+
+.modal-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
 }
-.modal-content a {
-    text-decoration: none !important;
-    text-transform: none !important;
-    color: #111;
+
+.modal-container.show {
+    opacity: 1;
+    pointer-events: auto;
 }
-.modal-footer a {
-    display: inline-block !important;
-    padding: 8px 20px !important;
-    border-radius: 5px;
-    background: #08376B !important;
-    text-decoration: none !important;
-    color: white;
-    font-weight: 500 !important;
-    width: 50%;
-    text-align: center !important;
-    box-shadow: 0 5px 15px rgb(0 0 0 / 10%) !important;
-    outline: none;
+
+.modal {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 30px 50px;
+    max-width: 100%;
+    text-align: center;
 }
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.espacoTextModal {
+    margin: 5%;
+    padding: 5%;
+    border: 2px solid #C6C6C6;
+    border-left: none;
+    border-right: none;
+}
+
+.espacobotao {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* FIM PROJETOS */
+
+
 /* FIM SECTION PROJETOS */
+
+
 /* SECTION SOBRE NÓS */
+
 .section_sobreNos {
     height: 760px;
     border-top: black;
     background-color: whitesmoke;
     padding-top: 5%;
 }
+
 .section_sobreNos .texto {
     width: 500px;
     color: black;
     font-size: 10px;
     float: right;
 }
+
 .sobre_nos {
     width: 100%;
     margin-top: 4%;
     display: inline-block;
 }
+
 .section_sobreNos .solucao {
     height: 390px;
     color: white;
     margin-top: 7%;
 }
+
 .section_sobreNos .texto p {
     margin-top: 29px;
     font-size: 20px;
     line-height: 2.0;
 }
+
+
 /* FIM SECTION SOBRE NÓS */
+
+
 /* FOOTER */
+
 footer {
     box-sizing: border-box;
     position: relative;
@@ -409,24 +604,29 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 footer .container-footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 footer .container-footer .sec {
     margin-right: 30px;
 }
+
 footer .container-footer .sec.work {
     width: 40%;
 }
+
 footer .container-footer h2 {
     position: relative;
     color: white;
     font-weight: 500;
     margin-bottom: 15px;
 }
+
 footer .container-footer h2::before {
     content: '';
     position: absolute;
@@ -436,17 +636,21 @@ footer .container-footer h2::before {
     height: 2px;
     background-color: #08376B;
 }
+
 footer p {
     color: #999;
 }
+
 .sci {
     margin-top: 20px;
     display: flex;
     padding-left: 0;
 }
+
 .sci li {
     list-style: none;
 }
+
 .sci li a {
     display: inline-block;
     width: 40px;
@@ -460,54 +664,67 @@ footer p {
     text-decoration: none;
     border-radius: 10px;
 }
+
 .sci li a:hover {
     color: white;
     background-color: #08376B;
     transition: 0.7s;
 }
+
 .sci li a .fa {
     font-size: 20px;
 }
+
 .localizacao {
     position: relative;
     width: 25%;
 }
+
 .contato {
     width: (35% - 60px);
     margin-right: 0 !important;
 }
+
 .contato .info {
     position: relative;
     padding-left: 0;
 }
+
 .contato .info li {
     display: flex;
     margin-bottom: 5px;
 }
+
 .contato .info li span:nth-child(1) {
     color: white;
     font-size: 20px;
     margin-right: 10px;
 }
+
 .contato .info li span {
     color: #999;
 }
+
 .contato .info li a {
     color: #999;
     text-decoration: none;
 }
+
 .contato .info li a:hover {
     color: white;
 }
+
 .copyrightText {
     color: white;
     background-color: #181818;
     padding: 1px 100px;
     text-align: center;
 }
+
 #pFooter {
     margin-top: 19px;
 }
+
 @media (max-width: 991px) {
     footer {
         padding: 40px;
@@ -528,21 +745,29 @@ footer p {
         padding: 8px 40px;
     }
 }
+
+
 /* FIM FOOTER */
+
+
 /* CHATBOT */
+
 #teste {
     z-index: 999999;
     cursor: pointer;
     position: fixed;
     bottom: 10px;
-    right: 10px; 
+    right: 10px;
     padding: 10px;
-    color: white; 
+    color: white;
     background-color: #08376B;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 #webchat {
     z-index: 999999;
-    display: none; 
+    display: none;
     position: fixed;
     right: 10px;
     bottom: 50px;
@@ -550,4 +775,6 @@ footer p {
     width: 30%;
     min-height: 400px;
 }
+
+
 /* FIM CHATBOT */

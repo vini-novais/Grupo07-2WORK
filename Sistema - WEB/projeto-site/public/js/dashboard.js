@@ -6,7 +6,7 @@ new Chart(document.getElementById("grafico-likes"), {
         datasets: [{
             data: [20, 100, 110, 146, 226, 370, 500, 567, 700, 900],
             label: "Curtidas",
-            borderColor: "#3e95cd",
+            borderColor: "#08376B",
             fill: false
         },]
     },
@@ -21,7 +21,7 @@ new Chart(document.getElementById("grafico-visitas"), {
         datasets: [{
             data: [100, 196, 370, 998, 1200, 1800, 2678, 3215, 4672, 5671],
             label: "Visualizações",
-            borderColor: "#3e95cd",
+            borderColor: "#08376B",
             fill: false
         },]
     },

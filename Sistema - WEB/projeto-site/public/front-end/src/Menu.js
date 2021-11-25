@@ -1,5 +1,5 @@
 /* FUNÇÃO MENU */
-const menuToggle = function() {
+const menuToggle = function () {
     const toggleMenu = document.querySelector('.menu');
     toggleMenu.classList.toggle('active');
 }

@@ -1,8 +1,45 @@
 import React from "react";
 import logo from '../img/White on Transparent.png';
 import iconCards from '../img/icon-2Work.png';
+import projeto7 from '../img/projeto-7.jpg';
+import projeto2 from '../img/projeto-2.svg';
+import desenhoSolucao from '../img/Desen.png';
 
 function Index() {
+
+    // function scroll() {
+    //     var scroll = $(window).scrollTop();
+
+    //     if (scroll > 500) {
+    //         $('.header2Work').css('background-color', '#08376B')
+    //         $('.header2Work').css('box-shadow', '0px 4px 4px rgba(0, 0, 0, 0.25');
+    //     } else {
+    //         $('.header2Work').css('background-color', 'transparent', 'box-shadow', 'none');
+    //         $('.header2Work').css('box-shadow', 'none');
+    //     }
+    // }
+
+    function inicio() {
+        const navbar = window.document.getElementById('navbar');
+
+        navbar.style.backgroundColor = `transparent`;
+        navbar.style.transition = `0.5s`;
+    }
+
+    function projetos() {
+        const navbar = window.document.getElementById('navbar');
+
+        navbar.style.backgroundColor = `#08376B`;
+        navbar.style.transition = `0.5s`;
+    }
+
+    function sobreNos() {
+        const navbar = window.document.getElementById('navbar');
+
+        navbar.style.backgroundColor = `#08376B`;
+        navbar.style.transition = `0.5s`;
+    }
+
     return (
         <>
             <div onClick="teste()" id="teste">
@@ -20,9 +57,9 @@ function Index() {
                     </div>
                     <div class="nav2Work">
                         <ul>
-                            <li><a onclick="pInicio()" href="#section_welcome">Início</a></li>
-                            <li><a onclick="pProjetos()" href="#section_projetos">Projetos</a></li>
-                            <li><a onclick="SobreNos()" href="#section_sobreNos">Sobre Nós</a></li>
+                            <li><a onClick={inicio} href="#section_welcome">Início</a></li>
+                            <li><a onClick={projetos} href="#section_projetos">Projetos</a></li>
+                            <li><a onClick={sobreNos} href="#section_sobreNos">Sobre Nós</a></li>
                         </ul>
                     </div>
                 </div>
@@ -61,6 +98,11 @@ function Index() {
                                     <div class="contentInf">
                                         <div>
                                             <h3>Enquanto investidor você:</h3>
+                                            <p>* Quer trazer inovação para a sua empresa. <br /> * Precisa de uma ideia inovadora
+                                                para competir no mercado. <br /> * Ter acesso a ideias que possam alavancar o seu
+                                                negócio.
+                                            </p>
+                                            <a href="#">Cadastre-se</a>
                                         </div>
                                     </div>
                                 </div>
@@ -69,6 +111,174 @@ function Index() {
                     </div>
                 </div>
             </section>
+            <section class="section_projetos" id="section_projetos">
+                <div class="container2Work">
+                    <div class="row-8">
+                        <h1>Estes são alguns projetos que já estão em nossa plataforma!</h1>
+                    </div>
+                    <div class="row-4 linha-1">
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">João Oliveira</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Caio Elcio</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Lucas Felix</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Lucas Felix</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-4 linha-1">
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Lucas Ferreira</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Luiz Gustavo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Vinicius Novais</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 coluna-card">
+                            <div>
+                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <div class="card-body">
+                                    <div class="row-informacoes-card">
+                                        <p class="card-text">Caio Elcio</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section_sobreNos" id="section_sobreNos">
+                <div class="container2Work">
+                    <div class="sobre_nos">
+                        <div class="texto">
+                            <h1>Buscamos trazer inspiração e inovação para todos!</h1>
+                            <p>Somos uma empresa que acreditamos no poder de auxiliar os desenvolvedores a expor seus projetos e
+                                assim promover a cultura de inovação no mercado da tecnologia. Através da 2WORK os
+                                desenvolvedores poderam expor seus projetos e assim
+                                como fazer publicações dos mesmos, no qual os iteressados poderão visualizar os mesmos e até
+                                mesmo fechar um negócio através de um contrato com segurança.
+                            </p>
+                        </div>
+                        <div class="imagem">
+                            <img class="solucao" src={desenhoSolucao} />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container-footer">
+                    <div class="sec work">
+                        <h2>2WORK</h2>
+                        <p>
+                            2WORK é a plataforma líder mundial para que desenvolvedores criativos compartilhem, cresçam e vendam
+                            seus projetos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum at quidem non
+                            nam molestiae laborum debitis accusantium
+                            natus doloribus magni. Illum, unde! Nemo placeat numquam esse. Repellat facilis deleniti veritatis!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        </p>
+                        <ul class="sci">
+                            <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://github.com/BandTec/3ADSB-2021-2-Grupo-07" target="_blank">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sec localizacao">
+                        <h2>Localização</h2>
+                        <iframe src="https://maps.google.com/maps?q=bandtec&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            style={{ width: '100%', height: '200px', border: '10px' }}
+                            allowfullscreen="" loading="lazy">
+                        </iframe>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Rua Haddock Lobo, 595 - Cerqueira César, São
+                            Paulo - SP, 01414-001
+                        </p>
+                    </div>
+                    <div class="sec contato">
+                        <h2>Contato</h2>
+                        <ul class="info">
+                            <li>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:5511941282899"> +55 (11) 94128-2899</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:5511953930508"> +55 (11) 95393-0508</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p><i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:2Work@bandtec.com.br"> 2Work@bandtec.com.br</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyrightText">
+                <p id="pFooter">Copyright © 2021 2WORK. Todos os direitos reservados.</p>
+            </div>
         </>
     );
 }

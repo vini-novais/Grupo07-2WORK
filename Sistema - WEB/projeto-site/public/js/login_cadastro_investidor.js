@@ -208,3 +208,25 @@ function showHideee() {
     }
 }
 /* FIM FUNÇÃO EXIBIR E OCULTAR SENHA (LOGIN) */
+
+function entrar1() {
+    console.log("entrou na função");
+
+    var email = document.getElementById("emailLogin").value;
+    var senha = document.getElementById("senhaLogin").value;
+
+    axios.post(`http://localhost:8080/2work/login-investidor`, {
+        headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+        "email": email,
+        "senha": senha
+    }).then(response => {
+        console.log('entrou' + response);
+        sessionStorage.usuario_dev = JSON.stringify(response.data);
+        console.log(sessionStorage.usuario_dev);
+        // Session storage cache do navegador, stringify ta convertendo o json pra uma string
+        // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
+        window.location.href = 'home_investidor.html';
+    }).catch(function (error) {
+        console.log(error)
+    })
+}

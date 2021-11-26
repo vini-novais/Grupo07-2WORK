@@ -210,13 +210,13 @@
                             <i class="fas fa-lock icon-modify"></i>
                             <input id="senhaLogin" type="password" placeholder="Senha" autocomplete="off"
                                 onkeyup="validarSenhaLogin()" required>
-                            <div id="toggle-login" onclick="showHideee();"></div>
+                            <div id="toggle-login" onclick="showHideee()"></div>
                         </label>
                     </div>
                     <!-- FIM SENHA -->
                     <a class="password" href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-second-login">Entrar</button>
                 </form>
+                <button class="btn btn-second-login" type="submit" onclick="entrar1()">Entrar</button>
                 <!-- FIM FORMULÁRIO DE LOGIN -->
             </div>
             <!-- FIM SEGUNDA COLUNA -->
@@ -230,3 +230,7 @@
 <!-- SCRIPT LOGIN E CADASTRO INVESTIDOR -->
 <script src="js/login_cadastro_investidor.js"></script>
 <!-- FIM SCRIPT LOGIN E CADASTRO INVESTIDOR -->
+
+<!-- SCRIPT AXIOS -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- FIM SCRIPT AXIOS -->

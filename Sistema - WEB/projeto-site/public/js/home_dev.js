@@ -13,6 +13,11 @@ if (sessionStorage == null) {
     window.location.href = 'login_cadastro_desenvolvedor.html';
 } else {
     let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON 
-    msgSaudacao.innerHTML = `<p style="color:black">Olá, ${nomeUsuario}!</p>`;
+    msgSaudacao.innerHTML = `<p style="color:black">Olá, ${nomeUsuario.split(" ")[0]}!</p>`;
 }
 /* FIM FUNÇÃO MENSAGEM DE SAUDAÇÃO */
+
+// function sair() {
+//     window.location.href = 'index.html';
+//     sessionStorage.clear();
+// }

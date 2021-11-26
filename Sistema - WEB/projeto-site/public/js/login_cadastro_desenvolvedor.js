@@ -201,7 +201,7 @@ function entrar() {
     var email = document.getElementById("emailLogin").value;
     var senha = document.getElementById("senhaLogin").value;
 
-    axios.post(`http://localhost:8080/2work/login`, {
+    axios.post(`http://localhost:8080/2work/login-dev`, {
         headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
         "email": email,
         "senha": senha

@@ -290,14 +290,14 @@ span {
 /* SECTION PROJETOS */
 .section_projetos {
     display: flex;
-    height: 110vh;
+    height: 115vh;
     background-color: white;
 }
 .section_projetos h1 {
     justify-content: center;
     display: flex;
     align-items: flex-end;
-    height: 100px;
+    height: 75px;
     font-weight: bold;
     margin-bottom: 90px;
     font-size: 35px;
@@ -370,7 +370,7 @@ span {
 /* FIM SECTION PROJETOS */
 /* SECTION SOBRE NÓS */
 .section_sobreNos {
-    height: 760px;
+    height: 90vh;
     border-top: black;
     background-color: whitesmoke;
     padding-top: 5%;

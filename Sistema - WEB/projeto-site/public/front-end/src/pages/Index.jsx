@@ -1,23 +1,17 @@
 import React from "react";
 import logo from '../img/White on Transparent.png';
 import iconCards from '../img/icon-2Work.png';
-import projeto7 from '../img/projeto-7.jpg';
-import projeto2 from '../img/projeto-2.svg';
+import projeto1 from '../img/projeto-1.png';
+import projeto2 from '../img/projeto-2.jpg';
+import projeto3 from '../img/projeto-3.png';
+import projeto4 from '../img/projeto-4.png';
+import projeto5 from '../img/projeto-5.png';
+import projeto6 from '../img/projeto-6.png';
+import projeto7 from '../img/projeto-7.png';
+import projeto8 from '../img/projeto-8.png';
 import desenhoSolucao from '../img/Desen.png';
 
 function Index() {
-
-    // function scroll() {
-    //     var scroll = $(window).scrollTop();
-
-    //     if (scroll > 500) {
-    //         $('.header2Work').css('background-color', '#08376B')
-    //         $('.header2Work').css('box-shadow', '0px 4px 4px rgba(0, 0, 0, 0.25');
-    //     } else {
-    //         $('.header2Work').css('background-color', 'transparent', 'box-shadow', 'none');
-    //         $('.header2Work').css('box-shadow', 'none');
-    //     }
-    // }
 
     function inicio() {
         const navbar = window.document.getElementById('navbar');
@@ -119,7 +113,7 @@ function Index() {
                     <div class="row-4 linha-1">
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <img class="card-img-top" src={projeto1} class="projeto1" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">João Oliveira</p>
@@ -139,7 +133,7 @@ function Index() {
                         </div>
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <img class="card-img-top" src={projeto3} class="projeto3" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">Lucas Felix</p>
@@ -149,7 +143,7 @@ function Index() {
                         </div>
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <img class="card-img-top" src={projeto4} class="projeto4" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">Lucas Felix</p>
@@ -161,7 +155,7 @@ function Index() {
                     <div class="row-4 linha-1">
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <img class="card-img-top" src={projeto5} class="projeto5" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">Lucas Ferreira</p>
@@ -171,7 +165,7 @@ function Index() {
                         </div>
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <img class="card-img-top" src={projeto6} class="projeto6" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">Luiz Gustavo</p>
@@ -181,7 +175,7 @@ function Index() {
                         </div>
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto2} class="projeto2" />
+                                <img class="card-img-top" src={projeto7} class="projeto7" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">Vinicius Novais</p>
@@ -191,7 +185,7 @@ function Index() {
                         </div>
                         <div class="col-3 coluna-card">
                             <div>
-                                <img class="card-img-top" src={projeto7} class="projeto7" />
+                                <img class="card-img-top" src={projeto8} class="projeto8" />
                                 <div class="card-body">
                                     <div class="row-informacoes-card">
                                         <p class="card-text">Caio Elcio</p>

@@ -34,3 +34,17 @@ function menuToggle() {
     toggleMenu.classList.toggle('active');
 }
 /* FIM FUNÇÃO MENU */
+
+var usuario = sessionStorage.usuario_dev;
+console.log(usuario);
+if (sessionStorage == null) { } else {
+
+    let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
+    let qtdProjetosPublicados = JSON.parse(usuario).totalPublicacoes;
+    let planoDoUsuario = JSON.parse(usuario).planoUsuario;
+
+    nomeMenu.innerHTML = `${nomeUsuario.split(" ")[0]}`;
+    campoProjetosPublicados.innerHTML = `${qtdProjetosPublicados}`;
+    campoPlanoUsuario.innerHTML = `${planoDoUsuario}`;
+
+}

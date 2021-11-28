@@ -59,7 +59,6 @@ html {
     color: #a0a0a0;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
 }
 .nav2Work a:after {
     content: "";

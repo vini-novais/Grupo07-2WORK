@@ -32,12 +32,12 @@
             </div>
             <div class="nav2Work">
                 <ul>
-                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
                     <li><input type="text" placeholder="Habilidade, tag, palavra chave..."></li>
                     <li><a href="upload.html"><button class="button_upload">UPLOAD</button></a></li>
                     <li>
                         <div class="action">
-                            <div class="profile" onclick="menuToggle();">
+                            <div class="profile" onclick="menuToggle()">
                                 <img src="img/Group 158.png">
                             </div>
                             <div class="menu">
@@ -78,6 +78,7 @@
                         <i class="far fa-image"></i>
                     </button>
                 </div>
+                <h2 id="nomeDoDev"></h2>
                 <button type="button" class="boton-portada">
                     <i class="far fa-image"></i> Trocar Plano de Fundo
                 </button>
@@ -88,21 +89,19 @@
         <div class="perfil-usuario-body">
             <!-- BIOGRAFIA DO DESENVOLVEDOR -->
             <div class="perfil-usuario-bio">
-                <h2 id="msgSaudacao"></h2>
-                <p class="texto"> <span id=biografiaDoDev></span></p>
+                <p class="texto">
+                    <span id=biografiaDoDev></span>
+                </p>
             </div>
             <!-- FIM BIOGRAFIA DO DESENVOLVEDOR -->
             <!-- INFORMAÇÕES DO DESENVOLVEDOR -->
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-user"></i>Nome:<span id="nomeDoDev"></span></li>
-                    <li><i class="icono fal fa-atom"></i>Especialidade:<span id="especialidadeMsg"></span></li>
-                </ul>
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-at"></i>E-mail:<span id="campoEmail"></span></li>
-                    <li><i class="icono fas fa-phone-alt">Telefone:</i><span id="campoTelefone"></span></li>
-                    <li><i class="icono fas fa-building">Cidade:</i><span id="campoCidade"></span></li>
-                    <li><i class="icono fas fa-flag-usa">Estado:</i></i><span id="campoEstado"></span></li>
+                    <li><i class="icono fal fa-atom"></i>Especialidade: <span id="especialidadeMsg"></span></li>
+                    <li><i class="icono fas fa-at"></i>E-mail: <span id="campoEmail"></span></li>
+                    <li><i class="icono fas fa-phone-alt"></i>Telefone: <span id="campoTelefone"></span></li>
+                    <li><i class="icono fas fa-building"></i>Cidade: <span id="campoCidade"></span></li>
+                    <li><i class="icono fas fa-flag-usa"></i>Estado: <span id="campoEstado">S</span></li>
                 </ul>
             </div>
             <!-- FIM INFORMAÇÕES DO DESENVOLVEDOR -->
@@ -122,34 +121,16 @@
                 <!-- PROJETO 1 -->
                 <div class="projetoBox">
                     <span>Projeto 1</span>
-                    <img src="img/projeto-1.png">
-                </div>
-                <!-- FIM PROJETO 1 -->
-                <!-- PROJETO 2 -->
-                <div class="projetoBox">
-                    <span>Projeto 2</span>
                     <img src="img/projeto-2.png">
                 </div>
-                <!-- FIM PROJETO 2 -->
-                <!-- PROJETO 3 -->
-                <div class="projetoBox">
-                    <span>Projeto 3</span>
-                    <img src="img/projeto-3.png">
-                </div>
-                <!-- FIM PROJETO 3 -->
-                <!-- PROJETO 4 -->
-                <div class="projetoBox">
-                    <span>Projeto 4</span>
-                    <img src="img/projeto-4.png">
-                </div>
-                <!-- FIM PROJETO 4 -->
+                <!-- FIM PROJETO 1 -->
             </div>
         </div>
         <!-- FIM PROJETOS PUBLICADOS -->
     </section>
     <!-- FOOTER -->
     <footer class="footer">
-        <img src="img/White on Transparent.png" alt="">
+        <img src="img/White on Transparent.png">
     </footer>
     <!-- FIM FOOTER -->
 </body>

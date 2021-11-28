@@ -652,3 +652,20 @@
             background: #fff;
         }
         /* FIM MODAL PROJETOS */
+
+        /* FOOTER */
+
+.footer {
+    background: #08376B;
+    box-shadow: 0 0 0.4em rgb(0, 0, 0);
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer img {
+    height: 4vh;
+}
+
+
+/* FIM FOOTER */

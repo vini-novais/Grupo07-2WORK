@@ -28,7 +28,7 @@
     <div id="navbar" class="header2Work">
         <div class="container2Work">
             <div class="logo-header">
-                <a href="home_investidor.html"> <img src="img/White on Transparent.png"></a>
+                <a href="home_investidor.html"><img src="img/White on Transparent.png"></a>
             </div>
             <div class="nav2Work">
                 <ul>
@@ -36,13 +36,13 @@
                     <li><input type="text" placeholder="Habilidade, tag, palavra chave..."></li>
                     <li>
                         <div class="action">
-                            <div class="profile" onclick="menuToggle();">
+                            <div class="profile" onclick="menuToggle()">
                                 <img src="./img/Group 158(2).png">
                             </div>
                             <div class="menu">
-                                <h3><span id="msgSaudacao"></span><br><span>Investidor</span></h3>
+                                <h3><span id="nomeMenu"></span><br><span>Investidor</span></h3>
                                 <ul>
-                                    <li>    
+                                    <li>
                                         <i class="fal fa-user-circle"></i>
                                         <a href="perfil_investidor.html">Perfil</a>
                                     </li>
@@ -62,16 +62,19 @@
     <section class="seccion-perfil-usuario">
         <!-- FOTO DE PERFIL E PLANO DE FUNDO -->
         <div class="perfil-usuario-header">
-            <div class="perfil-usuario-portada">
-                <div class="perfil-usuario-avatar">
-                    <img src="img/img-maicon.png" alt="img-avatar">
-                    <button type="button" class="boton-avatar">
-                        <i class="far fa-image"></i>
+            <div class="perfil-usuario-header">
+                <div class="perfil-usuario-portada">
+                    <div class="perfil-usuario-avatar">
+                        <img src="img/img-maicon.png" alt="img-avatar">
+                        <button type="button" class="boton-avatar">
+                            <i class="far fa-image"></i>
+                        </button>
+                    </div>
+                    <h2 id="nomeDoInv"></h2>
+                    <button type="button" class="boton-portada">
+                        <i class="far fa-image"></i> Trocar Plano de Fundo
                     </button>
                 </div>
-                <button type="button" class="boton-portada">
-                    <i class="far fa-image"></i> Trocar Plano de Fundo
-                </button>
             </div>
         </div>
         <!-- FIM FOTO DE PERFIL E PLANO DE FUNDO -->
@@ -80,23 +83,20 @@
             <!-- BIOGRAFIA DO DESENVOLVEDOR -->
             <div class="perfil-usuario-bio">
                 <!-- <h3 class="titulo">Vitor dos Santos</h3> -->
-                <h2 id="msgSaudacao"></h2>
-                <p class="texto"><span id="biografiaDoInv"></span></p>
+                <p class="texto">
+                    <span id=biografiaDoInv></span>
+                </p>
             </div>
-            <!-- FIM BIOGRAFIA DO DESENVOLVEDOR -->
-            <!-- INFORMAÇÕES DO DESENVOLVEDOR -->
+            <!-- INFORMAÇÕES DO INVESTIDOR -->
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-user"></i><span id ="nomeDoInv"></span></li>
-                </ul>
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-at"></i><span id="campoEmailInv"></span></li>
-                    <li><i class="icono fas fa-phone-alt"></i><span id="campoTelefoneInv"></span></li>
-                    <li><i class="icono fas fa-building"></i><span id="campoCidadeInv"></span></li>
-                    <li><i class="icono fas fa-flag-usa"></i></i><span id="campoEstadoInv"></span></li>
+                    <li><i class="icono fas fa-at"></i>E-mail: <span id="campoEmailInv"></span></li>
+                    <li><i class="icono fas fa-phone-alt"></i>Telefone: <span id="campoTelefoneInv"></span></li>
+                    <li><i class="icono fas fa-building"></i>Cidade: <span id="campoCidadeInv"></span></li>
+                    <li><i class="icono fas fa-flag-usa"></i>Estado: <span id="campoEstadoInv"></span></li>
                 </ul>
             </div>
-            <!-- FIM INFORMAÇÕES DO DESENVOLVEDOR -->
+            <!-- FIM INFORMAÇÕES DO INVESTIDOR -->
             <!-- REDES SOCIAIS -->
             <div class="redes-sociales">
                 <a href="" class="boton-redes linkedin fab fa-linkedin"><i class="icon-linkedin"></i></a>
@@ -139,7 +139,7 @@
     </section>
     <!-- FOOTER -->
     <footer class="footer">
-        <img src="img/White on Transparent.png" alt="">
+        <img src="img/White on Transparent.png">
     </footer>
     <!-- FIM FOOTER -->
 </body>

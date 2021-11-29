@@ -16,8 +16,3 @@ if (sessionStorage == null) {
     msgSaudacao.innerHTML = `<p style="color:black">Olá, ${nomeUsuario.split(" ")[0]}!</p>`;
 }
 /* FIM FUNÇÃO MENSAGEM DE SAUDAÇÃO */
-
-// function sair() {
-//     window.location.href = 'index.html';
-//     sessionStorage.clear();
-// }

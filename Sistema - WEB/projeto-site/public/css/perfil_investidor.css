@@ -381,6 +381,11 @@ html {
     text-align: center;
 }
 
+.seccion-perfil-usuario .perfil-usuario-bio .textArea {
+    outline: none;
+    border-radius: 5px;
+}
+
 .seccion-perfil-usuario .lista-datos {
     width: 100%;
     list-style: none;

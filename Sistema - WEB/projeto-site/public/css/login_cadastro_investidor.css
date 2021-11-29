@@ -152,6 +152,7 @@ body {
     background-color: #08376B;
     transition: background-color 0.7s;
     margin-left: 67px;
+    margin-left: 10px;
 }
 .btn-second-login:hover {
     background-color: #2F90B0;
@@ -161,6 +162,7 @@ body {
     transition: background-color 0.7s;
     margin: 17px 0 0px 227px;
     width: 11.4vw;
+    margin-left: 10px;
 }
 .btn-second-cadastro:hover {
     background-color: #2F90B0;
@@ -169,14 +171,14 @@ body {
 /* OLHO EXIBIR E OCULTAR SENHA */
 #toggle {
     position: absolute;
-    width: 3vw;
-    height: 6vh;
+    width: 2vw;
+    height: 3vh;
     background: url(../img/olho.png);
     background-size: cover;
     cursor: pointer;
-    margin-left: -42px;
+    margin-left: -45px;
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 34px;
 }
 #toggle.hide {
     background: url(../img/olho_block.png);
@@ -184,14 +186,14 @@ body {
 }
 #toggle-confirmar {
     position: absolute;
-    width: 3vw;
-    height: 6vh;
+    width: 2vw;
+    height: 3vh;
     background: url(../img/olho.png);
     background-size: cover;
     cursor: pointer;
-    margin-left: -42px;
+    margin-left: -45px;
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 34px;
 }
 #toggle-confirmar.hide {
     background: url(../img/olho_block.png);
@@ -199,14 +201,14 @@ body {
 }
 #toggle-login {
     position: absolute;
-    width: 3vw;
-    height: 6vh;
+    width: 2vw;
+    height: 3vh;
     background: url(../img/olho.png);
     background-size: cover;
     cursor: pointer;
-    margin-left: -42px;
+    margin-left: -45px;
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 34px;
 }
 #toggle-login.hide {
     background: url(../img/olho_block.png);
@@ -543,7 +545,6 @@ body {
         width: 50%;
     }
 }
-
 @media screen and (max-width: 425px) {
     .form {
         width: 100%;

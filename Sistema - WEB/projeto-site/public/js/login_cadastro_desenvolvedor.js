@@ -236,7 +236,6 @@ function cadastrar() {
     console.log('values %s, %s, %s, %s, %s, %s, %s, %s, %s', nome, estado, cidade, telefone, cpf, email,
         especialidade, senha, confirmarSenha);
 
-
     if (senha != confirmarSenha) {
         alert("Senhas estão diferentes!");
     } else {

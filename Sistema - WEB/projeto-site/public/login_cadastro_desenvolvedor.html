@@ -146,22 +146,22 @@
                         </label>
                     </div>
                     <!-- FIM E-MAIL -->
-                    <!-- COMPETÊNCIA -->
+                    <!-- ESPECIALIDADE -->
                     <div class="campo">
                         <label>
                             <i class="fas fa-code icon-modify"></i>
-                            <input name="competencia" id="competencia" type="text" placeholder="Competência"
-                                autocomplete="off" onkeyup="validarCompetenciaDesenvolvedor()" required>
+                            <input name="especialidade" id="especialidade" type="text" placeholder="Especialidade"
+                                autocomplete="off" onkeyup="validarEspecialidadeDesenvolvedor()" required>
                         </label>
                     </div>
-                    <!-- FIM COMPETÊNCIA -->
+                    <!-- FIM ESPECIALIDADE -->
                     <!-- SENHA -->
                     <div class="campo">
                         <label>
                             <i class="fas fa-lock icon-modify" style="margin: 1px;"></i>
                             <input name="senha1" id="senha1" type="password" placeholder="Senha" autocomplete="off"
                                 onkeyup="validarSenha1()" required>
-                            <div id="toggle" onclick="showHide();"></div>
+                            <div id="toggle" onclick="showHide()"></div>
                         </label>
                     </div>
                     <!-- FIM SENHA -->
@@ -171,13 +171,14 @@
                             <i class="fas fa-lock icon-modify" style="margin: 2px;"></i>
                             <input name="senha2" id="senha2" type="password" placeholder="Confirmar senha"
                                 autocomplete="off" onkeyup="validarSenha2()" required>
-                            <div id="toggle-confirmar" onclick="showHidee();"></div>
+                            <div id="toggle-confirmar" onclick="showHidee()"></div>
                         </label>
                     </div>
                     <!-- FIM CONFIRMAR SENHA -->
-                    <button class="btn btn-second-cadastro" type="submit" onclick="cadastrar()">Cadastrar</button>
                 </form>
                 <!-- FIM FORMULÁRIO DE CADASTRO -->
+                <button class="btn btn-second-cadastro" type="submit" onclick="cadastrar()"
+                    style="margin-left: 10px;">Cadastrar</button>
             </div>
             <!-- FIM SEGUNDA COLUNA -->
         </div>
@@ -218,7 +219,8 @@
                     <a class="password" href="#">Esqueceu sua senha?</a>
                 </form>
                 <!-- FIM FORMULÁRIO DE LOGIN -->
-                <button class="btn btn-second-login" type="submit" onclick="entrar()">Entrar</button>
+                <button class="btn btn-second-login" type="submit" onclick="entrar()"
+                    style="margin-left: 10px;">Entrar</button>
             </div>
             <!-- FIM SEGUNDA COLUNA -->
         </div>

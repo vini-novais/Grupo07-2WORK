@@ -209,6 +209,7 @@ function showHideee() {
 }
 /* FIM FUNÇÃO EXIBIR E OCULTAR SENHA (LOGIN) */
 
+/* FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
 function entrar1() {
     console.log("entrou na função");
 
@@ -230,3 +231,52 @@ function entrar1() {
         console.log(error)
     })
 }
+/* FIM FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
+
+/* FUNÇÃO PARA REALIZAR O CADASTRO AO BD (AZURE) */
+function cadastrar() {
+    console.log("entrou na função");
+
+    var nome = document.getElementById("nome").value;
+    var estado = document.getElementById("estado").value;
+    var cidade = document.getElementById("cidade").value;
+    // var dataNascimento = document.getElementById("dataNascimento").value;
+    var telefone = document.getElementById("telefone").value;
+    var cpf = document.getElementById("cpf").value;
+    var cnpj = document.getElementById("cnpj").value;
+    var email = document.getElementById("email").value;
+    var senha = document.getElementById("senha1").value;
+    var confirmarSenha = document.getElementById("senha2").value;
+
+    console.log('values %s, %s, %s, %s, %s, %s, %s, %s, %s', nome, estado, cidade, telefone, cpf, cnpj, email,
+        senha, confirmarSenha);
+
+    if (senha != confirmarSenha) {
+        alert("Senhas estão diferentes!");
+    } else {
+        axios.post(`http://localhost:8080/2work/cadastrar-investidor`, {
+            headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+            "nome": nome,
+            "email": email,
+            // "dataNascimento": dataNascimento,
+            "senha": senha,
+            "cpf": cpf,
+            "cnpj": cnpj,
+            "cidade": cidade,
+            "estado": estado,
+            "telefone": telefone,
+            "biografia": "",
+            "planoUsuario": "",
+            "onlineStatus": false,
+            "usuarioDev": false
+        }).then(response => {
+            alert("Cadastro realizado com sucesso!");
+            // Session storage cache do navegador, stringify ta convertendo o json pra uma string
+            // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
+        }).catch(function (error) {
+            console.log(error)
+            console.log("chegou até aqui");
+        })
+    }
+}
+/* FIM FUNÇÃO PARA REALIZAR O CADASTRO AO BD (AZURE) */

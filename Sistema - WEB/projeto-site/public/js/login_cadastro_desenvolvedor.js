@@ -117,12 +117,12 @@ function validarEmailDesenvolvedor() {
 /* FIM VALIDAÇÃO DE CADASTRO (E-MAIL) */
 
 /* VALIDAÇÃO DE CADASTRO (COMPETÊNCIA) */
-function validarCompetenciaDesenvolvedor() {
-    let competencia = document.getElementById('competencia');
-    if ((competencia.value).length < 5) {
-        competencia.style = `border-color: red`;
+function validarEspecialidadeDesenvolvedor() {
+    let especialidade = document.getElementById('especialidade');
+    if ((especialidade.value).length < 5) {
+        especialidade.style = `border-color: red`;
     } else {
-        competencia.style = `border-color: green`;
+        especialidade.style = `border-color: green`;
     }
 }
 /* FIM VALIDAÇÃO DE CADASTRO (COMPETÊNCIA) */
@@ -218,21 +218,51 @@ function entrar() {
 }
 /* FIM FUNÇÃO PARA REALIZAR O LOGIN AO BD (AZURE) */
 
-// function cadastrar() {
-//     // var entrar = new URLSearchParams(new FormData(formulario));
-//     // console.log("cheguei aqui", entrar);
-//     // fetch("/usuarios/cadastrar", {
-//     //     method: "POST",
-//     //     body: entrar
-//     // }).then(function (response) {
-//     //     if (response.ok) {
-//     //         window.location.href = '#home_dev.html';
-//     //     } else {
-//     //         console.log('Erro de cadastro!');
-//     //         response.text().then(function (resposta) {
-//     //             div_erro.innerHTML = resposta;
-//     //         });
-//     //     }
-//     // });
-//     return false;
-// }
+/* FUNÇÃO PARA REALIZAR O CADASTRO AO BD (AZURE) */
+function cadastrar() {
+    console.log("entrou na função");
+
+    var nome = document.getElementById("nome").value;
+    var estado = document.getElementById("estado").value;
+    var cidade = document.getElementById("cidade").value;
+    // var dataNascimento = document.getElementById("dataNascimento").value;
+    var telefone = document.getElementById("telefone").value;
+    var cpf = document.getElementById("cpf").value;
+    var email = document.getElementById("email").value;
+    var especialidade = document.getElementById("especialidade").value;
+    var senha = document.getElementById("senha1").value;
+    var confirmarSenha = document.getElementById("senha2").value;
+
+    console.log('values %s, %s, %s, %s, %s, %s, %s, %s, %s', nome, estado, cidade, telefone, cpf, email,
+        especialidade, senha, confirmarSenha);
+
+
+    if (senha != confirmarSenha) {
+        alert("Senhas estão diferentes!");
+    } else {
+        axios.post(`http://localhost:8080/2work/cadastrar-dev`, {
+            headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+            "nome": nome,
+            "email": email,
+            // "dataNascimento": dataNascimento,
+            "senha": senha,
+            "cpf": cpf,
+            "cidade": cidade,
+            "estado": estado,
+            "telefone": telefone,
+            "biografia": "",
+            "especialidade": especialidade,
+            "planoUsuario": "",
+            "onlineStatus": false,
+            "usuarioDev": true
+        }).then(response => {
+            alert("Cadastro realizado com sucesso!");
+            // Session storage cache do navegador, stringify ta convertendo o json pra uma string
+            // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
+        }).catch(function (error) {
+            console.log(error)
+            console.log("chegou até aqui");
+        })
+    }
+}
+/* FIM FUNÇÃO PARA REALIZAR O CADASTRO AO BD (AZURE) */

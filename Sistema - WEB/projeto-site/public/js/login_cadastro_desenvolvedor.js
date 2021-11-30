@@ -256,6 +256,17 @@ function cadastrar() {
             "usuarioDev": true
         }).then(response => {
             alert("Cadastro realizado com sucesso!");
+            document.getElementById('nome').value = '';
+            document.getElementById('estado').value = '';
+            document.getElementById('cidade').value = '';
+            document.getElementById('dataNascimento').value = '';
+            document.getElementById('telefone').value = '';
+            document.getElementById('cpf').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('especialidade').value = '';
+            document.getElementById('senha1').value = '';
+            document.getElementById('senha2').value = '';
+            body.className = "sign-in-js";
             // Session storage cache do navegador, stringify ta convertendo o json pra uma string
             // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
         }).catch(function (error) {

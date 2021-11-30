@@ -96,7 +96,7 @@ publicar.addEventListener('click', () => {
 function postImagem(arquivo) {
     const formData = new FormData()
     formData.append("image", arquivo)
-    fetch("https://api.imgur.com/3/image", {
+    fetch("https://api.imgur.com/3/image/", {
         method: 'post',
         headers: {
             Authorization: "Client-ID ed26193d18ed971"

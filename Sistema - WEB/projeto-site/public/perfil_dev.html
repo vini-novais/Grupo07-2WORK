@@ -18,8 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- TODOS OS ICONS DA TELA -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- FIM TODOS OS ICONS DA TELA -->
 </head>
 
@@ -89,9 +88,16 @@
         <div class="perfil-usuario-body">
             <!-- BIOGRAFIA DO DESENVOLVEDOR -->
             <div class="perfil-usuario-bio">
-                <p class="texto">
-                    <span id=biografiaDoDev></span>
-                    <textarea class="textArea" name="" id="" cols="60" rows="10"></textarea>
+                <button id="editarPerfil" onclick="editarBiografia() " type="button " class="boton-edit ">
+                    <i class="far fa-edit "></i> Editar Biografia
+                </button>
+                <p class="texto ">
+                    <span id=biografiaDoInv>
+                        <textarea class="textArea " name=" " id=" " cols="59" rows="10"></textarea>
+                    </span>
+                    <button onclick="atualizarBiografia() " id="salvarPerfil" type="button " class="boton-edit ">
+                        <i class="far fa-edit "></i> Salvar
+                    </button>
                 </p>
             </div>
             <!-- FIM BIOGRAFIA DO DESENVOLVEDOR -->
@@ -102,7 +108,7 @@
                     <li><i class="icono fas fa-at"></i>E-mail: <span id="campoEmail"></span></li>
                     <li><i class="icono fas fa-phone-alt"></i>Telefone: <span id="campoTelefone"></span></li>
                     <li><i class="icono fas fa-building"></i>Cidade: <span id="campoCidade"></span></li>
-                    <li><i class="icono fas fa-flag-usa"></i>Estado: <span id="campoEstado">S</span></li>
+                    <li><i class="icono fas fa-flag-usa"></i>Estado: <span id="campoEstado"></span></li>
                 </ul>
             </div>
             <!-- FIM INFORMAÇÕES DO DESENVOLVEDOR -->

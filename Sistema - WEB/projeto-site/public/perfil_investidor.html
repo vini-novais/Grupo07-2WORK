@@ -18,8 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- TODOS OS ICONS DA TELA -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- FIM TODOS OS ICONS DA TELA -->
 </head>
 
@@ -82,38 +81,44 @@
         <div class="perfil-usuario-body">
             <!-- BIOGRAFIA DO DESENVOLVEDOR -->
             <div class="perfil-usuario-bio">
-                <!-- <h3 class="titulo">Vitor dos Santos</h3> -->
-                <p class="texto">
-                    <span id=biografiaDoInv></span>
-                    <textarea class="textArea" name="" id="" cols="60" rows="10"></textarea>
+                <button id="editarPerfil" onclick="editarBiografia() " type="button " class="boton-edit ">
+                    <i class="far fa-edit "></i> Editar Biografia
+                </button>
+                <p class="texto ">
+                    <span id=biografiaDoInv>
+                        <textarea class="textArea " name=" " id=" " cols="59" rows="5"></textarea>
+                    </span>
+                    <button onclick="atualizarBiografia() " id="salvarPerfil" type="button " class="boton-edit ">
+                        <i class="far fa-edit "></i> Salvar
+                    </button>
                 </p>
             </div>
             <!-- INFORMAÇÕES DO INVESTIDOR -->
-            <div class="perfil-usuario-footer">
-                <ul class="lista-datos">
-                    <li><i class="icono fas fa-at"></i>E-mail: <span id="campoEmailInv"></span></li>
-                    <li><i class="icono fas fa-phone-alt"></i>Telefone: <span id="campoTelefoneInv"></span></li>
-                    <li><i class="icono fas fa-building"></i>Cidade: <span id="campoCidadeInv"></span></li>
-                    <li><i class="icono fas fa-flag-usa"></i>Estado: <span id="campoEstadoInv"></span></li>
+            <div class="perfil-usuario-footer ">
+                <ul class="lista-datos ">
+                    <li><i class="icono fas fa-at "></i>E-mail: <span id="campoEmailInv "></span></li>
+                    <li><i class="icono fas fa-phone-alt "></i>Telefone: <span id="campoTelefoneInv "></span></li>
+                    <li><i class="icono fas fa-building "></i>Cidade: <span id="campoCidadeInv "></span></li>
+                    <li><i class="icono fas fa-flag-usa "></i>Estado: <span id="campoEstadoInv "></span></li>
                 </ul>
             </div>
             <!-- FIM INFORMAÇÕES DO INVESTIDOR -->
             <!-- REDES SOCIAIS -->
-            <div class="redes-sociales">
-                <a href="" class="boton-redes linkedin fab fa-linkedin"><i class="icon-linkedin"></i></a>
-                <a href="" class="boton-redes instagram fab fa-instagram"><i class="icon-instagram"></i></a>
+            <div class="redes-sociales ">
+                <a href=" " class="boton-redes linkedin fab fa-linkedin "><i class="icon-linkedin "></i></a>
+                <a href=" " class="boton-redes instagram fab fa-instagram "><i class="icon-instagram "></i></a>
             </div>
             <!-- FIM REDES SOCIAIS -->
         </div>
         <!-- FIM PERFIL DO DESENVOLVEDOR -->
         <!-- PROJETOS PUBLICADOS -->
-        <div class="espaco-projetos">
+        <div class="espaco-projetos ">
             <h2>Projetos Curtidos:</h2>
-            <div class="meu-projetos">
+            <div class="meu-projetos ">
                 <!-- PROJETO 1 -->
-                <div class="projetoBox">
+                <div class="projetoBox ">
                     <span>Projeto 1</span>
-                    <img src="img/projeto-2.png">
+                    <img src="img/projeto-2.png ">
                 </div>
                 <!-- FIM PROJETO 1 -->
             </div>
@@ -121,8 +126,8 @@
         <!-- FIM PROJETOS PUBLICADOS -->
     </section>
     <!-- FOOTER -->
-    <footer class="footer">
-        <img src="img/White on Transparent.png">
+    <footer class="footer ">
+        <img src="img/White on Transparent.png ">
     </footer>
     <!-- FIM FOOTER -->
 </body>
@@ -130,5 +135,5 @@
 </html>
 
 <!-- SCRIPT PERFIL INVESTIDOR -->
-<script src="js/perfil_investidor.js"></script>
+<script src="js/perfil_investidor.js "></script>
 <!-- FIM SCRIPT PERFIL INVESTIDOR -->

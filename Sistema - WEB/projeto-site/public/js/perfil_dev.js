@@ -8,7 +8,7 @@ function menuToggle() {
 /* FUNÇÃO MENSAGEM DE SAUDAÇÃO */
 var usuario = sessionStorage.usuario_dev;
 console.log(usuario);
-if (sessionStorage == null) {} else {
+if (sessionStorage == null) { } else {
     let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
     let devEspecialidade = JSON.parse(usuario).especialidade;
     let emailUsuario = JSON.parse(usuario).email;
@@ -40,3 +40,28 @@ function atualizarBiografia() {
     editarPerfil.style.display = "block";
     salvarPerfil.style.display = "none";
 }
+
+/* FUNÇÃO PARA EDITAR E SALVAR BIOGRAFIA */
+publicar.addEventListener('click', () => {
+
+})
+
+function salvarBiografia() {
+    console.log("entrou na função");
+
+    var textAreaBiografia = document.getElementById("biografia").value;
+
+    axios.post(`http://localhost:8080/2work/login-dev`, {
+        headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+        "textAreaBiografia": biografia,
+    }).then(response => {
+        console.log('entrou' + response);
+        sessionStorage.usuario_dev = JSON.stringify(response.data);
+        console.log(sessionStorage.usuario_dev);
+        // Session storage cache do navegador, stringify ta convertendo o json pra uma string
+        // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
+    }).catch(function (error) {
+        console.log(error)
+    })
+}
+/* FIM FUNÇÃO PARA EDITAR E SALVAR BIOGRAFIA */

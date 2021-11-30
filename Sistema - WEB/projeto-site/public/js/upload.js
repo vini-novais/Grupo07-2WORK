@@ -87,9 +87,7 @@ if (sessionStorage == null) { } else {
 var urlImagem = "";
 
 publicar.addEventListener('click', () => {
-
     const [arquivo] = fileUpload.files
-
     postImagem(arquivo);
 })
 

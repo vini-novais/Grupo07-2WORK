@@ -19,11 +19,11 @@ if (sessionStorage == null) { } else {
 
     nomeMenu.innerHTML = `${nomeUsuario.split(" ")[0]}`;
     nomeDoDev.innerHTML = `${nomeUsuario}`;
-    especialidadeMsg.innerHTML = `${devEspecialidade}`;
+    especialidadeMsg.innerHTML = `${devEspecialidade}.`;
     campoEmail.innerHTML = `${emailUsuario}`;
     campoTelefone.innerHTML = `${telefoneUsuario}`;
-    campoCidade.innerHTML = `${cidadeUsuario}`;
-    campoEstado.innerHTML = `${estadoUsuario}`;
+    campoCidade.innerHTML = `${cidadeUsuario}.`;
+    campoEstado.innerHTML = `${estadoUsuario}.`;
     biografiaDoDev.innerHTML = `<p style="color:black">${biografiaUsuario}</p>`;
     msgSaudacao.innerHTML = `<span style="color:black">Olá, ${nomeUsuario.split(" ")[0]}!</span>`;
 }

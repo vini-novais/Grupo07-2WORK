@@ -1,3 +1,20 @@
+/* FIM FUNÇÃO MENU */
+function menuToggle() {
+    const toggleMenu = document.querySelector('.menu');
+    toggleMenu.classList.toggle('active');
+}
+/* FIM FUNÇÃO MENU */
+
+var usuario = sessionStorage.usuario_dev;
+console.log(usuario);
+if (sessionStorage == null) { } else {
+
+    let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
+
+    nomeMenu.innerHTML = `${nomeUsuario.split(" ")[0]}`;
+}
+
+/* FUNÇÃO MODAL PROJETOS */
 // Get DOM Elements
 const modal = document.querySelector('#my-modal');
 const modalBtn = document.querySelector('#modal-btn');
@@ -90,3 +107,4 @@ setInterval(() => {
         rolar = true
     }
 }, 4000)
+/* FIM FUNÇÃO MODAL PROJETOS */

@@ -46,5 +46,4 @@ if (sessionStorage == null) { } else {
     nomeMenu.innerHTML = `${nomeUsuario.split(" ")[0]}`;
     campoProjetosPublicados.innerHTML = `${qtdProjetosPublicados}`;
     campoPlanoUsuario.innerHTML = `${planoDoUsuario}`;
-
 }

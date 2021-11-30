@@ -74,6 +74,15 @@ function menuToggle() {
 
 /* FIM FUNÇÃO MENU */
 
+/* FUNÇÃO MENSAGEM DE SAUDAÇÃO */
+var usuario = sessionStorage.usuario_dev;
+console.log(usuario);
+if (sessionStorage == null) { } else {
+    let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
+    nomeMenu.innerHTML = `${nomeUsuario.split(" ")[0]}`;
+}
+/* FIM FUNÇÃO MENSAGEM DE SAUDAÇÃO */
+
 /* FUNÇÃO DE UPLOAD DA IMAGEM */
 var urlImagem = "";
 

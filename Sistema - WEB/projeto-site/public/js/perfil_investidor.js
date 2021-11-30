@@ -8,7 +8,7 @@ function menuToggle() {
 /* FUNÇÃO MENSAGEM DE SAUDAÇÃO */
 var usuario = sessionStorage.usuario_dev;
 console.log(usuario);
-if (sessionStorage == null) {} else {
+if (sessionStorage == null) { } else {
     let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
     let emailUsuario = JSON.parse(usuario).email;
     let telefoneUsuario = JSON.parse(usuario).telefone;
@@ -20,8 +20,8 @@ if (sessionStorage == null) {} else {
     nomeDoInv.innerHTML = `${nomeUsuario}`;
     campoEmailInv.innerHTML = `${emailUsuario}`;
     campoTelefoneInv.innerHTML = `${telefoneUsuario}`;
-    campoCidadeInv.innerHTML = `${cidadeUsuario}`;
-    campoEstadoInv.innerHTML = `${estadoUsuario}`;
+    campoCidadeInv.innerHTML = `${cidadeUsuario}.`;
+    campoEstadoInv.innerHTML = `${estadoUsuario}.`;
     biografiaDoInv.innerHTML = `<p style="color:black">${biografiaUsuario}</p>`;
     msgSaudacao.innerHTML = `<span style="color:black">Olá, ${nomeUsuario.split(" ")[0]}!</span>`;
 }

@@ -249,7 +249,7 @@ body {
     border-radius: 5px;
     border: 1px solid rgba(60, 60, 60, 0.5);
     outline: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .campo #estado {
     width: 80%;

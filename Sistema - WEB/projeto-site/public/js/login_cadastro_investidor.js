@@ -3,14 +3,14 @@ var btnSignin = document.querySelector("#signin");
 var btnSignup = document.querySelector("#signup");
 var body = document.querySelector("body");
 
-btnSignin.addEventListener("click", function () {
+btnSignin.addEventListener("click", function() {
     body.className = "sign-in-js";
 });
 
-btnSignup.addEventListener("click", function () {
-    body.className = "sign-up-js";
-})
-/* FIM SCRIPT ANIMAÇÃO */
+btnSignup.addEventListener("click", function() {
+        body.className = "sign-up-js";
+    })
+    /* FIM SCRIPT ANIMAÇÃO */
 
 /* SCRIPT MÁSCARA INPUT TELEFONE */
 const tel = document.getElementById('telefone') // SELETOR DO CAMPO TELEFONE
@@ -19,12 +19,12 @@ tel.addEventListener('keypress', (e) => mascaraTelefone(e.target.value)) // DISP
 tel.addEventListener('change', (e) => mascaraTelefone(e.target.value)) // DISPARA QUANDO AUTOCOMPLETADO O CAMPO
 
 const mascaraTelefone = (valor) => {
-    valor = valor.replace(/\D/g, "")
-    valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2")
-    valor = valor.replace(/(\d)(\d{4})$/, "$1-$2")
-    tel.value = valor // INSERE O(S) VALOR(ES) NO CAMPO
-}
-/* FIM SCRIPT MÁSCARA INPUT TELEFONE */
+        valor = valor.replace(/\D/g, "")
+        valor = valor.replace(/^(\d{2})(\d)/g, "($1) $2")
+        valor = valor.replace(/(\d)(\d{4})$/, "$1-$2")
+        tel.value = valor // INSERE O(S) VALOR(ES) NO CAMPO
+    }
+    /* FIM SCRIPT MÁSCARA INPUT TELEFONE */
 
 /* SCRIPT MÁSCARA INPUT CPF */
 function mascaraCPF(i) {
@@ -227,7 +227,7 @@ function entrar1() {
         // Session storage cache do navegador, stringify ta convertendo o json pra uma string
         // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
         window.location.href = 'home_investidor.html';
-    }).catch(function (error) {
+    }).catch(function(error) {
         console.log(error)
     })
 }
@@ -271,9 +271,19 @@ function cadastrar() {
             "usuarioDev": false
         }).then(response => {
             alert("Cadastro realizado com sucesso!");
+            nome.innerHTML = "";
+            estado.innerHTML = "";
+            cidade.innerHTML = "";
+            dataNascimento.innerHTML = "";
+            telefone.innerHTML = "";
+            cpf.innerHTML = "";
+            email.innerHTML = "";
+            cnpj.innerHTML = "";
+            senha1.innerHTML = "";
+            senha2.innerHTML = "";
             // Session storage cache do navegador, stringify ta convertendo o json pra uma string
             // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
-        }).catch(function (error) {
+        }).catch(function(error) {
             console.log(error)
             console.log("chegou até aqui");
         })

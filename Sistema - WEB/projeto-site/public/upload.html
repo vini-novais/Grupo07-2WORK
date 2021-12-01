@@ -10,7 +10,7 @@
     <link rel="icon" href="img/icon-2Work.png">
     <!-- FIM LOGO NO DOMÍNIO -->
     <!-- CSS -->
-    <link rel="stylesheet" href="css/upload.css">
+    <link href="css/upload.css" rel="stylesheet">
     <!-- FIM CSS -->
     <!-- LINK FONTAWESOME DO ÍCONE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -22,8 +22,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <!-- TODOS OS ICONS DA TELA -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <!-- FIM TODOS OS ICONS DA TELA -->
 </head>
 
@@ -86,10 +85,8 @@
             <div class="wrapper">
                 <div class="container2Work">
                     <h1>Em que você está trabalhando?</h1>
-                    <form action="#">
-                        <input id="fileUpload" type="file" class="file-input" name="file" hidden>
-                        <!-- <input id="image-file" type="file" class="file-input" name="file" hidden
-                            onchange="SavePhoto(this)"> -->
+                    <form class="dropzone" action="#">
+
                         <i class="fas fa-cloud-upload-alt"></i>
                         <p>System.out.println("Selecione uma imagem!");</p>
                     </form>
@@ -121,6 +118,8 @@
 
 <!-- SCRIPT UPLOAD  -->
 <script src="js/upload.js"></script>
+<script type="text/javascript" src="./js/imgur.js"></script>
+<script type="text/javascript" src="./js/upload-imgur.js"></script>
 <!-- FIM SCRIPT UPLOAD  -->
 
 <!-- SCRIPT AXIOS -->

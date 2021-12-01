@@ -30,6 +30,23 @@ window.addEventListener('click', outsideClick);
 // Open
 function openModal() {
     modal.style.display = 'block';
+    console.log("entrou na função");
+
+    var usuario = sessionStorage.usuario_dev;
+
+    var idUsuarioPatch = JSON.parse(usuario).id;
+    var valorNovoPatch = JSON.parse(usuario).otalVisualizacoes;
+    valorNovoPatch++;
+
+    axios.patch(`/alterar-visualizacao/${idUsuarioPatch}/${valorNovoPatch}`, {
+        headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+        "id": idUsuarioPatch,
+        "totalVisualizacoes": valorNovoPatch
+    }).then(response => {
+        console.log('entrou' + response);
+    }).catch(function (error) {
+        console.log(error)
+    })
 }
 
 // Close

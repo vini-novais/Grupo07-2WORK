@@ -87,7 +87,9 @@ if (sessionStorage == null) { } else {
 var urlImagem = "";
 
 publicar.addEventListener('click', () => {
+
     const [arquivo] = fileUpload.files
+
     postImagem(arquivo);
 })
 
@@ -104,4 +106,51 @@ function postImagem(arquivo) {
         urlImagem = data.data.link
     })
 }
+/* FIM FUNÇÃO DE UPLOAD DA IMAGEM */
+
+/* FUNÇÃO DE UPLOAD DA IMAGEM */
+// let photo = document.getElementById("image-file").files[0];
+// let formData = new FormData();
+
+// formData.append("photo", photo);
+// fetch('/upload/foto', { method: "PATCH", body: formData });
+
+// async function SavePhoto(inp) {
+//     let user = { name: 'john', age: 34 };
+//     let formData = new FormData();
+//     let photo = inp.files[0];
+
+//     formData.append("photo", photo);
+//     formData.append("user", JSON.stringify(user));
+
+//     const ctrl = new AbortController()    // timeout
+//     setTimeout(() => ctrl.abort(), 5000);
+
+//     try {
+//         let r = await fetch('/upload/image',
+//             { method: "POST", body: formData, signal: ctrl.signal });
+//         console.log('HTTP response code:', r.status);
+//     } catch (e) {
+//         console.log('Huston we have problem...:', e);
+//     }
+// }
+
+// function upload() {
+//     console.log("entrou na função");
+
+//     axios.get(`http://localhost:8080/2work/foto/1`, {
+//         headers: { "Access-Control-Allow-Origin": "*", "crossorigin": true },
+//     }).then(response => {
+//         console.log('entrou' + response);
+//         sessionStorage.usuario_dev = JSON.stringify(response.data);
+//         console.log(sessionStorage.usuario_dev);
+//         alert("Upload realizado com sucesso!");
+//         // Session storage cache do navegador, stringify ta convertendo o json pra uma string
+//         // enquanto a sessionStorage estiver vazia, significa que o usuário não está autenticado
+//         window.location.href = 'projetos.html';
+//     }).catch(function (error) {
+//         console.log(error)
+//         console.log("chegou até aqui");
+//     })
+// }
 /* FIM FUNÇÃO DE UPLOAD DA IMAGEM */

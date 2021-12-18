@@ -1,63 +1,45 @@
 /* GLOBAL */
-
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
-
 /* FIM GLOBAL */
-
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
-
 .title_msg {
     font-size: 32px;
     font-weight: 30;
     margin: 0;
 }
-
 .description {
     font-size: 18px;
     max-width: 800px;
 }
-
 .description p {
     text-align: center;
 }
-
-
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
-
-
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
-
-
 /* NAVBAR */
-
 .header2Work {
     width: 100%;
     position: fixed;
@@ -67,23 +49,19 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
-
 .nav2Work {
     float: right;
 }
-
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -92,7 +70,6 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -103,26 +80,21 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
-
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
-
 .nav2Work a:hover:after {
     width: 100%;
 }
-
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
-
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
-
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -134,7 +106,6 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -147,25 +118,21 @@ html {
     text-decoration: none;
     box-sizing: none;
 }
-
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
-
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
-
 .action .profile {
     position: relative;
     text-align: center;
@@ -180,11 +147,9 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
-
 .fotoperfil {
     width: 70px;
 }
-
 .action .profile img {
     position: absolute;
     top: 0;
@@ -193,7 +158,6 @@ html {
     height: 100%;
     object-fit: cover;
 }
-
 .action .menu {
     position: absolute;
     top: 120px;
@@ -208,13 +172,11 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
-
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -223,13 +185,11 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
-
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
-
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -238,7 +198,6 @@ html {
     align-items: center;
     margin-left: -30px;
 }
-
 .action .menu ul li i {
     max-width: 20px;
     margin-right: 10px;
@@ -246,11 +205,9 @@ html {
     transition: 0.5s;
     color: #E4E4E4;
 }
-
 .action .menu ul li:hover i {
     opacity: 1;
 }
-
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -258,17 +215,11 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
-
 .action .menu ul li:hover a {
     color: #ff5d94;
 }
-
-
 /* FIM NAVBAR */
-
-
 /* SECTION WELCOME */
-
 .section_welcome {
     display: flex;
     height: 92vh;
@@ -279,13 +230,11 @@ html {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .section_welcome img {
     height: 350px;
     float: right;
     margin-top: 90px;
 }
-
 .content2Work {
     position: absolute;
     top: 36%;
@@ -293,23 +242,19 @@ html {
     text-align: left;
     color: black;
 }
-
 .content2Work h1 {
     font-size: 50px;
     margin: 0;
 }
-
 .content2Work h3 {
     font-size: 15px;
     margin: 0 0 0 3px;
 }
-
 .content2Work p {
     margin: 5px auto;
     font-weight: 100;
     line-height: 25px;
 }
-
 .btn_projeto {
     width: 240px;
     padding: 10px 0;
@@ -325,25 +270,18 @@ html {
     float: left;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .btn_projeto {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
-
 .btn_projeto:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
-
 /* FIM SECTION WELCOME */
-
-
 /* INICIO LIST PROJETOS */
-
 .section_Projetos {
     margin: auto;
     width: 90%;
@@ -353,19 +291,16 @@ html {
     align-items: flex-start;
     height: 80vh;
 }
-
 .projetoslist {
     width: 75%;
     height: auto;
     display: inline-block;
 }
-
 .meusProjetos {
     padding-bottom: 1%;
     border-bottom: 2px solid #BFBABA;
     width: 85%;
 }
-
 .descriptionProjeto {
     margin-top: 4%;
     margin-bottom: 2%;
@@ -376,11 +311,9 @@ html {
     align-items: flex-start;
     border-bottom: 2px solid #BFBABA;
 }
-
 .iconUsuario {
     height: 3vw;
 }
-
 .perfil-Projeto {
     display: flex;
     width: 100%;
@@ -389,7 +322,6 @@ html {
     height: 7rem;
     justify-content: space-between;
 }
-
 .modal-btn {
     width: 30%;
     color: #fff;
@@ -403,19 +335,16 @@ html {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
-
 .modal-btn {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
-
 .modal-btn:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .nomeDev {
     display: flex;
     flex-direction: row;
@@ -423,7 +352,6 @@ html {
     justify-content: start;
     width: 90%;
 }
-
 .nomeDev2 {
     display: flex;
     flex-direction: row;
@@ -432,16 +360,13 @@ html {
     align-items: baseline;
     margin-left: 1%;
 }
-
 .nomeDev span {
     font-size: 10pt;
     margin-left: 3%;
 }
-
 .descriptionProjeto p {
     width: 80%;
 }
-
 .especificationProjeto {
     height: 4rem;
     width: 80%;
@@ -451,7 +376,6 @@ html {
     flex-direction: row;
     align-items: center;
 }
-
 .especificationProjeto span {
     font-size: 10pt;
     font-weight: bold;
@@ -462,7 +386,6 @@ html {
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .filtro {
     margin: 7% 1%;
     width: 25%;
@@ -473,7 +396,6 @@ html {
     box-shadow: 0px 5px 5px rgb(0 0 0 / 60%);
     border-radius: 3px;
 }
-
 .inputPesquisa {
     background: #FFFFFF;
     border: 2px solid #C6C6C6;
@@ -486,18 +408,15 @@ html {
     margin-bottom: 10%;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 7%);
 }
-
 .filtro h2 {
     margin: 0 0 5%;
 }
-
 .form-group {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 2%;
 }
-
 .radio,
 .checkbox {
     margin-right: 5%;
@@ -514,11 +433,9 @@ html {
     justify-content: center;
     outline: none;
 }
-
 .checkbox {
     border-radius: 10%;
 }
-
 .radio:before,
 .checkbox:before {
     content: '';
@@ -530,7 +447,6 @@ html {
     transition: all 200ms ease-in-out;
     position: absolute;
 }
-
 .checkbox:before {
     border-radius: 0;
     background: transparent;
@@ -542,22 +458,15 @@ html {
     transform: rotate(45deg);
     top: 2px;
 }
-
 .radio:checked:before,
 .checkbox:checked:before {
     opacity: 1;
 }
-
-
 /* FIM LIST PROJETOS */
-
-
 /* INICIO MODAL PROJETOS */
-
 :root {
     --modal-duration: 1s;
 }
-
 .modal {
     display: none;
     position: fixed;
@@ -569,12 +478,10 @@ html {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 .descriptionModal {
     width: 90%;
     margin-bottom: 5%;
 }
-
 .modal-content {
     margin: 10% auto;
     width: 60%;
@@ -582,12 +489,10 @@ html {
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
 }
-
 .modal-header h2,
 .modal-footer h3 {
     margin: 0;
 }
-
 .modal-header {
     background: #08376B;
     padding: 15px;
@@ -595,12 +500,10 @@ html {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-
 .modal-body {
     padding: 10px 20px;
     background: #fff;
 }
-
 .conteudoModal {
     padding: 10px 20px 50px;
     display: flex;
@@ -610,11 +513,9 @@ html {
     align-items: center;
     text-align: justify;
 }
-
 .modalimgProjeto {
     width: 40%;
 }
-
 .modal-footer {
     background: #08376B;
     padding: 10px;
@@ -623,11 +524,9 @@ html {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-
 .modal-footer img {
     height: 30px;
 }
-
 .close {
     color: #ccc;
     float: right;
@@ -635,14 +534,12 @@ html {
     color: #fff;
     margin-top: -17px;
 }
-
 .close:hover,
 .close:focus {
     color: rgb(255, 70, 70);
     text-decoration: none;
     cursor: pointer;
 }
-
 @keyframes modalopen {
     from {
         opacity: 0;
@@ -651,16 +548,12 @@ html {
         opacity: 1;
     }
 }
-
-
 /* FIM MODAL PROJETOS */
-
 .heart-btnButton {
     display: flex;
     margin-top: 6.5%;
     transform: translate(0%, -50%);
 }
-
 .contentButton {
     padding: 10px 10px;
     display: flex;
@@ -668,12 +561,10 @@ html {
     border-radius: 5px;
     cursor: pointer;
 }
-
 .contentButton.heartButton-active {
     border-color: #f9b9c4;
     background: #fbd0d8;
 }
-
 .heartButton {
     position: absolute;
     background: url("/img/img.png") no-repeat;
@@ -685,7 +576,6 @@ html {
     left: 21%;
     transform: translate(-50%, -50%);
 }
-
 .textButton {
     font-weight: bold;
     font-size: 10pt;
@@ -693,16 +583,13 @@ html {
     color: grey;
     font-family: 'Montserrat', sans-serif;
 }
-
 .textButton.heartButton-active {
     color: #000;
 }
-
 .heartButton.heartButton-active {
     animation: animate .8s steps(28) 1;
     background-position: right;
 }
-
 @keyframes animate {
     0% {
         background-position: left;
@@ -711,7 +598,6 @@ html {
         background-position: right;
     }
 }
-
 .slide {
     width: 90%;
     height: 60vh;
@@ -720,26 +606,22 @@ html {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     transition: all 0.4s;
 }
-
 .slides {
     width: 5200px;
     display: flex;
     align-content: center;
     align-items: center;
 }
-
 .image img {
     display: flex;
     width: 48.7vw;
     height: 60vh;
     overflow: hidden;
 }
-
 #atual {
     margin-left: 0;
     transition: all 2s;
 }
-
 .btnSlide {
     position: absolute;
     color: #fff;
@@ -751,19 +633,15 @@ html {
     transition: all 0.4s;
     font-size: 1.5em;
 }
-
 .btnSlide:hover {
     transform: scale(1.5);
 }
-
 #voltar {
     left: 27%;
 }
-
 #avancar {
     right: 27%;
 }
-
 .balls {
     position: absolute;
     width: 49vw;
@@ -771,7 +649,6 @@ html {
     justify-content: center;
     margin-top: -2%;
 }
-
 .balls div {
     transition: all 0.5s;
     border: 2px solid #fff;
@@ -780,7 +657,6 @@ html {
     margin-right: 15px;
     cursor: pointer;
 }
-
 .balls div:hover {
     background: #fff;
 }

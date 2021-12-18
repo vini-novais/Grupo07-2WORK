@@ -220,10 +220,11 @@ function Index() {
                         <h2>2WORK</h2>
                         <p>
                             2WORK é a plataforma líder mundial para que desenvolvedores criativos compartilhem, cresçam e vendam
-                            seus projetos! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum at quidem non
-                            nam molestiae laborum debitis accusantium
-                            natus doloribus magni. Illum, unde! Nemo placeat numquam esse. Repellat facilis deleniti veritatis!
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            seus projetos. <br />
+                            Trazendo maior visibilidade e probabilidade de sucesso para desenvolvedores autonomos
+                            façam de suas projetos de gaveta, projetos que mudarão o mercado e a vida das pessoas que o
+                            utilizarem
+                            o mesmo.
                         </p>
                         <ul class="sci">
                             <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>

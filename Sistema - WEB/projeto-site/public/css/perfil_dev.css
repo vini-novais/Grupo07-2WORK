@@ -1,63 +1,45 @@
 /* GLOBAL */
-
 body {
     font-family: 'Montserrat', sans-serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
-
 /* FIM GLOBAL */
-
 .container2Work {
     width: 90%;
     height: auto;
     margin: auto;
 }
-
 .title_msg {
     font-size: 32px;
     font-weight: 30;
     margin: 0;
 }
-
 .description {
     font-size: 18px;
     max-width: 800px;
 }
-
 .description p {
     text-align: center;
 }
-
-
 /* ALÇA DE ROLAGEM ARRASTÁVEL */
-
 ::-webkit-scrollbar {
     width: 10px;
     background-color: black;
 }
-
 ::-webkit-scrollbar-thumb {
     background-color: white;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
     background-color: #08376B
 }
-
-
 /* FIM ALÇA DE ROLAGEM ARRASTÁVEL */
-
-
 /* NAVBAR */
-
 .header2Work {
     width: 100%;
     position: fixed;
@@ -67,23 +49,19 @@ html {
     z-index: 1000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .header2Work .container2Work {
     display: flex;
     height: 65px;
     align-items: center;
     justify-content: space-between;
 }
-
 .logo-header img {
     height: 30px;
     cursor: pointer;
 }
-
 .nav2Work {
     float: right;
 }
-
 .nav2Work a {
     position: relative;
     font-size: 15px;
@@ -92,7 +70,6 @@ html {
     text-transform: uppercase;
     font-weight: bold;
 }
-
 .nav2Work a:after {
     content: "";
     position: absolute;
@@ -103,26 +80,21 @@ html {
     bottom: -3px;
     transition: 0.3s;
 }
-
 .nav2Work a:hover {
     color: #fff;
     text-decoration: none;
 }
-
 .nav2Work a:hover:after {
     width: 100%;
 }
-
 .nav2Work li {
     display: unset;
     padding: 0px 0px 0px 10px;
 }
-
 .nav2Work ul {
     float: left;
     margin-right: 10px;
 }
-
 .nav2Work ul input {
     background: #FFFFFF;
     border: 1px solid #C6C6C6;
@@ -134,7 +106,6 @@ html {
     padding: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .button_upload {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100px;
@@ -145,25 +116,21 @@ html {
     border: 1px solid #C6C6C6;
     cursor: pointer;
 }
-
 .button_upload {
     -moz-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3;
 }
-
 .button_upload:hover {
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
-
 .action {
     float: right;
     top: 20px;
     right: 30px;
 }
-
 .action .profile {
     position: relative;
     text-align: center;
@@ -178,11 +145,9 @@ html {
     background: #FFFFFF;
     border: 0.1px solid #C6C6C6;
 }
-
 .fotoperfil {
     width: 70px;
 }
-
 .action .profile img {
     position: absolute;
     top: 0;
@@ -191,7 +156,6 @@ html {
     height: 100%;
     object-fit: cover;
 }
-
 .action .menu {
     position: absolute;
     top: 120px;
@@ -206,13 +170,11 @@ html {
     opacity: 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
 .action .menu.active {
     top: 70px;
     visibility: visible;
     opacity: 1;
 }
-
 .action .menu h3 {
     width: 100%;
     text-align: center;
@@ -221,13 +183,11 @@ html {
     color: #fff;
     line-height: 1.2em;
 }
-
 .action .menu h3 span {
     font-size: 14px;
     color: #cecece;
     font-weight: 400;
 }
-
 .action .menu ul li {
     list-style: none;
     padding: 10px 0;
@@ -236,7 +196,6 @@ html {
     align-items: center;
     margin-left: -30px;
 }
-
 .action .menu ul li i {
     max-width: 20px;
     margin-right: 10px;
@@ -244,11 +203,9 @@ html {
     transition: 0.5s;
     color: #E4E4E4;
 }
-
 .action .menu ul li:hover i {
     opacity: 1;
 }
-
 .action .menu ul li a {
     display: inline-block;
     text-decoration: none;
@@ -256,14 +213,10 @@ html {
     font-weight: 500;
     transition: 0.5s;
 }
-
 .action .menu ul li:hover a {
     color: #ff5d94;
 }
-
-
 /* FIM NAVBAR */
-
 .seccion-perfil-usuario .perfil-usuario-body,
 .seccion-perfil-usuario {
     display: flex;
@@ -275,13 +228,11 @@ html {
     height: auto;
     margin: 1% auto 2%;
 }
-
 .seccion-perfil-usuario .perfil-usuario-header {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-
 .seccion-perfil-usuario .perfil-usuario-portada {
     display: block;
     position: relative;
@@ -292,14 +243,12 @@ html {
     margin-top: 5%;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
-
 .seccion-perfil-usuario .perfil-usuario-portada h2 {
     position: absolute;
     color: #fff;
     left: 20%;
     top: 60%;
 }
-
 .seccion-perfil-usuario .perfil-usuario-portada .boton-portada {
     position: absolute;
     top: 1rem;
@@ -311,7 +260,6 @@ html {
     color: #fff;
     cursor: pointer;
 }
-
 .seccion-perfil-usuario .perfil-usuario-avatar {
     display: flex;
     width: 180px;
@@ -327,13 +275,11 @@ html {
     left: calc(10% - 95px);
     z-index: 1;
 }
-
 .seccion-perfil-usuario .perfil-usuario-avatar img {
     width: 100%;
     position: relative;
     border-radius: 50%;
 }
-
 .boton-edit {
     position: absolute;
     top: 5px;
@@ -346,21 +292,17 @@ html {
     cursor: pointer;
     display: block;
 }
-
 .boton-edit:hover {
     color: #fff;
     background-color: rgba(0, 0, 0, .4);
     transition: 0.7s;
 }
-
 #biografiaDoInv {
     display: none;
 }
-
 #salvarPerfil {
     display: none;
 }
-
 .seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {
     position: absolute;
     left: -2px;
@@ -373,27 +315,23 @@ html {
     border-radius: 50%;
     cursor: pointer;
 }
-
 .seccion-perfil-usuario .perfil-usuario-body {
     width: 45%;
     position: relative;
     margin-top: 2%;
 }
-
 .seccion-perfil-usuario .perfil-usuario-body .titulo {
     display: block;
     width: 100%;
     font-size: 1.75em;
     margin-bottom: 0.5rem;
 }
-
 .seccion-perfil-usuario .perfil-usuario-body .texto {
     color: #848484;
     font-size: 13pt;
     text-align: justify;
     width: 98%;
 }
-
 .seccion-perfil-usuario .perfil-usuario-footer,
 .seccion-perfil-usuario .perfil-usuario-bio {
     display: flex;
@@ -404,34 +342,28 @@ html {
     border-radius: 5px;
     width: 100%;
 }
-
 .seccion-perfil-usuario .perfil-usuario-bio {
     margin-bottom: 1.25rem;
     text-align: center;
     height: 24vh;
 }
-
 .seccion-perfil-usuario .perfil-usuario-bio .textArea {
     outline: none;
     border-radius: 5px;
 }
-
 .seccion-perfil-usuario .lista-datos {
     width: 100%;
     list-style: none;
     font-size: 12pt;
 }
-
 .seccion-perfil-usuario .lista-datos li {
     padding: 5px 0;
 }
-
 .seccion-perfil-usuario .lista-datos li>.icono {
     margin-right: 1rem;
     font-size: 1.2rem;
     vertical-align: middle;
 }
-
 .seccion-perfil-usuario .redes-sociales {
     position: absolute;
     right: calc(0px - 25px - 0rem);
@@ -439,7 +371,6 @@ html {
     display: flex;
     flex-direction: column;
 }
-
 .seccion-perfil-usuario .redes-sociales .boton-redes {
     border: 0;
     background-color: #fff;
@@ -454,26 +385,19 @@ html {
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
     font-size: 1.3rem;
 }
-
 .seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
     margin-top: .5rem;
 }
-
 .seccion-perfil-usuario .boton-redes.linkedin {
     background-color: #5955FF;
 }
-
 .seccion-perfil-usuario .boton-redes.github {
     background-color: rgba(45, 49, 58, 0.87);
 }
-
 .seccion-perfil-usuario .boton-redes.instagram {
     background: linear-gradient(45deg, #FF2DFD, #40A7FF);
 }
-
-
 /* ADAPTAÇÃO A DISPOSITIVOS */
-
 @media (max-width: 750px) {
     .seccion-perfil-usuario .lista-datos {
         width: 100%;
@@ -498,21 +422,16 @@ html {
         margin-top: 0;
     }
 }
-
-
 /* FIM ADAPTAÇÃO A DISPOSITIVOS */
-
 .mensaje a {
     color: inherit;
     margin-right: .5rem;
     display: inline-block;
 }
-
 .mensaje a:hover {
     color: #309B76;
     transform: scale(1.4)
 }
-
 .espaco-projetos {
     font-weight: bold;
     height: auto;
@@ -523,36 +442,28 @@ html {
     justify-content: center;
     border-left: 2px solid #BFBABA;
 }
-
 .espaco-projetos h2 {
     margin: 0 0 3%;
 }
-
 .meu-projetos {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
 }
-
 .projetoBox {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
-
 .projetoBox span {
     font-size: 15pt;
     margin: 2% 5%;
 }
-
 .projetoBox img {
     height: 150px;
 }
-
-
 /* FOOTER */
-
 .footer {
     background: #08376B;
     box-shadow: 0 0 0.4em rgb(0, 0, 0);
@@ -560,10 +471,7 @@ html {
     color: #fff;
     text-align: center;
 }
-
 .footer img {
     height: 4vh;
 }
-
-
 /* FIM FOOTER */

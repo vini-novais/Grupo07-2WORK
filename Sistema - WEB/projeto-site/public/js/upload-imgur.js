@@ -13,17 +13,35 @@ function addImg(ele, content) {
     }
 }
 
-var feedback = function(res) {
+var content = "";
+console.log(content);
+var feedback = function (res) {
     reportInfo(res, true);
     if (res.success === true) {
         var get_link = res.data.link.replace(/^http:\/\//i, 'https://');
-        document.querySelector('.status').classList.add('bg-success');
-        var content =
-            'Image : ' + '<br><input class="image-url" value=\"' + get_link + '\"/>' +
-            '<img class="img" alt="Imgur-Upload" src=\"' + get_link + '\"/>';
-        addImg('.status', content);
+        // document.querySelector('.status').classList.add('bg-success');
+        content = get_link;
+        addImg(content);
+        // imgProjeto.src = content;
     }
 };
+
+function publicarProjeto() {
+    var nomeProjeto = document.getElementById("nomeProjeto").value;
+    var descricao = document.getElementById("descricao").value;
+
+    sessionStorage.id1 = nomeProjeto;
+    sessionStorage.id2 = descricao;
+    sessionStorage.id = content;
+
+    document.getElementById('nomeProjeto').value = '';
+    document.getElementById('descricao').value = '';
+
+    alert('Projeto Postado com sucesso!');
+    // sessionStorage.descricao = descricao;
+    // sessionStorage.nomeProjeto = nomeProjeto;
+
+}
 
 new Imgur({
     clientid: 'ed26193d18ed971', //You can change this ClientID

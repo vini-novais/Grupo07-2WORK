@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projetos</title>
+    <!-- LOGO NO DOMÍNIO -->
+    <link rel="icon" href="img/icon-2Work.png">
+    <!-- FIM LOGO NO DOMÍNIO -->
+    <link rel="stylesheet" href="css/projetos.css">
+    <!-- LINK FONT MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FIM LINK FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- LINK JSQUERY PARA BOTÃO DE CURTIDA -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- FIM LINK JSQUERY PARA BOTÃO DE CURTIDA -->
+    <!-- TODOS OS ICONS DA TELA -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar" class="header2Work">
+        <div class="container2Work">
+            <div class="logo-header">
+                <a href="home_dev.html"><img src="img/White on Transparent.png"></a>
+            </div>
+            <div class="nav2Work">
+                <ul>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><input type="text" placeholder="Habilidade, tag, palavra chave..."></li>
+                    <li><a href="upload.html"><button class="button_upload">UPLOAD</button></a></li>
+                    <li>
+                        <div class="action">
+                            <div class="profile" onclick="menuToggle()">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="menu">
+                                <h3><span id="nomeMenu"></span></h3>
+                                <ul>
+                                    <li>
+                                        <i class="fal fa-chart-area"></i>
+                                        <a href="dashboard.html">Meu Desempenho</a>
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-user-circle"></i>
+                                        <a href="perfil_dev.html">Perfil</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-award"></i>
+                                        <a href="planos.html">Planos</a>
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-sign-out-alt"></i>
+                                        <a href="index.html">Sair</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- FIM NAVBAR -->
+    <div class="container2Work">
+        <section class="listagem-projetos">
+            <!-- PRIMEIRO PROJETO 1 -->
+            <div class="ui-card">
+                <span id="imgProjeto">
+                    <img id="idcapaProjeto" class="capa-projeto">
+                </span>
+                <div class="description">
+                    <h3 id="nomeDoDev">
+                        </h2>
+                        <h2 id="idnomeProjeto"></h2>
+                        <p id="iddescricaoProjeto"></p>
+                        <button class="modal-btn" id="modal-btn">Saiba mais</button>
+                </div>
+            </div>
+            <!-- MODAL PROJETO 1 -->
+            <div id="my-modal" class="modal">
+                <div class="modal-content">
+                    <!-- HEADER DO MODAL -->
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                        <h2>Projeto X</h2>
+                    </div>
+                    <!-- FIM HEADER DO MODAL -->
+                    <div class="modal-body">
+                        <div class="conteudoModal">
+                            <!-- NOME DO DEV E BOTÃO DE GOSTEI -->
+                            <div class="nomeDev">
+                                <img class="iconUsuario" src="img/image-perfilV.png">
+                                <div class="nomeDev2">
+                                    <h2>Vinicius Novais</h2>
+                                </div>
+                                <div class="heart-btnButton">
+                                    <div class="contentButton">
+                                        <b class="heartButton"></b>
+                                        <b class="textButton">Gostei</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIM NOME DO DEV E BOTÃO DE GOSTEI -->
+                            <!-- SLIDES -->
+                            <div class="slide">
+                                <div class="slides">
+                                    <!-- BOTÃO SLIDE ANTERIOR -->
+                                    <div id="voltar" class="btnSlide">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </div>
+                                    <!-- FIM BOTÃO SLIDE ANTERIOR -->
+                                    <!-- BOTÃO PRÓXIMO SLIDE -->
+                                    <div id="avancar" class="btnSlide">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <!-- FIM BOTÃO PRÓXIMO SLIDE -->
+                                    <div id="atual" class="image">
+                                        <img src="/img/walp-lol.jpg">
+                                    </div>
+                                    <div class="image">
+                                        <img src="/img/walp-runn.jpg">
+                                    </div>
+                                    <div class="image">
+                                        <img src="/img/walp-tft.jpg">
+                                    </div>
+                                    <div class="image">
+                                        <img src="/img/walp-valorat.jpg">
+                                    </div>
+                                </div>
+                                <div class="balls">
+                                </div>
+                            </div>
+                            <!-- FIM SLIDES -->
+                            <!-- DESCRIÇÃO DO PROJETO -->
+                            <h2>Descrição</h2>
+                            <span class="descriptionModal">
+                                League of Legends é um jogo eletrônico online gratuito, do gênero batalha
+                                multijogador, desenvolvido e publicado pela Riot Games em 2009, para os sistemas
+                                Microsoft Windows e Mac OS X, inspirado no modo Defense of the Ancients do jogo
+                                Warcraft III: The Frozen Throne.
+                            </span>
+                            <!-- FIM DESCRIÇÃO DO PROJETO -->
+                            <button class="modal-btn" id="modal-btn">Comentar publicação!</button>
+                        </div>
+                    </div>
+                    <!-- FOOTER DO MODAL -->
+                    <div class="modal-footer">
+                        <img src="img/White on Transparent.png">
+                    </div>
+                    <!-- FIM FOOTER DO MODAL -->
+                </div>
+            </div>
+            <!-- FIM MODAL PROJETO 1 -->
+    </div>
+    <!-- FIM PRIMEIRO PROJETO 1 -->
+    </section>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <img src="img/White on Transparent.png">
+    </footer>
+    <!-- FIM FOOTER -->
+</body>
+
+</html>
+
+<!-- SCRIPT PROJETOS -->
+<script src="js/projetos.js"></script>
+<!-- FIM SCRIPT PROJETOS -->
+
+<!-- SCRIPT AXIOS -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- FIM SCRIPT AXIOS -->
+
+<script>
+    console.log(sessionStorage.id);
+    idcapaProjeto.src = sessionStorage.id;
+    idnomeProjeto.innerHTML = sessionStorage.id1;
+    iddescricaoProjeto.innerHTML = sessionStorage.id2;
+</script>

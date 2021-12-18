@@ -11,7 +11,6 @@ if (sessionStorage == null) { } else {
 
     let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
 
-
     nomeMenu.innerHTML = `${nomeUsuario.split(" ")[0]}`;
     nomeDoDev.innerHTML = `${nomeUsuario}`;
 }

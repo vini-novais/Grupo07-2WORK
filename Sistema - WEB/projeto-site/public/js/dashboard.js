@@ -8,7 +8,7 @@ new Chart(document.getElementById("grafico-likes"), {
             label: "Curtidas",
             borderColor: "#08376B",
             fill: false
-        }, ]
+        },]
     },
 });
 /* FIM GRÁFICO LIKES EM POSTAGENS */
@@ -23,7 +23,7 @@ new Chart(document.getElementById("grafico-visitas"), {
             label: "Visualizações",
             borderColor: "#08376B",
             fill: false
-        }, ]
+        },]
     },
 });
 /* FIM GRÁFICO VISUALIZAÇÕES EM POSTAGENS */
@@ -37,7 +37,7 @@ function menuToggle() {
 
 var usuario = sessionStorage.usuario_dev;
 console.log(usuario);
-if (sessionStorage == null) {} else {
+if (sessionStorage == null) { } else {
 
     let nomeUsuario = JSON.parse(usuario).nome; // o Parse serve para pegar apenas um campo do JSON
     let qtdProjetosPublicados = JSON.parse(usuario).totalPublicacoes;

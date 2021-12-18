@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Upload</title>
+    <!-- LOGO NO DOMÍNIO -->
+    <link rel="icon" href="img/icon-2Work.png">
+    <!-- FIM LOGO NO DOMÍNIO -->
+    <!-- CSS -->
+    <link href="css/upload2.css" rel="stylesheet">
+    <!-- FIM CSS -->
+    <!-- LINK FONTAWESOME DO ÍCONE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- FIM LINK FONTAWESOME DO ÍCONE -->
+    <!-- LINK FONT MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- FIM LINK FONT MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- TODOS OS ICONS DA TELA -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- FIM TODOS OS ICONS DA TELA -->
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div id="navbar" class="header2Work">
+        <div class="container2Work">
+            <div class="logo-header">
+                <a href="home_dev.html"><img src="img/White on Transparent.png"></a>
+            </div>
+            <div class="nav2Work">
+                <ul>
+                    <li><a href="projetos2.html">Projetos</a></li>
+                    <li><input type="text" placeholder="Habilidade, tag, palavra chave..."></li>
+                    <li><a href="upload.html"><button class="button_upload">UPLOAD</button></a></li>
+                    <li>
+                        <div class="action">
+                            <div class="profile" onclick="menuToggle()">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="menu">
+                                <h3><span id="nomeMenu"></span></h3>
+                                <ul>
+                                    <li>
+                                        <i class="fal fa-chart-area"></i>
+                                        <a href="dashboard.html">Meu Desempenho</a>
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-user-circle"></i>
+                                        <a href="perfil_dev.html">Perfil</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-award"></i>
+                                        <a href="planos.html">Planos</a>
+                                    </li>
+                                    <li>
+                                        <i class="fal fa-sign-out-alt"></i>
+                                        <a href="index.html">Sair</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- FIM NAVBAR -->
+    <!-- UPLOAD DAS IMAGENS -->
+    <section class="section_upload" id="section_upload">
+        <div>
+            <div class="box">
+                <div class="form_projeto">
+                    <div class="div-projeto">
+                        <input type="text" id="nomeProjeto" required="">
+                        <label>Nome Projeto</label>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="container2Work">
+                    <h1>Em que você está trabalhando?</h1>
+                    <form class="dropzone" action="#">
+
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>System.out.println("Selecione uma imagem!");</p>
+                    </form>
+                    <section class="progress-area"></section>
+                    <section class="uploaded-area"></section>
+                </div>
+            </div>
+        </div>
+        <img class="img-upload" src="img/img-upload.png">
+    </section>
+    <!-- FIM UPLOAD DAS IMAGENS -->
+    <!-- DESCRIÇÃO E BOTÃO PUBLICAR AGORA -->
+    <footer id="footer">
+        <div class="container2Work">
+            <div class="containerTwo">
+                <div class="footerForm">
+                    <textarea id="descricao" placeholder=" Descrição:" cols="10" rows="5">
+                    </textarea>
+                    <button onclick=publicarProjeto() id="publicar ">Publicar Agora</button>
+                    <!-- id="publicar "  colcoar no botão acima mais tarde -->
+                    <!-- onclick="upload() " -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM DESCRIÇÃO E BOTÃO PUBLICAR AGORA -->
+</body>
+
+</html>
+
+<!-- SCRIPT UPLOAD  -->
+<!-- <script src="js/upload.js "></script> -->
+<script type="text/javascript" src="./js/imgur.js"></script>
+<script type="text/javascript" src="./js/upload-imgur.js"></script>
+<script src="./js/projetos.js"></script>
+<!-- FIM SCRIPT UPLOAD  -->
+
+<!-- SCRIPT AXIOS -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- FIM SCRIPT AXIOS -->

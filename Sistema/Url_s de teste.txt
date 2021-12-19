@@ -1,4 +1,4 @@
-- Testar cadastro do desenvolvedor -----> 
+- Testar cadastro do desenvolvedor ----->
 http://localhost:8080/2work/cadastrar-usuario/00011122233/Luiz/Luiz@gmail.com/luiz1234/true/backend/null
 
 - Testar cadastro do investidor -----> 
